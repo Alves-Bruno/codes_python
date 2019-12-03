@@ -1,0 +1,387 @@
+2019/11/23 18:50:26.42 #|1574535026.426255609|00#| work_queue_worker[1] debug: /root/cctools/bin/work_queue_worker version 8.0.0 DEVELOPMENT (released 2019-11-14 15:35:16 +0000)
+2019/11/23 18:50:26.42 #|1574535026.426292608|00#| work_queue_worker[1] debug: Built by root@7e9ecba79f43 on 2019-11-14 15:35:16 +0000
+2019/11/23 18:50:26.42 #|1574535026.426302481|00#| work_queue_worker[1] debug: System: Linux 7e9ecba79f43 5.0.0-32-generic #34~18.04.2-Ubuntu SMP Thu Oct 10 10:36:02 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+2019/11/23 18:50:26.42 #|1574535026.426311016|00#| work_queue_worker[1] debug: Configuration: --prefix /root/cctools
+2019/11/23 18:50:26.42 #|1574535026.426483386|00#| work_queue_worker[1] wq: WORK_QUEUE_SANDBOX set to /tmp/worker-0-1.
+2019/11/23 18:50:26.42 #|1574535026.427052983|00#| work_queue_worker[1] debug: error reading disk usage on directory: ./cache.
+2019/11/23 18:50:26.42 #|1574535026.427092333|00#| work_queue_worker[1] dns: looking up name master
+2019/11/23 18:50:26.42 #|1574535026.427755166|00#| work_queue_worker[1] dns: master is 10.0.136.2
+2019/11/23 18:50:26.42 #|1574535026.427787482|00#| work_queue_worker[1] tcp: connecting to 10.0.136.2 port 1026
+2019/11/23 18:50:29.46 #|1574535029.466737371|00#| work_queue_worker[1] tcp: made connection to 10.0.136.2 port 1026
+2019/11/23 18:50:29.46 #|1574535029.466774143|00#| work_queue_worker[1] wq: connected to master master:1026 via local address 10.0.136.16:52618
+2019/11/23 18:50:29.46 #|1574535029.466784592|00#| work_queue_worker[1] wq: preparing workspace /tmp/worker-0-1
+2019/11/23 18:50:29.46 #|1574535029.466906978|00#| work_queue_worker[1] dns: looking up name 09f6daf8045c
+2019/11/23 18:50:29.46 #|1574535029.466958211|00#| work_queue_worker[1] dns: 09f6daf8045c is 10.0.136.16
+2019/11/23 18:50:29.46 #|1574535029.466969828|00#| work_queue_worker[1] dns: looking up addr 10.0.136.16
+2019/11/23 18:50:29.46 #|1574535029.466994949|00#| work_queue_worker[1] dns: 10.0.136.16 is 09f6daf8045c
+2019/11/23 18:50:29.46 #|1574535029.467004267|00#| work_queue_worker[1] dns: finding my hostname: uname = 09f6daf8045c, address = 10.0.136.16, hostname = 09f6daf8045c
+2019/11/23 18:50:29.46 #|1574535029.467016220|00#| work_queue_worker[1] wq: tx to master: workqueue 8 09f6daf8045c Linux x86_64 8.0.0
+2019/11/23 18:50:29.46 #|1574535029.467073945|00#| work_queue_worker[1] wq: tx to master: info worker-id worker-196f34b4b67cdf5c687e2903fab0dd5c
+2019/11/23 18:50:29.46 #|1574535029.467091333|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/23 18:50:29.46 #|1574535029.467101317|00#| work_queue_worker[1] wq: Sending resource description to master:
+2019/11/23 18:50:29.46 #|1574535029.467109267|00#| work_queue_worker[1] wq:  workers      0 inuse      1 total      1 smallest      1 largest
+2019/11/23 18:50:29.46 #|1574535029.467120518|00#| work_queue_worker[1] wq:     disk      0 inuse   2341 total   2341 smallest   2341 largest
+2019/11/23 18:50:29.46 #|1574535029.467130754|00#| work_queue_worker[1] wq:   memory      0 inuse  11908 total  11908 smallest  11908 largest
+2019/11/23 18:50:29.46 #|1574535029.467141273|00#| work_queue_worker[1] wq:     gpus      0 inuse      0 total      0 smallest      0 largest
+2019/11/23 18:50:29.46 #|1574535029.467151376|00#| work_queue_worker[1] wq:    cores      0 inuse      1 total      1 smallest      1 largest
+2019/11/23 18:50:29.46 #|1574535029.467162666|00#| work_queue_worker[1] wq: tx to master: info end_of_resource_update 0
+2019/11/23 18:50:29.46 #|1574535029.467172487|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 18:50:29.46 #|1574535029.467182596|00#| work_queue_worker[1] wq: working for master at 10.0.136.2:1026.
+2019/11/23 18:50:55.70 #|1574535055.706762756|00#| work_queue_worker[1] wq: Failed to read from master.
+2019/11/23 18:50:55.70 #|1574535055.706816452|00#| work_queue_worker[1] wq: cleaning workspace /tmp/worker-0-1
+2019/11/23 18:50:55.70 #|1574535055.706967641|00#| work_queue_worker[1] wq: disconnecting from master 10.0.136.2:1026
+2019/11/23 18:50:55.70 #|1574535055.706988101|00#| work_queue_worker[1] tcp: disconnected from 10.0.136.2 port 1026
+2019/11/23 18:50:55.70 #|1574535055.707012261|00#| work_queue_worker[1] wq: killing all outstanding tasks
+2019/11/23 18:50:55.70 #|1574535055.707027383|00#| work_queue_worker[1] wq: all data structures are clean
+2019/11/23 18:51:01.70 #|1574535061.707484551|00#| work_queue_worker[1] debug: error reading disk usage on directory: ./cache.
+2019/11/23 18:51:01.70 #|1574535061.707540462|00#| work_queue_worker[1] tcp: connecting to 10.0.136.2 port 1026
+2019/11/23 18:51:01.70 #|1574535061.707718626|00#| work_queue_worker[1] tcp: made connection to 10.0.136.2 port 1026
+2019/11/23 18:51:01.70 #|1574535061.707736948|00#| work_queue_worker[1] wq: connected to master master:1026 via local address 10.0.136.16:52630
+2019/11/23 18:51:01.70 #|1574535061.707746272|00#| work_queue_worker[1] wq: preparing workspace /tmp/worker-0-1
+2019/11/23 18:51:01.70 #|1574535061.707859953|00#| work_queue_worker[1] dns: finding my hostname: uname = 09f6daf8045c, address = 10.0.136.16, hostname = 09f6daf8045c
+2019/11/23 18:51:01.70 #|1574535061.707872925|00#| work_queue_worker[1] wq: tx to master: workqueue 8 09f6daf8045c Linux x86_64 8.0.0
+2019/11/23 18:51:01.70 #|1574535061.707918089|00#| work_queue_worker[1] wq: tx to master: info worker-id worker-196f34b4b67cdf5c687e2903fab0dd5c
+2019/11/23 18:51:01.70 #|1574535061.707954976|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/23 18:51:01.70 #|1574535061.707988977|00#| work_queue_worker[1] wq: Sending resource description to master:
+2019/11/23 18:51:01.70 #|1574535061.708000180|00#| work_queue_worker[1] wq:  workers      0 inuse      1 total      1 smallest      1 largest
+2019/11/23 18:51:01.70 #|1574535061.708033323|00#| work_queue_worker[1] wq:     disk      0 inuse   2341 total   2341 smallest   2341 largest
+2019/11/23 18:51:01.70 #|1574535061.708070710|00#| work_queue_worker[1] wq:   memory      0 inuse  11908 total  11908 smallest  11908 largest
+2019/11/23 18:51:01.70 #|1574535061.708105852|00#| work_queue_worker[1] wq:     gpus      0 inuse      0 total      0 smallest      0 largest
+2019/11/23 18:51:01.70 #|1574535061.708139938|00#| work_queue_worker[1] wq:    cores      0 inuse      1 total      1 smallest      1 largest
+2019/11/23 18:51:01.70 #|1574535061.708190350|00#| work_queue_worker[1] wq: tx to master: info end_of_resource_update 0
+2019/11/23 18:51:01.70 #|1574535061.708224934|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 18:51:01.70 #|1574535061.708239396|00#| work_queue_worker[1] wq: working for master at 10.0.136.2:1026.
+2019/11/23 18:51:14.90 #|1574535074.906778200|00#| work_queue_worker[1] wq: Failed to read from master.
+2019/11/23 18:51:14.90 #|1574535074.906825359|00#| work_queue_worker[1] wq: cleaning workspace /tmp/worker-0-1
+2019/11/23 18:51:14.90 #|1574535074.906969049|00#| work_queue_worker[1] wq: disconnecting from master 10.0.136.2:1026
+2019/11/23 18:51:14.90 #|1574535074.906993137|00#| work_queue_worker[1] tcp: disconnected from 10.0.136.2 port 1026
+2019/11/23 18:51:14.90 #|1574535074.907002915|00#| work_queue_worker[1] wq: killing all outstanding tasks
+2019/11/23 18:51:14.90 #|1574535074.907013033|00#| work_queue_worker[1] wq: all data structures are clean
+2019/11/23 18:51:20.90 #|1574535080.907471113|00#| work_queue_worker[1] debug: error reading disk usage on directory: ./cache.
+2019/11/23 18:51:20.90 #|1574535080.907528767|00#| work_queue_worker[1] tcp: connecting to 10.0.136.2 port 1026
+2019/11/23 18:51:20.90 #|1574535080.907712467|00#| work_queue_worker[1] tcp: made connection to 10.0.136.2 port 1026
+2019/11/23 18:51:20.90 #|1574535080.907732092|00#| work_queue_worker[1] wq: connected to master master:1026 via local address 10.0.136.16:52638
+2019/11/23 18:51:20.90 #|1574535080.907742330|00#| work_queue_worker[1] wq: preparing workspace /tmp/worker-0-1
+2019/11/23 18:51:20.90 #|1574535080.907865467|00#| work_queue_worker[1] dns: finding my hostname: uname = 09f6daf8045c, address = 10.0.136.16, hostname = 09f6daf8045c
+2019/11/23 18:51:20.90 #|1574535080.907879362|00#| work_queue_worker[1] wq: tx to master: workqueue 8 09f6daf8045c Linux x86_64 8.0.0
+2019/11/23 18:51:20.90 #|1574535080.907941689|00#| work_queue_worker[1] wq: tx to master: info worker-id worker-196f34b4b67cdf5c687e2903fab0dd5c
+2019/11/23 18:51:20.90 #|1574535080.907982400|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/23 18:51:20.90 #|1574535080.908019927|00#| work_queue_worker[1] wq: Sending resource description to master:
+2019/11/23 18:51:20.90 #|1574535080.908031893|00#| work_queue_worker[1] wq:  workers      0 inuse      1 total      1 smallest      1 largest
+2019/11/23 18:51:20.90 #|1574535080.908068762|00#| work_queue_worker[1] wq:     disk      0 inuse   2341 total   2341 smallest   2341 largest
+2019/11/23 18:51:20.90 #|1574535080.908106828|00#| work_queue_worker[1] wq:   memory      0 inuse  11908 total  11908 smallest  11908 largest
+2019/11/23 18:51:20.90 #|1574535080.908144842|00#| work_queue_worker[1] wq:     gpus      0 inuse      0 total      0 smallest      0 largest
+2019/11/23 18:51:20.90 #|1574535080.908181887|00#| work_queue_worker[1] wq:    cores      0 inuse      1 total      1 smallest      1 largest
+2019/11/23 18:51:20.90 #|1574535080.908237406|00#| work_queue_worker[1] wq: tx to master: info end_of_resource_update 0
+2019/11/23 18:51:20.90 #|1574535080.908274554|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 18:51:20.90 #|1574535080.908289902|00#| work_queue_worker[1] wq: working for master at 10.0.136.2:1026.
+2019/11/23 18:51:34.10 #|1574535094.106724724|00#| work_queue_worker[1] wq: Failed to read from master.
+2019/11/23 18:51:34.10 #|1574535094.106771541|00#| work_queue_worker[1] wq: cleaning workspace /tmp/worker-0-1
+2019/11/23 18:51:34.10 #|1574535094.106925669|00#| work_queue_worker[1] wq: disconnecting from master 10.0.136.2:1026
+2019/11/23 18:51:34.10 #|1574535094.106951468|00#| work_queue_worker[1] tcp: disconnected from 10.0.136.2 port 1026
+2019/11/23 18:51:34.10 #|1574535094.106961519|00#| work_queue_worker[1] wq: killing all outstanding tasks
+2019/11/23 18:51:34.10 #|1574535094.106972311|00#| work_queue_worker[1] wq: all data structures are clean
+2019/11/23 18:51:40.10 #|1574535100.107432265|00#| work_queue_worker[1] debug: error reading disk usage on directory: ./cache.
+2019/11/23 18:51:40.10 #|1574535100.107487412|00#| work_queue_worker[1] tcp: connecting to 10.0.136.2 port 1026
+2019/11/23 18:51:40.10 #|1574535100.107668958|00#| work_queue_worker[1] tcp: made connection to 10.0.136.2 port 1026
+2019/11/23 18:51:40.10 #|1574535100.107687151|00#| work_queue_worker[1] wq: connected to master master:1026 via local address 10.0.136.16:52640
+2019/11/23 18:51:40.10 #|1574535100.107696355|00#| work_queue_worker[1] wq: preparing workspace /tmp/worker-0-1
+2019/11/23 18:51:40.10 #|1574535100.107818249|00#| work_queue_worker[1] dns: finding my hostname: uname = 09f6daf8045c, address = 10.0.136.16, hostname = 09f6daf8045c
+2019/11/23 18:51:40.10 #|1574535100.107831783|00#| work_queue_worker[1] wq: tx to master: workqueue 8 09f6daf8045c Linux x86_64 8.0.0
+2019/11/23 18:51:40.10 #|1574535100.107881204|00#| work_queue_worker[1] wq: tx to master: info worker-id worker-196f34b4b67cdf5c687e2903fab0dd5c
+2019/11/23 18:51:40.10 #|1574535100.107919915|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/23 18:51:40.10 #|1574535100.107955823|00#| work_queue_worker[1] wq: Sending resource description to master:
+2019/11/23 18:51:40.10 #|1574535100.107967351|00#| work_queue_worker[1] wq:  workers      0 inuse      1 total      1 smallest      1 largest
+2019/11/23 18:51:40.10 #|1574535100.108006263|00#| work_queue_worker[1] wq:     disk      0 inuse   2270 total   2270 smallest   2270 largest
+2019/11/23 18:51:40.10 #|1574535100.108042224|00#| work_queue_worker[1] wq:   memory      0 inuse  11908 total  11908 smallest  11908 largest
+2019/11/23 18:51:40.10 #|1574535100.108077797|00#| work_queue_worker[1] wq:     gpus      0 inuse      0 total      0 smallest      0 largest
+2019/11/23 18:51:40.10 #|1574535100.108112026|00#| work_queue_worker[1] wq:    cores      0 inuse      1 total      1 smallest      1 largest
+2019/11/23 18:51:40.10 #|1574535100.108176813|00#| work_queue_worker[1] wq: tx to master: info end_of_resource_update 0
+2019/11/23 18:51:40.10 #|1574535100.108211697|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 18:51:40.10 #|1574535100.108227925|00#| work_queue_worker[1] wq: working for master at 10.0.136.2:1026.
+2019/11/23 18:53:38.05 #|1574535218.54713432|00#| work_queue_worker[1] wq: rx from master: put file-0-6a3566a41d4cc2c0ac4ec7bfaab41382-query.fastq.6 2044000 0644 1
+2019/11/23 18:53:38.05 #|1574535218.54764430|00#| work_queue_worker[1] wq: Putting file file-0-6a3566a41d4cc2c0ac4ec7bfaab41382-query.fastq.6 into workspace
+2019/11/23 18:53:38.05 #|1574535218.59763526|00#| work_queue_worker[1] wq: rx from master: put file-0-971da570f958f7598fb58342dc472274-ref.fasta.sa 50000056 0644 1
+2019/11/23 18:53:38.05 #|1574535218.59813212|00#| work_queue_worker[1] wq: Putting file file-0-971da570f958f7598fb58342dc472274-ref.fasta.sa into workspace
+2019/11/23 18:53:38.13 #|1574535218.138546451|00#| work_queue_worker[1] wq: rx from master: put file-0-35f59a9883b4870b84f03717aff16002-ref.fasta.ann 5866697 0644 1
+2019/11/23 18:53:38.13 #|1574535218.138592067|00#| work_queue_worker[1] wq: Putting file file-0-35f59a9883b4870b84f03717aff16002-ref.fasta.ann into workspace
+2019/11/23 18:53:38.14 #|1574535218.147208244|00#| work_queue_worker[1] wq: rx from master: put file-0-1aba5e7adecebe065db19a405fb8bdf0-ref.fasta.amb 19 0644 1
+2019/11/23 18:53:38.14 #|1574535218.147248092|00#| work_queue_worker[1] wq: Putting file file-0-1aba5e7adecebe065db19a405fb8bdf0-ref.fasta.amb into workspace
+2019/11/23 18:53:38.14 #|1574535218.147336112|00#| work_queue_worker[1] wq: rx from master: put file-0-d4ff2b390cdd34b642d74a1cd1b59b97-ref.fasta.pac 25000002 0644 1
+2019/11/23 18:53:38.14 #|1574535218.147356930|00#| work_queue_worker[1] wq: Putting file file-0-d4ff2b390cdd34b642d74a1cd1b59b97-ref.fasta.pac into workspace
+2019/11/23 18:53:38.18 #|1574535218.182365390|00#| work_queue_worker[1] wq: rx from master: put file-0-0cadea4f68da3f941c5b5f0c963a59f8-ref.fasta.bwt 100000072 0644 1
+2019/11/23 18:53:38.18 #|1574535218.182404803|00#| work_queue_worker[1] wq: Putting file file-0-0cadea4f68da3f941c5b5f0c963a59f8-ref.fasta.bwt into workspace
+2019/11/23 18:53:38.31 #|1574535218.318955587|00#| work_queue_worker[1] wq: rx from master: put file-0-b08c3e9746692f64bcb9a448620c7967-ref.fasta 105477790 0644 1
+2019/11/23 18:53:38.31 #|1574535218.318999789|00#| work_queue_worker[1] wq: Putting file file-0-b08c3e9746692f64bcb9a448620c7967-ref.fasta into workspace
+2019/11/23 18:53:38.45 #|1574535218.458800461|00#| work_queue_worker[1] wq: rx from master: put file-0-a6be17d8a097bb9efd120be10bbc654c-bwa 1444312 0755 1
+2019/11/23 18:53:38.45 #|1574535218.458847251|00#| work_queue_worker[1] wq: Putting file file-0-a6be17d8a097bb9efd120be10bbc654c-bwa into workspace
+2019/11/23 18:53:38.46 #|1574535218.461101658|00#| work_queue_worker[1] wq: rx from master: task 4
+2019/11/23 18:53:38.46 #|1574535218.461145117|00#| work_queue_worker[1] wq: rx from master: cmd 58
+2019/11/23 18:53:38.46 #|1574535218.461169692|00#| work_queue_worker[1] wq: rx from master: ./bwa mem ref.fasta query.fastq.6 > Out.6.sam 2> mem.6.err
+2019/11/23 18:53:38.46 #|1574535218.461182534|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 18:53:38.46 #|1574535218.461196863|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 18:53:38.46 #|1574535218.461211243|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 18:53:38.46 #|1574535218.461225224|00#| work_queue_worker[1] wq: rx from master: disk 2270
+2019/11/23 18:53:38.46 #|1574535218.461238927|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 18:53:38.46 #|1574535218.461253576|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 18:53:38.46 #|1574535218.461269626|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 18:53:38.46 #|1574535218.461283502|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 18:53:38.46 #|1574535218.461311872|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 18:53:38.46 #|1574535218.461330428|00#| work_queue_worker[1] wq: rx from master: infile file-0-6a3566a41d4cc2c0ac4ec7bfaab41382-query.fastq.6 query.fastq.6 1
+2019/11/23 18:53:38.46 #|1574535218.461361459|00#| work_queue_worker[1] wq: rx from master: infile file-0-971da570f958f7598fb58342dc472274-ref.fasta.sa ref.fasta.sa 1
+2019/11/23 18:53:38.46 #|1574535218.461388438|00#| work_queue_worker[1] wq: rx from master: infile file-0-35f59a9883b4870b84f03717aff16002-ref.fasta.ann ref.fasta.ann 1
+2019/11/23 18:53:38.46 #|1574535218.461414829|00#| work_queue_worker[1] wq: rx from master: infile file-0-1aba5e7adecebe065db19a405fb8bdf0-ref.fasta.amb ref.fasta.amb 1
+2019/11/23 18:53:38.46 #|1574535218.461441094|00#| work_queue_worker[1] wq: rx from master: infile file-0-d4ff2b390cdd34b642d74a1cd1b59b97-ref.fasta.pac ref.fasta.pac 1
+2019/11/23 18:53:38.46 #|1574535218.461467714|00#| work_queue_worker[1] wq: rx from master: infile file-0-0cadea4f68da3f941c5b5f0c963a59f8-ref.fasta.bwt ref.fasta.bwt 1
+2019/11/23 18:53:38.46 #|1574535218.461493669|00#| work_queue_worker[1] wq: rx from master: infile file-0-b08c3e9746692f64bcb9a448620c7967-ref.fasta ref.fasta 1
+2019/11/23 18:53:38.46 #|1574535218.461518895|00#| work_queue_worker[1] wq: rx from master: infile file-0-a6be17d8a097bb9efd120be10bbc654c-bwa bwa 1
+2019/11/23 18:53:38.46 #|1574535218.461543534|00#| work_queue_worker[1] wq: rx from master: outfile file-0-d8efdf305b5ec470231b1129c3286ec1-mem.6.err mem.6.err 1
+2019/11/23 18:53:38.46 #|1574535218.461568797|00#| work_queue_worker[1] wq: rx from master: outfile file-0-e72c9cb95a264e932ca4b0a988983a76-Out.6.sam Out.6.sam 1
+2019/11/23 18:53:38.46 #|1574535218.461594901|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 18:53:38.46 #|1574535218.461744877|00#| work_queue_worker[1] wq: linking cache/file-0-6a3566a41d4cc2c0ac4ec7bfaab41382-query.fastq.6 to /tmp/worker-0-1/t.4/query.fastq.6
+2019/11/23 18:53:38.46 #|1574535218.461785724|00#| work_queue_worker[1] wq: linking cache/file-0-971da570f958f7598fb58342dc472274-ref.fasta.sa to /tmp/worker-0-1/t.4/ref.fasta.sa
+2019/11/23 18:53:38.46 #|1574535218.461819206|00#| work_queue_worker[1] wq: linking cache/file-0-35f59a9883b4870b84f03717aff16002-ref.fasta.ann to /tmp/worker-0-1/t.4/ref.fasta.ann
+2019/11/23 18:53:38.46 #|1574535218.461851843|00#| work_queue_worker[1] wq: linking cache/file-0-1aba5e7adecebe065db19a405fb8bdf0-ref.fasta.amb to /tmp/worker-0-1/t.4/ref.fasta.amb
+2019/11/23 18:53:38.46 #|1574535218.461884887|00#| work_queue_worker[1] wq: linking cache/file-0-d4ff2b390cdd34b642d74a1cd1b59b97-ref.fasta.pac to /tmp/worker-0-1/t.4/ref.fasta.pac
+2019/11/23 18:53:38.46 #|1574535218.461917676|00#| work_queue_worker[1] wq: linking cache/file-0-0cadea4f68da3f941c5b5f0c963a59f8-ref.fasta.bwt to /tmp/worker-0-1/t.4/ref.fasta.bwt
+2019/11/23 18:53:38.46 #|1574535218.461952395|00#| work_queue_worker[1] wq: linking cache/file-0-b08c3e9746692f64bcb9a448620c7967-ref.fasta to /tmp/worker-0-1/t.4/ref.fasta
+2019/11/23 18:53:38.46 #|1574535218.461985024|00#| work_queue_worker[1] wq: linking cache/file-0-a6be17d8a097bb9efd120be10bbc654c-bwa to /tmp/worker-0-1/t.4/bwa
+2019/11/23 18:53:38.46 #|1574535218.462014084|00#| work_queue_worker[1] wq: Waiting task 4 has been forsaken.
+2019/11/23 18:53:38.46 #|1574535218.462025540|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/23 18:53:38.46 #|1574535218.462101414|00#| work_queue_worker[1] wq: Sending resource description to master:
+2019/11/23 18:53:38.46 #|1574535218.462115081|00#| work_queue_worker[1] wq:  workers      0 inuse      1 total      1 smallest      1 largest
+2019/11/23 18:53:38.46 #|1574535218.462167917|00#| work_queue_worker[1] wq:     disk      0 inuse   1946 total   1946 smallest   1946 largest
+2019/11/23 18:53:38.46 #|1574535218.462220370|00#| work_queue_worker[1] wq:   memory      0 inuse  11908 total  11908 smallest  11908 largest
+2019/11/23 18:53:38.46 #|1574535218.462272502|00#| work_queue_worker[1] wq:     gpus      0 inuse      0 total      0 smallest      0 largest
+2019/11/23 18:53:38.46 #|1574535218.462333550|00#| work_queue_worker[1] wq:    cores      0 inuse      1 total      1 smallest      1 largest
+2019/11/23 18:53:38.46 #|1574535218.462416430|00#| work_queue_worker[1] wq: tx to master: info end_of_resource_update 0
+2019/11/23 18:53:38.46 #|1574535218.462467950|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 18:53:38.46 #|1574535218.462546860|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 18:53:38.46 #|1574535218.462606198|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 18:53:38.88 #|1574535218.882330928|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 18:53:38.88 #|1574535218.882362957|00#| work_queue_worker[1] wq: tx to master: result 40 0 0 0 4
+2019/11/23 18:53:38.88 #|1574535218.882447622|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 18:53:38.88 #|1574535218.882504514|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 18:53:38.88 #|1574535218.882820774|00#| work_queue_worker[1] wq: rx from master: task 4
+2019/11/23 18:53:38.88 #|1574535218.882920032|00#| work_queue_worker[1] wq: rx from master: cmd 58
+2019/11/23 18:53:38.88 #|1574535218.882947610|00#| work_queue_worker[1] wq: rx from master: ./bwa mem ref.fasta query.fastq.6 > Out.6.sam 2> mem.6.err
+2019/11/23 18:53:38.88 #|1574535218.882983938|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 18:53:38.88 #|1574535218.883123942|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 18:53:38.88 #|1574535218.883144263|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 18:53:38.88 #|1574535218.883157899|00#| work_queue_worker[1] wq: rx from master: disk 1946
+2019/11/23 18:53:38.88 #|1574535218.883240934|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 18:53:38.88 #|1574535218.883264150|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 18:53:38.88 #|1574535218.883344979|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 18:53:38.88 #|1574535218.883368301|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 18:53:38.88 #|1574535218.883446315|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 18:53:38.88 #|1574535218.883474891|00#| work_queue_worker[1] wq: rx from master: infile file-0-6a3566a41d4cc2c0ac4ec7bfaab41382-query.fastq.6 query.fastq.6 1
+2019/11/23 18:53:38.88 #|1574535218.883577879|00#| work_queue_worker[1] wq: rx from master: infile file-0-971da570f958f7598fb58342dc472274-ref.fasta.sa ref.fasta.sa 1
+2019/11/23 18:53:38.88 #|1574535218.883611246|00#| work_queue_worker[1] wq: rx from master: infile file-0-35f59a9883b4870b84f03717aff16002-ref.fasta.ann ref.fasta.ann 1
+2019/11/23 18:53:38.88 #|1574535218.883661583|00#| work_queue_worker[1] wq: rx from master: infile file-0-1aba5e7adecebe065db19a405fb8bdf0-ref.fasta.amb ref.fasta.amb 1
+2019/11/23 18:53:38.88 #|1574535218.883689340|00#| work_queue_worker[1] wq: rx from master: infile file-0-d4ff2b390cdd34b642d74a1cd1b59b97-ref.fasta.pac ref.fasta.pac 1
+2019/11/23 18:53:38.88 #|1574535218.883837894|00#| work_queue_worker[1] wq: rx from master: infile file-0-0cadea4f68da3f941c5b5f0c963a59f8-ref.fasta.bwt ref.fasta.bwt 1
+2019/11/23 18:53:38.88 #|1574535218.883895007|00#| work_queue_worker[1] wq: rx from master: infile file-0-b08c3e9746692f64bcb9a448620c7967-ref.fasta ref.fasta 1
+2019/11/23 18:53:38.88 #|1574535218.883918739|00#| work_queue_worker[1] wq: rx from master: infile file-0-a6be17d8a097bb9efd120be10bbc654c-bwa bwa 1
+2019/11/23 18:53:38.88 #|1574535218.883938074|00#| work_queue_worker[1] wq: rx from master: outfile file-0-d8efdf305b5ec470231b1129c3286ec1-mem.6.err mem.6.err 1
+2019/11/23 18:53:38.88 #|1574535218.884022356|00#| work_queue_worker[1] wq: rx from master: outfile file-0-e72c9cb95a264e932ca4b0a988983a76-Out.6.sam Out.6.sam 1
+2019/11/23 18:53:38.88 #|1574535218.884054554|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 18:53:38.88 #|1574535218.884177500|00#| work_queue_worker[1] wq: linking cache/file-0-6a3566a41d4cc2c0ac4ec7bfaab41382-query.fastq.6 to /tmp/worker-0-1/t.4/query.fastq.6
+2019/11/23 18:53:38.88 #|1574535218.884214434|00#| work_queue_worker[1] wq: linking cache/file-0-971da570f958f7598fb58342dc472274-ref.fasta.sa to /tmp/worker-0-1/t.4/ref.fasta.sa
+2019/11/23 18:53:38.88 #|1574535218.884241471|00#| work_queue_worker[1] wq: linking cache/file-0-35f59a9883b4870b84f03717aff16002-ref.fasta.ann to /tmp/worker-0-1/t.4/ref.fasta.ann
+2019/11/23 18:53:38.88 #|1574535218.884267235|00#| work_queue_worker[1] wq: linking cache/file-0-1aba5e7adecebe065db19a405fb8bdf0-ref.fasta.amb to /tmp/worker-0-1/t.4/ref.fasta.amb
+2019/11/23 18:53:38.88 #|1574535218.884293159|00#| work_queue_worker[1] wq: linking cache/file-0-d4ff2b390cdd34b642d74a1cd1b59b97-ref.fasta.pac to /tmp/worker-0-1/t.4/ref.fasta.pac
+2019/11/23 18:53:38.88 #|1574535218.884318477|00#| work_queue_worker[1] wq: linking cache/file-0-0cadea4f68da3f941c5b5f0c963a59f8-ref.fasta.bwt to /tmp/worker-0-1/t.4/ref.fasta.bwt
+2019/11/23 18:53:38.88 #|1574535218.884344183|00#| work_queue_worker[1] wq: linking cache/file-0-b08c3e9746692f64bcb9a448620c7967-ref.fasta to /tmp/worker-0-1/t.4/ref.fasta
+2019/11/23 18:53:38.88 #|1574535218.884370513|00#| work_queue_worker[1] wq: linking cache/file-0-a6be17d8a097bb9efd120be10bbc654c-bwa to /tmp/worker-0-1/t.4/bwa
+2019/11/23 18:53:38.88 #|1574535218.884643724|00#| work_queue_worker[1] wq: started process 9: ./bwa mem ref.fasta query.fastq.6 > Out.6.sam 2> mem.6.err
+2019/11/23 18:53:38.88 #|1574535218.884704676|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/23 18:53:41.80 #|1574535221.802569477|00#| work_queue_worker[1] wq: task 4 (pid 9) exited normally with exit code 0
+2019/11/23 18:53:41.80 #|1574535221.807179949|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.4/mem.6.err to cache/file-0-d8efdf305b5ec470231b1129c3286ec1-mem.6.err
+2019/11/23 18:53:41.80 #|1574535221.807286093|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.4/Out.6.sam to cache/file-0-e72c9cb95a264e932ca4b0a988983a76-Out.6.sam
+2019/11/23 18:53:41.80 #|1574535221.807575047|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 18:53:41.82 #|1574535221.823898785|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 18:53:41.82 #|1574535221.823942830|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 2922707 4
+2019/11/23 18:53:41.82 #|1574535221.824016748|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 18:53:41.82 #|1574535221.824069507|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 18:53:42.45 #|1574535222.454843395|00#| work_queue_worker[1] wq: rx from master: get file-0-d8efdf305b5ec470231b1129c3286ec1-mem.6.err 1
+2019/11/23 18:53:42.45 #|1574535222.454898263|00#| work_queue_worker[1] wq: tx to master: file file-0-d8efdf305b5ec470231b1129c3286ec1-mem.6.err 297
+2019/11/23 18:53:42.45 #|1574535222.455031968|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 18:53:42.45 #|1574535222.455344998|00#| work_queue_worker[1] wq: rx from master: get file-0-e72c9cb95a264e932ca4b0a988983a76-Out.6.sam 1
+2019/11/23 18:53:42.45 #|1574535222.455381068|00#| work_queue_worker[1] wq: tx to master: file file-0-e72c9cb95a264e932ca4b0a988983a76-Out.6.sam 7096640
+2019/11/23 18:53:42.46 #|1574535222.464350083|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 18:53:42.46 #|1574535222.467353956|00#| work_queue_worker[1] wq: rx from master: kill 4
+2019/11/23 18:53:50.74 #|1574535230.745885158|00#| work_queue_worker[1] wq: rx from master: put file-0-f193924bff0822cf0a6734e5978706e9-Out.bam 11154014 0755 1
+2019/11/23 18:53:50.74 #|1574535230.745929520|00#| work_queue_worker[1] wq: Putting file file-0-f193924bff0822cf0a6734e5978706e9-Out.bam into workspace
+2019/11/23 18:53:50.75 #|1574535230.759979267|00#| work_queue_worker[1] wq: rx from master: put file-0-ec2a8ddc7358fb1db3022befed687cc2-samtools 1346700 0755 1
+2019/11/23 18:53:50.76 #|1574535230.760021278|00#| work_queue_worker[1] wq: Putting file file-0-ec2a8ddc7358fb1db3022befed687cc2-samtools into workspace
+2019/11/23 18:53:50.76 #|1574535230.761313084|00#| work_queue_worker[1] wq: rx from master: task 12
+2019/11/23 18:53:50.76 #|1574535230.761334984|00#| work_queue_worker[1] wq: rx from master: cmd 69
+2019/11/23 18:53:50.76 #|1574535230.761347351|00#| work_queue_worker[1] wq: rx from master: ./samtools mpileup -s -f ref.fasta Out.bam > pileup.txt 2> pileup.err
+2019/11/23 18:53:50.76 #|1574535230.761356150|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 18:53:50.76 #|1574535230.761366073|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 18:53:50.76 #|1574535230.761376381|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 18:53:50.76 #|1574535230.761386353|00#| work_queue_worker[1] wq: rx from master: disk 1946
+2019/11/23 18:53:50.76 #|1574535230.761396217|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 18:53:50.76 #|1574535230.761406584|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 18:53:50.76 #|1574535230.761417873|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 18:53:50.76 #|1574535230.761428331|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 18:53:50.76 #|1574535230.761441622|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 18:53:50.76 #|1574535230.761454352|00#| work_queue_worker[1] wq: rx from master: infile file-0-f193924bff0822cf0a6734e5978706e9-Out.bam Out.bam 1
+2019/11/23 18:53:50.76 #|1574535230.761477731|00#| work_queue_worker[1] wq: rx from master: infile file-0-b08c3e9746692f64bcb9a448620c7967-ref.fasta ref.fasta 1
+2019/11/23 18:53:50.76 #|1574535230.761495814|00#| work_queue_worker[1] wq: rx from master: infile file-0-ec2a8ddc7358fb1db3022befed687cc2-samtools samtools 1
+2019/11/23 18:53:50.76 #|1574535230.761513265|00#| work_queue_worker[1] wq: rx from master: outfile file-0-e8324b85168e57519f5277a6d8ab05cf-pileup.err pileup.err 1
+2019/11/23 18:53:50.76 #|1574535230.761531576|00#| work_queue_worker[1] wq: rx from master: outfile file-0-8d55648d78ce81969e4d3e04b1c1578c-ref.fasta.fai ref.fasta.fai 1
+2019/11/23 18:53:50.76 #|1574535230.761550170|00#| work_queue_worker[1] wq: rx from master: outfile file-0-75aa09691f6a637fdb35bb765f5002a8-pileup.txt pileup.txt 1
+2019/11/23 18:53:50.76 #|1574535230.761568011|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 18:53:50.76 #|1574535230.761678002|00#| work_queue_worker[1] wq: linking cache/file-0-f193924bff0822cf0a6734e5978706e9-Out.bam to /tmp/worker-0-1/t.12/Out.bam
+2019/11/23 18:53:50.76 #|1574535230.761715031|00#| work_queue_worker[1] wq: linking cache/file-0-b08c3e9746692f64bcb9a448620c7967-ref.fasta to /tmp/worker-0-1/t.12/ref.fasta
+2019/11/23 18:53:50.76 #|1574535230.761748266|00#| work_queue_worker[1] wq: linking cache/file-0-ec2a8ddc7358fb1db3022befed687cc2-samtools to /tmp/worker-0-1/t.12/samtools
+2019/11/23 18:53:50.76 #|1574535230.761776480|00#| work_queue_worker[1] wq: Waiting task 12 has been forsaken.
+2019/11/23 18:53:50.76 #|1574535230.761787627|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/23 18:53:50.76 #|1574535230.761847041|00#| work_queue_worker[1] wq: Sending resource description to master:
+2019/11/23 18:53:50.76 #|1574535230.761860607|00#| work_queue_worker[1] wq:  workers      0 inuse      1 total      1 smallest      1 largest
+2019/11/23 18:53:50.76 #|1574535230.761900433|00#| work_queue_worker[1] wq:     disk    284 inuse    586 total    586 smallest    586 largest
+2019/11/23 18:53:50.76 #|1574535230.761938451|00#| work_queue_worker[1] wq:   memory      0 inuse  11908 total  11908 smallest  11908 largest
+2019/11/23 18:53:50.76 #|1574535230.761977445|00#| work_queue_worker[1] wq:     gpus      0 inuse      0 total      0 smallest      0 largest
+2019/11/23 18:53:50.76 #|1574535230.762015374|00#| work_queue_worker[1] wq:    cores      0 inuse      1 total      1 smallest      1 largest
+2019/11/23 18:53:50.76 #|1574535230.762082496|00#| work_queue_worker[1] wq: tx to master: info end_of_resource_update 0
+2019/11/23 18:53:50.76 #|1574535230.762120628|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 18:53:50.76 #|1574535230.762157960|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 18:53:50.76 #|1574535230.762199000|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 18:53:50.76 #|1574535230.762450758|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 18:53:50.76 #|1574535230.762472271|00#| work_queue_worker[1] wq: tx to master: result 40 0 0 0 12
+2019/11/23 18:53:50.76 #|1574535230.762547256|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 18:53:50.76 #|1574535230.762598243|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 18:53:50.76 #|1574535230.762827157|00#| work_queue_worker[1] wq: rx from master: task 12
+2019/11/23 18:53:50.76 #|1574535230.762893054|00#| work_queue_worker[1] wq: rx from master: cmd 69
+2019/11/23 18:53:50.76 #|1574535230.762911010|00#| work_queue_worker[1] wq: rx from master: ./samtools mpileup -s -f ref.fasta Out.bam > pileup.txt 2> pileup.err
+2019/11/23 18:53:50.76 #|1574535230.762943216|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 18:53:50.76 #|1574535230.762957822|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 18:53:50.76 #|1574535230.763022120|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 18:53:50.76 #|1574535230.763039894|00#| work_queue_worker[1] wq: rx from master: disk 586
+2019/11/23 18:53:50.76 #|1574535230.763097174|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 18:53:50.76 #|1574535230.763115266|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 18:53:50.76 #|1574535230.763173123|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 18:53:50.76 #|1574535230.763191577|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 18:53:50.76 #|1574535230.763250337|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 18:53:50.76 #|1574535230.763271494|00#| work_queue_worker[1] wq: rx from master: infile file-0-f193924bff0822cf0a6734e5978706e9-Out.bam Out.bam 1
+2019/11/23 18:53:50.76 #|1574535230.763329002|00#| work_queue_worker[1] wq: rx from master: infile file-0-b08c3e9746692f64bcb9a448620c7967-ref.fasta ref.fasta 1
+2019/11/23 18:53:50.76 #|1574535230.763356369|00#| work_queue_worker[1] wq: rx from master: infile file-0-ec2a8ddc7358fb1db3022befed687cc2-samtools samtools 1
+2019/11/23 18:53:50.76 #|1574535230.763398413|00#| work_queue_worker[1] wq: rx from master: outfile file-0-e8324b85168e57519f5277a6d8ab05cf-pileup.err pileup.err 1
+2019/11/23 18:53:50.76 #|1574535230.763424650|00#| work_queue_worker[1] wq: rx from master: outfile file-0-8d55648d78ce81969e4d3e04b1c1578c-ref.fasta.fai ref.fasta.fai 1
+2019/11/23 18:53:50.76 #|1574535230.763481230|00#| work_queue_worker[1] wq: rx from master: outfile file-0-75aa09691f6a637fdb35bb765f5002a8-pileup.txt pileup.txt 1
+2019/11/23 18:53:50.76 #|1574535230.763508657|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 18:53:50.76 #|1574535230.763587366|00#| work_queue_worker[1] wq: linking cache/file-0-f193924bff0822cf0a6734e5978706e9-Out.bam to /tmp/worker-0-1/t.12/Out.bam
+2019/11/23 18:53:50.76 #|1574535230.763617069|00#| work_queue_worker[1] wq: linking cache/file-0-b08c3e9746692f64bcb9a448620c7967-ref.fasta to /tmp/worker-0-1/t.12/ref.fasta
+2019/11/23 18:53:50.76 #|1574535230.763642429|00#| work_queue_worker[1] wq: linking cache/file-0-ec2a8ddc7358fb1db3022befed687cc2-samtools to /tmp/worker-0-1/t.12/samtools
+2019/11/23 18:53:50.76 #|1574535230.763822805|00#| work_queue_worker[1] wq: started process 15: ./samtools mpileup -s -f ref.fasta Out.bam > pileup.txt 2> pileup.err
+2019/11/23 18:53:50.76 #|1574535230.763854665|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/23 18:53:54.73 #|1574535234.732808291|00#| work_queue_worker[1] wq: task 12 (pid 15) exited normally with exit code 0
+2019/11/23 18:53:54.73 #|1574535234.732862349|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.12/pileup.err to cache/file-0-e8324b85168e57519f5277a6d8ab05cf-pileup.err
+2019/11/23 18:53:54.73 #|1574535234.732935981|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.12/ref.fasta.fai to cache/file-0-8d55648d78ce81969e4d3e04b1c1578c-ref.fasta.fai
+2019/11/23 18:53:54.73 #|1574535234.732976600|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.12/pileup.txt to cache/file-0-75aa09691f6a637fdb35bb765f5002a8-pileup.txt
+2019/11/23 18:53:54.73 #|1574535234.733393285|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 18:53:54.73 #|1574535234.733750340|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 18:53:54.73 #|1574535234.733794633|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 3969159 12
+2019/11/23 18:53:54.73 #|1574535234.733869841|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 18:53:54.73 #|1574535234.733929234|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 18:53:54.73 #|1574535234.734283718|00#| work_queue_worker[1] wq: rx from master: get file-0-e8324b85168e57519f5277a6d8ab05cf-pileup.err 1
+2019/11/23 18:53:54.73 #|1574535234.734328679|00#| work_queue_worker[1] wq: tx to master: file file-0-e8324b85168e57519f5277a6d8ab05cf-pileup.err 108
+2019/11/23 18:53:54.73 #|1574535234.734439355|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 18:53:54.73 #|1574535234.734916224|00#| work_queue_worker[1] wq: rx from master: get file-0-8d55648d78ce81969e4d3e04b1c1578c-ref.fasta.fai 1
+2019/11/23 18:53:54.73 #|1574535234.734949242|00#| work_queue_worker[1] wq: tx to master: file file-0-8d55648d78ce81969e4d3e04b1c1578c-ref.fasta.fai 5472423
+2019/11/23 18:53:54.74 #|1574535234.742759066|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 18:53:54.74 #|1574535234.747072715|00#| work_queue_worker[1] wq: rx from master: get file-0-75aa09691f6a637fdb35bb765f5002a8-pileup.txt 1
+2019/11/23 18:53:54.74 #|1574535234.747123971|00#| work_queue_worker[1] wq: tx to master: file file-0-75aa09691f6a637fdb35bb765f5002a8-pileup.txt 230555591
+2019/11/23 18:53:55.03 #|1574535235.36418257|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 18:53:55.04 #|1574535235.42705823|00#| work_queue_worker[1] wq: rx from master: kill 12
+2019/11/23 18:53:58.35 #|1574535238.355719459|00#| work_queue_worker[1] wq: rx from master: put file-0-048045060f61089a83cce204e6b8f151-corr.out 0 0644 1
+2019/11/23 18:53:58.35 #|1574535238.355762941|00#| work_queue_worker[1] wq: Putting file file-0-048045060f61089a83cce204e6b8f151-corr.out into workspace
+2019/11/23 18:53:58.35 #|1574535238.355858204|00#| work_queue_worker[1] wq: rx from master: put file-0-7e84d12fe76710de61a1e1012d161708-ref.fasta.95 1055000 0644 1
+2019/11/23 18:53:58.35 #|1574535238.355897826|00#| work_queue_worker[1] wq: Putting file file-0-7e84d12fe76710de61a1e1012d161708-ref.fasta.95 into workspace
+2019/11/23 18:53:58.35 #|1574535238.358590688|00#| work_queue_worker[1] wq: rx from master: put file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py 1402 0755 1
+2019/11/23 18:53:58.35 #|1574535238.358628456|00#| work_queue_worker[1] wq: Putting file file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py into workspace
+2019/11/23 18:53:58.35 #|1574535238.358727064|00#| work_queue_worker[1] wq: rx from master: task 17
+2019/11/23 18:53:58.35 #|1574535238.358756082|00#| work_queue_worker[1] wq: rx from master: cmd 76
+2019/11/23 18:53:58.35 #|1574535238.358775508|00#| work_queue_worker[1] wq: rx from master: python Create_Corrected_AllLRReads.py ref.fasta.95 corr.out 2> create.err.95
+2019/11/23 18:53:58.35 #|1574535238.358793235|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 18:53:58.35 #|1574535238.358810815|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 18:53:58.35 #|1574535238.358827582|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 18:53:58.35 #|1574535238.358901958|00#| work_queue_worker[1] wq: rx from master: disk 586
+2019/11/23 18:53:58.35 #|1574535238.358925639|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 18:53:58.35 #|1574535238.358944030|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 18:53:58.35 #|1574535238.358966234|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 18:53:58.35 #|1574535238.358985454|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 18:53:58.35 #|1574535238.359009886|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 18:53:58.35 #|1574535238.359075775|00#| work_queue_worker[1] wq: rx from master: infile file-0-048045060f61089a83cce204e6b8f151-corr.out corr.out 1
+2019/11/23 18:53:58.35 #|1574535238.359120069|00#| work_queue_worker[1] wq: rx from master: infile file-0-7e84d12fe76710de61a1e1012d161708-ref.fasta.95 ref.fasta.95 1
+2019/11/23 18:53:58.35 #|1574535238.359156472|00#| work_queue_worker[1] wq: rx from master: infile file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py Create_Corrected_AllLRReads.py 1
+2019/11/23 18:53:58.35 #|1574535238.359238628|00#| work_queue_worker[1] wq: rx from master: outfile file-0-bdd2eb0caeb9adced89a5016cc60b763-create.err.95 create.err.95 1
+2019/11/23 18:53:58.35 #|1574535238.359274365|00#| work_queue_worker[1] wq: rx from master: outfile file-0-ed277250e06d89d2f88b429376d61705-Corrected_ref.fasta.95 Corrected_ref.fasta.95 1
+2019/11/23 18:53:58.35 #|1574535238.359302579|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 18:53:58.35 #|1574535238.359447655|00#| work_queue_worker[1] wq: linking cache/file-0-048045060f61089a83cce204e6b8f151-corr.out to /tmp/worker-0-1/t.17/corr.out
+2019/11/23 18:53:58.35 #|1574535238.359502245|00#| work_queue_worker[1] wq: linking cache/file-0-7e84d12fe76710de61a1e1012d161708-ref.fasta.95 to /tmp/worker-0-1/t.17/ref.fasta.95
+2019/11/23 18:53:58.35 #|1574535238.359554858|00#| work_queue_worker[1] wq: linking cache/file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py to /tmp/worker-0-1/t.17/Create_Corrected_AllLRReads.py
+2019/11/23 18:53:58.35 #|1574535238.359798261|00#| work_queue_worker[1] wq: started process 17: python Create_Corrected_AllLRReads.py ref.fasta.95 corr.out 2> create.err.95
+2019/11/23 18:53:58.35 #|1574535238.359844046|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/23 18:53:58.41 #|1574535238.416301641|00#| work_queue_worker[1] wq: task 17 (pid 17) exited normally with exit code 0
+2019/11/23 18:53:58.41 #|1574535238.416332668|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.17/create.err.95 to cache/file-0-bdd2eb0caeb9adced89a5016cc60b763-create.err.95
+2019/11/23 18:53:58.41 #|1574535238.416399823|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.17/Corrected_ref.fasta.95 to cache/file-0-ed277250e06d89d2f88b429376d61705-Corrected_ref.fasta.95
+2019/11/23 18:53:58.41 #|1574535238.416449253|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 18:53:58.41 #|1574535238.417096370|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 18:53:58.41 #|1574535238.417131582|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 56695 17
+2019/11/23 18:53:58.41 #|1574535238.417192553|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 18:53:58.41 #|1574535238.417259114|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 18:53:58.42 #|1574535238.425327613|00#| work_queue_worker[1] wq: rx from master: get file-0-bdd2eb0caeb9adced89a5016cc60b763-create.err.95 1
+2019/11/23 18:53:58.42 #|1574535238.425361128|00#| work_queue_worker[1] wq: tx to master: file file-0-bdd2eb0caeb9adced89a5016cc60b763-create.err.95 0
+2019/11/23 18:53:58.42 #|1574535238.425424465|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 18:53:58.42 #|1574535238.425661213|00#| work_queue_worker[1] wq: rx from master: get file-0-ed277250e06d89d2f88b429376d61705-Corrected_ref.fasta.95 1
+2019/11/23 18:53:58.42 #|1574535238.425698618|00#| work_queue_worker[1] wq: tx to master: file file-0-ed277250e06d89d2f88b429376d61705-Corrected_ref.fasta.95 1055000
+2019/11/23 18:53:58.42 #|1574535238.427646654|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 18:53:58.42 #|1574535238.428099631|00#| work_queue_worker[1] wq: rx from master: kill 17
+2019/11/23 18:53:58.43 #|1574535238.435892185|00#| work_queue_worker[1] wq: rx from master: put file-0-bf3115c82377a77ae1e2edeca44e5a86-ref.fasta.83 1055000 0644 1
+2019/11/23 18:53:58.43 #|1574535238.435937392|00#| work_queue_worker[1] wq: Putting file file-0-bf3115c82377a77ae1e2edeca44e5a86-ref.fasta.83 into workspace
+2019/11/23 18:53:58.44 #|1574535238.440720966|00#| work_queue_worker[1] wq: rx from master: task 29
+2019/11/23 18:53:58.44 #|1574535238.440882360|00#| work_queue_worker[1] wq: rx from master: cmd 76
+2019/11/23 18:53:58.44 #|1574535238.440971884|00#| work_queue_worker[1] wq: rx from master: python Create_Corrected_AllLRReads.py ref.fasta.83 corr.out 2> create.err.83
+2019/11/23 18:53:58.44 #|1574535238.441130883|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 18:53:58.44 #|1574535238.441243792|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 18:53:58.44 #|1574535238.441388169|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 18:53:58.44 #|1574535238.441500245|00#| work_queue_worker[1] wq: rx from master: disk 586
+2019/11/23 18:53:58.44 #|1574535238.441646658|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 18:53:58.44 #|1574535238.441760361|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 18:53:58.44 #|1574535238.441912927|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 18:53:58.44 #|1574535238.442030763|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 18:53:58.44 #|1574535238.442190974|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 18:53:58.44 #|1574535238.442313610|00#| work_queue_worker[1] wq: rx from master: infile file-0-048045060f61089a83cce204e6b8f151-corr.out corr.out 1
+2019/11/23 18:53:58.44 #|1574535238.442487652|00#| work_queue_worker[1] wq: rx from master: infile file-0-bf3115c82377a77ae1e2edeca44e5a86-ref.fasta.83 ref.fasta.83 1
+2019/11/23 18:53:58.44 #|1574535238.442633607|00#| work_queue_worker[1] wq: rx from master: infile file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py Create_Corrected_AllLRReads.py 1
+2019/11/23 18:53:58.44 #|1574535238.442802414|00#| work_queue_worker[1] wq: rx from master: outfile file-0-cd327625000287e9d60a4c3eb3abf544-create.err.83 create.err.83 1
+2019/11/23 18:53:58.44 #|1574535238.442932793|00#| work_queue_worker[1] wq: rx from master: outfile file-0-2f7fdd6868957c08ffcef565b7516c26-Corrected_ref.fasta.83 Corrected_ref.fasta.83 1
+2019/11/23 18:53:58.44 #|1574535238.443096540|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 18:53:58.44 #|1574535238.443284182|00#| work_queue_worker[1] wq: linking cache/file-0-048045060f61089a83cce204e6b8f151-corr.out to /tmp/worker-0-1/t.29/corr.out
+2019/11/23 18:53:58.44 #|1574535238.443345775|00#| work_queue_worker[1] wq: linking cache/file-0-bf3115c82377a77ae1e2edeca44e5a86-ref.fasta.83 to /tmp/worker-0-1/t.29/ref.fasta.83
+2019/11/23 18:53:58.44 #|1574535238.443401629|00#| work_queue_worker[1] wq: linking cache/file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py to /tmp/worker-0-1/t.29/Create_Corrected_AllLRReads.py
+2019/11/23 18:53:58.44 #|1574535238.443669636|00#| work_queue_worker[1] wq: started process 19: python Create_Corrected_AllLRReads.py ref.fasta.83 corr.out 2> create.err.83
+2019/11/23 18:53:58.44 #|1574535238.443725455|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/23 18:53:58.50 #|1574535238.509676207|00#| work_queue_worker[1] wq: task 29 (pid 19) exited normally with exit code 0
+2019/11/23 18:53:58.50 #|1574535238.509702379|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.29/create.err.83 to cache/file-0-cd327625000287e9d60a4c3eb3abf544-create.err.83
+2019/11/23 18:53:58.50 #|1574535238.509759919|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.29/Corrected_ref.fasta.83 to cache/file-0-2f7fdd6868957c08ffcef565b7516c26-Corrected_ref.fasta.83
+2019/11/23 18:53:58.50 #|1574535238.509794503|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 18:53:58.51 #|1574535238.510288840|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 18:53:58.51 #|1574535238.510324451|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 66211 29
+2019/11/23 18:53:58.51 #|1574535238.510382982|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 18:53:58.51 #|1574535238.510432144|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 18:53:58.51 #|1574535238.511006783|00#| work_queue_worker[1] wq: rx from master: get file-0-cd327625000287e9d60a4c3eb3abf544-create.err.83 1
+2019/11/23 18:53:58.51 #|1574535238.511043724|00#| work_queue_worker[1] wq: tx to master: file file-0-cd327625000287e9d60a4c3eb3abf544-create.err.83 0
+2019/11/23 18:53:58.51 #|1574535238.511102640|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 18:53:58.51 #|1574535238.511436190|00#| work_queue_worker[1] wq: rx from master: get file-0-2f7fdd6868957c08ffcef565b7516c26-Corrected_ref.fasta.83 1
+2019/11/23 18:53:58.51 #|1574535238.511467849|00#| work_queue_worker[1] wq: tx to master: file file-0-2f7fdd6868957c08ffcef565b7516c26-Corrected_ref.fasta.83 1055000
+2019/11/23 18:53:58.51 #|1574535238.512244175|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 18:53:58.51 #|1574535238.512271796|00#| work_queue_worker[1] wq: rx from master: kill 29
+2019/11/23 18:53:58.51 #|1574535238.512458284|00#| work_queue_worker[1] wq: Failed to read from master.
+2019/11/23 18:53:58.51 #|1574535238.512474800|00#| work_queue_worker[1] wq: cleaning workspace /tmp/worker-0-1
+2019/11/23 18:53:58.63 #|1574535238.635210138|00#| work_queue_worker[1] wq: disconnecting from master 10.0.136.2:1026
+2019/11/23 18:53:58.63 #|1574535238.635276348|00#| work_queue_worker[1] tcp: disconnected from 10.0.136.2 port 1026
+2019/11/23 18:53:58.63 #|1574535238.635296759|00#| work_queue_worker[1] wq: killing all outstanding tasks
+2019/11/23 18:53:58.63 #|1574535238.635315036|00#| work_queue_worker[1] wq: all data structures are clean

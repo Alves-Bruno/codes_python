@@ -1,0 +1,864 @@
+2019/11/23 18:58:25.39 #|1574535505.392421281|00#| work_queue_worker[1] debug: /root/cctools/bin/work_queue_worker version 8.0.0 DEVELOPMENT (released 2019-11-14 15:35:16 +0000)
+2019/11/23 18:58:25.39 #|1574535505.392456030|00#| work_queue_worker[1] debug: Built by root@7e9ecba79f43 on 2019-11-14 15:35:16 +0000
+2019/11/23 18:58:25.39 #|1574535505.392469481|00#| work_queue_worker[1] debug: System: Linux 7e9ecba79f43 5.0.0-32-generic #34~18.04.2-Ubuntu SMP Thu Oct 10 10:36:02 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+2019/11/23 18:58:25.39 #|1574535505.392484331|00#| work_queue_worker[1] debug: Configuration: --prefix /root/cctools
+2019/11/23 18:58:25.39 #|1574535505.392674084|00#| work_queue_worker[1] wq: WORK_QUEUE_SANDBOX set to /tmp/worker-0-1.
+2019/11/23 18:58:25.39 #|1574535505.393260291|00#| work_queue_worker[1] debug: error reading disk usage on directory: ./cache.
+2019/11/23 18:58:25.39 #|1574535505.393301227|00#| work_queue_worker[1] dns: looking up name master
+2019/11/23 18:58:25.39 #|1574535505.395551450|00#| work_queue_worker[1] dns: couldn't look up master: Name or service not known
+2019/11/23 18:58:27.39 #|1574535507.395709912|00#| work_queue_worker[1] dns: looking up name master
+2019/11/23 18:58:27.39 #|1574535507.396098345|00#| work_queue_worker[1] dns: master is 10.0.138.11
+2019/11/23 18:58:27.39 #|1574535507.396140387|00#| work_queue_worker[1] tcp: connecting to 10.0.138.11 port 1026
+2019/11/23 18:58:27.39 #|1574535507.396374828|00#| work_queue_worker[1] tcp: made connection to 10.0.138.11 port 1026
+2019/11/23 18:58:27.39 #|1574535507.396394128|00#| work_queue_worker[1] wq: connected to master master:1026 via local address 10.0.138.3:53462
+2019/11/23 18:58:27.39 #|1574535507.396403909|00#| work_queue_worker[1] wq: preparing workspace /tmp/worker-0-1
+2019/11/23 18:58:27.39 #|1574535507.396535664|00#| work_queue_worker[1] dns: looking up name a1d0611f121e
+2019/11/23 18:58:27.39 #|1574535507.396579003|00#| work_queue_worker[1] dns: a1d0611f121e is 10.0.138.3
+2019/11/23 18:58:27.39 #|1574535507.396590906|00#| work_queue_worker[1] dns: looking up addr 10.0.138.3
+2019/11/23 18:58:27.39 #|1574535507.396617530|00#| work_queue_worker[1] dns: 10.0.138.3 is a1d0611f121e
+2019/11/23 18:58:27.39 #|1574535507.396628029|00#| work_queue_worker[1] dns: finding my hostname: uname = a1d0611f121e, address = 10.0.138.3, hostname = a1d0611f121e
+2019/11/23 18:58:27.39 #|1574535507.396640682|00#| work_queue_worker[1] wq: tx to master: workqueue 8 a1d0611f121e Linux x86_64 8.0.0
+2019/11/23 18:58:27.39 #|1574535507.396708881|00#| work_queue_worker[1] wq: tx to master: info worker-id worker-ceffca3d01c5ed18ee59ee8cd48b0ef5
+2019/11/23 18:58:27.39 #|1574535507.396764121|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/23 18:58:27.39 #|1574535507.396815048|00#| work_queue_worker[1] wq: Sending resource description to master:
+2019/11/23 18:58:27.39 #|1574535507.396827639|00#| work_queue_worker[1] wq:  workers      0 inuse      1 total      1 smallest      1 largest
+2019/11/23 18:58:27.39 #|1574535507.396876215|00#| work_queue_worker[1] wq:     disk      0 inuse   2515 total   2515 smallest   2515 largest
+2019/11/23 18:58:27.39 #|1574535507.396926895|00#| work_queue_worker[1] wq:   memory      0 inuse  11908 total  11908 smallest  11908 largest
+2019/11/23 18:58:27.39 #|1574535507.396977395|00#| work_queue_worker[1] wq:     gpus      0 inuse      0 total      0 smallest      0 largest
+2019/11/23 18:58:27.39 #|1574535507.397027775|00#| work_queue_worker[1] wq:    cores      0 inuse      1 total      1 smallest      1 largest
+2019/11/23 18:58:27.39 #|1574535507.397108034|00#| work_queue_worker[1] wq: tx to master: info end_of_resource_update 0
+2019/11/23 18:58:27.39 #|1574535507.397158159|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 18:58:27.39 #|1574535507.397212784|00#| work_queue_worker[1] wq: working for master at 10.0.138.11:1026.
+2019/11/23 19:00:55.67 #|1574535655.675024507|00#| work_queue_worker[1] wq: rx from master: put file-0-cdcb812e1d4b3d86022e7dd488b06452-query.fastq.3 2044000 0644 1
+2019/11/23 19:00:55.67 #|1574535655.675094585|00#| work_queue_worker[1] wq: Putting file file-0-cdcb812e1d4b3d86022e7dd488b06452-query.fastq.3 into workspace
+2019/11/23 19:00:55.67 #|1574535655.679104481|00#| work_queue_worker[1] wq: rx from master: put file-0-971da570f958f7598fb58342dc472274-ref.fasta.sa 50000056 0644 1
+2019/11/23 19:00:55.67 #|1574535655.679137598|00#| work_queue_worker[1] wq: Putting file file-0-971da570f958f7598fb58342dc472274-ref.fasta.sa into workspace
+2019/11/23 19:00:55.74 #|1574535655.747603211|00#| work_queue_worker[1] wq: rx from master: put file-0-35f59a9883b4870b84f03717aff16002-ref.fasta.ann 5866697 0644 1
+2019/11/23 19:00:55.74 #|1574535655.747639043|00#| work_queue_worker[1] wq: Putting file file-0-35f59a9883b4870b84f03717aff16002-ref.fasta.ann into workspace
+2019/11/23 19:00:55.75 #|1574535655.755697668|00#| work_queue_worker[1] wq: rx from master: put file-0-1aba5e7adecebe065db19a405fb8bdf0-ref.fasta.amb 19 0644 1
+2019/11/23 19:00:55.75 #|1574535655.755738228|00#| work_queue_worker[1] wq: Putting file file-0-1aba5e7adecebe065db19a405fb8bdf0-ref.fasta.amb into workspace
+2019/11/23 19:00:55.75 #|1574535655.755829913|00#| work_queue_worker[1] wq: rx from master: put file-0-d4ff2b390cdd34b642d74a1cd1b59b97-ref.fasta.pac 25000002 0644 1
+2019/11/23 19:00:55.75 #|1574535655.755850811|00#| work_queue_worker[1] wq: Putting file file-0-d4ff2b390cdd34b642d74a1cd1b59b97-ref.fasta.pac into workspace
+2019/11/23 19:00:55.78 #|1574535655.789400549|00#| work_queue_worker[1] wq: rx from master: put file-0-0cadea4f68da3f941c5b5f0c963a59f8-ref.fasta.bwt 100000072 0644 1
+2019/11/23 19:00:55.78 #|1574535655.789441829|00#| work_queue_worker[1] wq: Putting file file-0-0cadea4f68da3f941c5b5f0c963a59f8-ref.fasta.bwt into workspace
+2019/11/23 19:00:55.92 #|1574535655.921125740|00#| work_queue_worker[1] wq: rx from master: put file-0-b08c3e9746692f64bcb9a448620c7967-ref.fasta 105477790 0644 1
+2019/11/23 19:00:55.92 #|1574535655.921166335|00#| work_queue_worker[1] wq: Putting file file-0-b08c3e9746692f64bcb9a448620c7967-ref.fasta into workspace
+2019/11/23 19:00:56.05 #|1574535656.55617632|00#| work_queue_worker[1] wq: rx from master: put file-0-a6be17d8a097bb9efd120be10bbc654c-bwa 1444312 0755 1
+2019/11/23 19:00:56.05 #|1574535656.55651447|00#| work_queue_worker[1] wq: Putting file file-0-a6be17d8a097bb9efd120be10bbc654c-bwa into workspace
+2019/11/23 19:00:56.05 #|1574535656.57133748|00#| work_queue_worker[1] wq: rx from master: task 7
+2019/11/23 19:00:56.05 #|1574535656.57157909|00#| work_queue_worker[1] wq: rx from master: cmd 58
+2019/11/23 19:00:56.05 #|1574535656.57169548|00#| work_queue_worker[1] wq: rx from master: ./bwa mem ref.fasta query.fastq.3 > Out.3.sam 2> mem.3.err
+2019/11/23 19:00:56.05 #|1574535656.57178480|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 19:00:56.05 #|1574535656.57188034|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 19:00:56.05 #|1574535656.57197889|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 19:00:56.05 #|1574535656.57207764|00#| work_queue_worker[1] wq: rx from master: disk 2515
+2019/11/23 19:00:56.05 #|1574535656.57217448|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 19:00:56.05 #|1574535656.57227420|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 19:00:56.05 #|1574535656.57238026|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 19:00:56.05 #|1574535656.57247990|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 19:00:56.05 #|1574535656.57259780|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 19:00:56.05 #|1574535656.57271833|00#| work_queue_worker[1] wq: rx from master: infile file-0-cdcb812e1d4b3d86022e7dd488b06452-query.fastq.3 query.fastq.3 1
+2019/11/23 19:00:56.05 #|1574535656.57298005|00#| work_queue_worker[1] wq: rx from master: infile file-0-971da570f958f7598fb58342dc472274-ref.fasta.sa ref.fasta.sa 1
+2019/11/23 19:00:56.05 #|1574535656.57317286|00#| work_queue_worker[1] wq: rx from master: infile file-0-35f59a9883b4870b84f03717aff16002-ref.fasta.ann ref.fasta.ann 1
+2019/11/23 19:00:56.05 #|1574535656.57342635|00#| work_queue_worker[1] wq: rx from master: infile file-0-1aba5e7adecebe065db19a405fb8bdf0-ref.fasta.amb ref.fasta.amb 1
+2019/11/23 19:00:56.05 #|1574535656.57361025|00#| work_queue_worker[1] wq: rx from master: infile file-0-d4ff2b390cdd34b642d74a1cd1b59b97-ref.fasta.pac ref.fasta.pac 1
+2019/11/23 19:00:56.05 #|1574535656.57379247|00#| work_queue_worker[1] wq: rx from master: infile file-0-0cadea4f68da3f941c5b5f0c963a59f8-ref.fasta.bwt ref.fasta.bwt 1
+2019/11/23 19:00:56.05 #|1574535656.57397652|00#| work_queue_worker[1] wq: rx from master: infile file-0-b08c3e9746692f64bcb9a448620c7967-ref.fasta ref.fasta 1
+2019/11/23 19:00:56.05 #|1574535656.57415358|00#| work_queue_worker[1] wq: rx from master: infile file-0-a6be17d8a097bb9efd120be10bbc654c-bwa bwa 1
+2019/11/23 19:00:56.05 #|1574535656.57432921|00#| work_queue_worker[1] wq: rx from master: outfile file-0-d86b3e96c438a1a208b38cae5dacaf2e-mem.3.err mem.3.err 1
+2019/11/23 19:00:56.05 #|1574535656.57450763|00#| work_queue_worker[1] wq: rx from master: outfile file-0-afe424355297e6cf59385fab9a81c87e-Out.3.sam Out.3.sam 1
+2019/11/23 19:00:56.05 #|1574535656.57468056|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 19:00:56.05 #|1574535656.57576645|00#| work_queue_worker[1] wq: linking cache/file-0-cdcb812e1d4b3d86022e7dd488b06452-query.fastq.3 to /tmp/worker-0-1/t.7/query.fastq.3
+2019/11/23 19:00:56.05 #|1574535656.57614366|00#| work_queue_worker[1] wq: linking cache/file-0-971da570f958f7598fb58342dc472274-ref.fasta.sa to /tmp/worker-0-1/t.7/ref.fasta.sa
+2019/11/23 19:00:56.05 #|1574535656.57646930|00#| work_queue_worker[1] wq: linking cache/file-0-35f59a9883b4870b84f03717aff16002-ref.fasta.ann to /tmp/worker-0-1/t.7/ref.fasta.ann
+2019/11/23 19:00:56.05 #|1574535656.57678930|00#| work_queue_worker[1] wq: linking cache/file-0-1aba5e7adecebe065db19a405fb8bdf0-ref.fasta.amb to /tmp/worker-0-1/t.7/ref.fasta.amb
+2019/11/23 19:00:56.05 #|1574535656.57710894|00#| work_queue_worker[1] wq: linking cache/file-0-d4ff2b390cdd34b642d74a1cd1b59b97-ref.fasta.pac to /tmp/worker-0-1/t.7/ref.fasta.pac
+2019/11/23 19:00:56.05 #|1574535656.57742866|00#| work_queue_worker[1] wq: linking cache/file-0-0cadea4f68da3f941c5b5f0c963a59f8-ref.fasta.bwt to /tmp/worker-0-1/t.7/ref.fasta.bwt
+2019/11/23 19:00:56.05 #|1574535656.57774578|00#| work_queue_worker[1] wq: linking cache/file-0-b08c3e9746692f64bcb9a448620c7967-ref.fasta to /tmp/worker-0-1/t.7/ref.fasta
+2019/11/23 19:00:56.05 #|1574535656.57806024|00#| work_queue_worker[1] wq: linking cache/file-0-a6be17d8a097bb9efd120be10bbc654c-bwa to /tmp/worker-0-1/t.7/bwa
+2019/11/23 19:00:56.05 #|1574535656.57833626|00#| work_queue_worker[1] wq: Waiting task 7 has been forsaken.
+2019/11/23 19:00:56.05 #|1574535656.57844819|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/23 19:00:56.05 #|1574535656.57910632|00#| work_queue_worker[1] wq: Sending resource description to master:
+2019/11/23 19:00:56.05 #|1574535656.57924068|00#| work_queue_worker[1] wq:  workers      0 inuse      1 total      1 smallest      1 largest
+2019/11/23 19:00:56.05 #|1574535656.57976241|00#| work_queue_worker[1] wq:     disk      0 inuse   1392 total   1392 smallest   1392 largest
+2019/11/23 19:00:56.05 #|1574535656.58029063|00#| work_queue_worker[1] wq:   memory      0 inuse  11908 total  11908 smallest  11908 largest
+2019/11/23 19:00:56.05 #|1574535656.58080911|00#| work_queue_worker[1] wq:     gpus      0 inuse      0 total      0 smallest      0 largest
+2019/11/23 19:00:56.05 #|1574535656.58132152|00#| work_queue_worker[1] wq:    cores      0 inuse      1 total      1 smallest      1 largest
+2019/11/23 19:00:56.05 #|1574535656.58213020|00#| work_queue_worker[1] wq: tx to master: info end_of_resource_update 0
+2019/11/23 19:00:56.05 #|1574535656.58264406|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:00:56.05 #|1574535656.58315123|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:00:56.05 #|1574535656.58366579|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 19:01:23.19 #|1574535683.192251641|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 19:01:23.19 #|1574535683.192298060|00#| work_queue_worker[1] wq: tx to master: result 40 0 0 0 7
+2019/11/23 19:01:23.19 #|1574535683.192396101|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:23.19 #|1574535683.192470415|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:37.25 #|1574535697.250815748|00#| work_queue_worker[1] wq: rx from master: put file-0-048045060f61089a83cce204e6b8f151-corr.out 0 0644 1
+2019/11/23 19:01:37.25 #|1574535697.250912252|00#| work_queue_worker[1] wq: Putting file file-0-048045060f61089a83cce204e6b8f151-corr.out into workspace
+2019/11/23 19:01:37.25 #|1574535697.251028489|00#| work_queue_worker[1] wq: rx from master: put file-0-4980f39c2875c027dae7602880a2b656-ref.fasta.92 1055000 0644 1
+2019/11/23 19:01:37.25 #|1574535697.251054273|00#| work_queue_worker[1] wq: Putting file file-0-4980f39c2875c027dae7602880a2b656-ref.fasta.92 into workspace
+2019/11/23 19:01:37.25 #|1574535697.252685244|00#| work_queue_worker[1] wq: rx from master: put file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py 1402 0755 1
+2019/11/23 19:01:37.25 #|1574535697.252719055|00#| work_queue_worker[1] wq: Putting file file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py into workspace
+2019/11/23 19:01:37.25 #|1574535697.252835147|00#| work_queue_worker[1] wq: rx from master: task 20
+2019/11/23 19:01:37.25 #|1574535697.252857926|00#| work_queue_worker[1] wq: rx from master: cmd 76
+2019/11/23 19:01:37.25 #|1574535697.252869611|00#| work_queue_worker[1] wq: rx from master: python Create_Corrected_AllLRReads.py ref.fasta.92 corr.out 2> create.err.92
+2019/11/23 19:01:37.25 #|1574535697.252878802|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 19:01:37.25 #|1574535697.252888803|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 19:01:37.25 #|1574535697.252899181|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 19:01:37.25 #|1574535697.252909203|00#| work_queue_worker[1] wq: rx from master: disk 1392
+2019/11/23 19:01:37.25 #|1574535697.252919311|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 19:01:37.25 #|1574535697.252929565|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 19:01:37.25 #|1574535697.252940730|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 19:01:37.25 #|1574535697.252951096|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 19:01:37.25 #|1574535697.252963514|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 19:01:37.25 #|1574535697.252975655|00#| work_queue_worker[1] wq: rx from master: infile file-0-048045060f61089a83cce204e6b8f151-corr.out corr.out 1
+2019/11/23 19:01:37.25 #|1574535697.252995893|00#| work_queue_worker[1] wq: rx from master: infile file-0-4980f39c2875c027dae7602880a2b656-ref.fasta.92 ref.fasta.92 1
+2019/11/23 19:01:37.25 #|1574535697.253015214|00#| work_queue_worker[1] wq: rx from master: infile file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py Create_Corrected_AllLRReads.py 1
+2019/11/23 19:01:37.25 #|1574535697.253062276|00#| work_queue_worker[1] wq: rx from master: outfile file-0-c382b06117dc57c7c2a747d0d7965340-create.err.92 create.err.92 1
+2019/11/23 19:01:37.25 #|1574535697.253086290|00#| work_queue_worker[1] wq: rx from master: outfile file-0-78386749f9b37f6ac55181c941935a54-Corrected_ref.fasta.92 Corrected_ref.fasta.92 1
+2019/11/23 19:01:37.25 #|1574535697.253105056|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 19:01:37.25 #|1574535697.253221522|00#| work_queue_worker[1] wq: linking cache/file-0-048045060f61089a83cce204e6b8f151-corr.out to /tmp/worker-0-1/t.20/corr.out
+2019/11/23 19:01:37.25 #|1574535697.253259295|00#| work_queue_worker[1] wq: linking cache/file-0-4980f39c2875c027dae7602880a2b656-ref.fasta.92 to /tmp/worker-0-1/t.20/ref.fasta.92
+2019/11/23 19:01:37.25 #|1574535697.253371826|00#| work_queue_worker[1] wq: linking cache/file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py to /tmp/worker-0-1/t.20/Create_Corrected_AllLRReads.py
+2019/11/23 19:01:37.25 #|1574535697.253412850|00#| work_queue_worker[1] wq: Waiting task 20 has been forsaken.
+2019/11/23 19:01:37.25 #|1574535697.253427989|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/23 19:01:37.25 #|1574535697.253504939|00#| work_queue_worker[1] wq: Sending resource description to master:
+2019/11/23 19:01:37.25 #|1574535697.253591468|00#| work_queue_worker[1] wq:  workers      0 inuse      1 total      1 smallest      1 largest
+2019/11/23 19:01:37.25 #|1574535697.253665075|00#| work_queue_worker[1] wq:     disk    277 inuse    725 total    725 smallest    725 largest
+2019/11/23 19:01:37.25 #|1574535697.253733363|00#| work_queue_worker[1] wq:   memory      0 inuse  11908 total  11908 smallest  11908 largest
+2019/11/23 19:01:37.25 #|1574535697.253844677|00#| work_queue_worker[1] wq:     gpus      0 inuse      0 total      0 smallest      0 largest
+2019/11/23 19:01:37.25 #|1574535697.253902193|00#| work_queue_worker[1] wq:    cores      0 inuse      1 total      1 smallest      1 largest
+2019/11/23 19:01:37.25 #|1574535697.253983607|00#| work_queue_worker[1] wq: tx to master: info end_of_resource_update 0
+2019/11/23 19:01:37.25 #|1574535697.254072046|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:37.25 #|1574535697.254127760|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:37.25 #|1574535697.254180012|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 19:01:37.52 #|1574535697.527299344|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 19:01:37.52 #|1574535697.527330836|00#| work_queue_worker[1] wq: tx to master: result 40 0 0 0 20
+2019/11/23 19:01:37.52 #|1574535697.527407987|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:37.52 #|1574535697.527480464|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:37.52 #|1574535697.528116349|00#| work_queue_worker[1] wq: rx from master: put file-0-9d36663bc9ba2664f9d818064c36dc63-ref.fasta.84 1055000 0644 1
+2019/11/23 19:01:37.52 #|1574535697.528152929|00#| work_queue_worker[1] wq: Putting file file-0-9d36663bc9ba2664f9d818064c36dc63-ref.fasta.84 into workspace
+2019/11/23 19:01:37.52 #|1574535697.529808239|00#| work_queue_worker[1] wq: rx from master: task 28
+2019/11/23 19:01:37.52 #|1574535697.529827251|00#| work_queue_worker[1] wq: rx from master: cmd 76
+2019/11/23 19:01:37.52 #|1574535697.529873105|00#| work_queue_worker[1] wq: rx from master: python Create_Corrected_AllLRReads.py ref.fasta.84 corr.out 2> create.err.84
+2019/11/23 19:01:37.52 #|1574535697.529885829|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 19:01:37.52 #|1574535697.529926298|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 19:01:37.52 #|1574535697.530000130|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 19:01:37.53 #|1574535697.530023263|00#| work_queue_worker[1] wq: rx from master: disk 725
+2019/11/23 19:01:37.53 #|1574535697.530170453|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 19:01:37.53 #|1574535697.530224216|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 19:01:37.53 #|1574535697.530240538|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 19:01:37.53 #|1574535697.530256158|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 19:01:37.53 #|1574535697.530352806|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 19:01:37.53 #|1574535697.530389401|00#| work_queue_worker[1] wq: rx from master: infile file-0-048045060f61089a83cce204e6b8f151-corr.out corr.out 1
+2019/11/23 19:01:37.53 #|1574535697.530476635|00#| work_queue_worker[1] wq: rx from master: infile file-0-9d36663bc9ba2664f9d818064c36dc63-ref.fasta.84 ref.fasta.84 1
+2019/11/23 19:01:37.53 #|1574535697.530539206|00#| work_queue_worker[1] wq: rx from master: infile file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py Create_Corrected_AllLRReads.py 1
+2019/11/23 19:01:37.53 #|1574535697.530642492|00#| work_queue_worker[1] wq: rx from master: outfile file-0-57a07cacf053809c2053d2577abb2159-create.err.84 create.err.84 1
+2019/11/23 19:01:37.53 #|1574535697.530684088|00#| work_queue_worker[1] wq: rx from master: outfile file-0-ebac8f02d2296fc70c44d2863ebce947-Corrected_ref.fasta.84 Corrected_ref.fasta.84 1
+2019/11/23 19:01:37.53 #|1574535697.530738967|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 19:01:37.53 #|1574535697.530870121|00#| work_queue_worker[1] wq: linking cache/file-0-048045060f61089a83cce204e6b8f151-corr.out to /tmp/worker-0-1/t.28/corr.out
+2019/11/23 19:01:37.53 #|1574535697.530923241|00#| work_queue_worker[1] wq: linking cache/file-0-9d36663bc9ba2664f9d818064c36dc63-ref.fasta.84 to /tmp/worker-0-1/t.28/ref.fasta.84
+2019/11/23 19:01:37.53 #|1574535697.530962656|00#| work_queue_worker[1] wq: linking cache/file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py to /tmp/worker-0-1/t.28/Create_Corrected_AllLRReads.py
+2019/11/23 19:01:37.53 #|1574535697.531212756|00#| work_queue_worker[1] wq: started process 9: python Create_Corrected_AllLRReads.py ref.fasta.84 corr.out 2> create.err.84
+2019/11/23 19:01:37.53 #|1574535697.531268315|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/23 19:01:37.60 #|1574535697.605738355|00#| work_queue_worker[1] wq: task 28 (pid 9) exited normally with exit code 0
+2019/11/23 19:01:37.60 #|1574535697.605767254|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.28/create.err.84 to cache/file-0-57a07cacf053809c2053d2577abb2159-create.err.84
+2019/11/23 19:01:37.60 #|1574535697.605825120|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.28/Corrected_ref.fasta.84 to cache/file-0-ebac8f02d2296fc70c44d2863ebce947-Corrected_ref.fasta.84
+2019/11/23 19:01:37.60 #|1574535697.605866314|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 19:01:37.71 #|1574535697.710769116|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 19:01:37.71 #|1574535697.710811657|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 74735 28
+2019/11/23 19:01:37.71 #|1574535697.710893406|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:37.71 #|1574535697.710989646|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:37.91 #|1574535697.910157694|00#| work_queue_worker[1] wq: rx from master: get file-0-57a07cacf053809c2053d2577abb2159-create.err.84 1
+2019/11/23 19:01:37.91 #|1574535697.910203410|00#| work_queue_worker[1] wq: tx to master: file file-0-57a07cacf053809c2053d2577abb2159-create.err.84 0
+2019/11/23 19:01:37.91 #|1574535697.910286579|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:37.91 #|1574535697.910625060|00#| work_queue_worker[1] wq: rx from master: get file-0-ebac8f02d2296fc70c44d2863ebce947-Corrected_ref.fasta.84 1
+2019/11/23 19:01:37.91 #|1574535697.910665653|00#| work_queue_worker[1] wq: tx to master: file file-0-ebac8f02d2296fc70c44d2863ebce947-Corrected_ref.fasta.84 1055000
+2019/11/23 19:01:37.91 #|1574535697.913999755|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:37.91 #|1574535697.914581865|00#| work_queue_worker[1] wq: rx from master: kill 28
+2019/11/23 19:01:37.93 #|1574535697.931069671|00#| work_queue_worker[1] wq: rx from master: put file-0-7ab30a43881e8e0cd0a3ea551fefd6f9-ref.fasta.78 1055000 0644 1
+2019/11/23 19:01:37.93 #|1574535697.931123736|00#| work_queue_worker[1] wq: Putting file file-0-7ab30a43881e8e0cd0a3ea551fefd6f9-ref.fasta.78 into workspace
+2019/11/23 19:01:37.93 #|1574535697.933380818|00#| work_queue_worker[1] wq: rx from master: task 34
+2019/11/23 19:01:37.93 #|1574535697.933410683|00#| work_queue_worker[1] wq: rx from master: cmd 76
+2019/11/23 19:01:37.93 #|1574535697.933434312|00#| work_queue_worker[1] wq: rx from master: python Create_Corrected_AllLRReads.py ref.fasta.78 corr.out 2> create.err.78
+2019/11/23 19:01:37.93 #|1574535697.933462190|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 19:01:37.93 #|1574535697.933482946|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 19:01:37.93 #|1574535697.933502737|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 19:01:37.93 #|1574535697.933521861|00#| work_queue_worker[1] wq: rx from master: disk 725
+2019/11/23 19:01:37.93 #|1574535697.933542417|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 19:01:37.93 #|1574535697.933562206|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 19:01:37.93 #|1574535697.933583772|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 19:01:37.93 #|1574535697.933646731|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 19:01:37.93 #|1574535697.933675282|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 19:01:37.93 #|1574535697.933699920|00#| work_queue_worker[1] wq: rx from master: infile file-0-048045060f61089a83cce204e6b8f151-corr.out corr.out 1
+2019/11/23 19:01:37.93 #|1574535697.933739783|00#| work_queue_worker[1] wq: rx from master: infile file-0-7ab30a43881e8e0cd0a3ea551fefd6f9-ref.fasta.78 ref.fasta.78 1
+2019/11/23 19:01:37.93 #|1574535697.933774927|00#| work_queue_worker[1] wq: rx from master: infile file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py Create_Corrected_AllLRReads.py 1
+2019/11/23 19:01:37.93 #|1574535697.933807059|00#| work_queue_worker[1] wq: rx from master: outfile file-0-03150a4c914d2a73eba7a75d9fcf4ae8-create.err.78 create.err.78 1
+2019/11/23 19:01:37.93 #|1574535697.933886781|00#| work_queue_worker[1] wq: rx from master: outfile file-0-e1b9b8322b4e4f66dad9162bc8f7e28c-Corrected_ref.fasta.78 Corrected_ref.fasta.78 1
+2019/11/23 19:01:37.93 #|1574535697.933925248|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 19:01:37.93 #|1574535697.934083854|00#| work_queue_worker[1] wq: linking cache/file-0-048045060f61089a83cce204e6b8f151-corr.out to /tmp/worker-0-1/t.34/corr.out
+2019/11/23 19:01:37.93 #|1574535697.934144705|00#| work_queue_worker[1] wq: linking cache/file-0-7ab30a43881e8e0cd0a3ea551fefd6f9-ref.fasta.78 to /tmp/worker-0-1/t.34/ref.fasta.78
+2019/11/23 19:01:37.93 #|1574535697.934200517|00#| work_queue_worker[1] wq: linking cache/file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py to /tmp/worker-0-1/t.34/Create_Corrected_AllLRReads.py
+2019/11/23 19:01:37.93 #|1574535697.934456299|00#| work_queue_worker[1] wq: started process 11: python Create_Corrected_AllLRReads.py ref.fasta.78 corr.out 2> create.err.78
+2019/11/23 19:01:37.93 #|1574535697.934542345|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/23 19:01:37.99 #|1574535697.999915937|00#| work_queue_worker[1] wq: task 34 (pid 11) exited normally with exit code 0
+2019/11/23 19:01:37.99 #|1574535697.999941618|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.34/create.err.78 to cache/file-0-03150a4c914d2a73eba7a75d9fcf4ae8-create.err.78
+2019/11/23 19:01:37.99 #|1574535697.999988276|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.34/Corrected_ref.fasta.78 to cache/file-0-e1b9b8322b4e4f66dad9162bc8f7e28c-Corrected_ref.fasta.78
+2019/11/23 19:01:38.00 #|1574535698.20720|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 19:01:38.17 #|1574535698.179555813|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 19:01:38.17 #|1574535698.179597269|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 65661 34
+2019/11/23 19:01:38.17 #|1574535698.179685534|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:38.17 #|1574535698.179771409|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:38.19 #|1574535698.191151191|00#| work_queue_worker[1] wq: rx from master: get file-0-03150a4c914d2a73eba7a75d9fcf4ae8-create.err.78 1
+2019/11/23 19:01:38.19 #|1574535698.191203091|00#| work_queue_worker[1] wq: tx to master: file file-0-03150a4c914d2a73eba7a75d9fcf4ae8-create.err.78 0
+2019/11/23 19:01:38.19 #|1574535698.191282217|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:38.19 #|1574535698.191584049|00#| work_queue_worker[1] wq: rx from master: get file-0-e1b9b8322b4e4f66dad9162bc8f7e28c-Corrected_ref.fasta.78 1
+2019/11/23 19:01:38.19 #|1574535698.191624986|00#| work_queue_worker[1] wq: tx to master: file file-0-e1b9b8322b4e4f66dad9162bc8f7e28c-Corrected_ref.fasta.78 1055000
+2019/11/23 19:01:38.19 #|1574535698.194432553|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:38.19 #|1574535698.194624355|00#| work_queue_worker[1] wq: rx from master: kill 34
+2019/11/23 19:01:38.21 #|1574535698.214185846|00#| work_queue_worker[1] wq: rx from master: put file-0-bc1ca4a7d217f08f6cfed4b9fc896252-ref.fasta.67 1055000 0644 1
+2019/11/23 19:01:38.21 #|1574535698.214220885|00#| work_queue_worker[1] wq: Putting file file-0-bc1ca4a7d217f08f6cfed4b9fc896252-ref.fasta.67 into workspace
+2019/11/23 19:01:38.21 #|1574535698.216036265|00#| work_queue_worker[1] wq: rx from master: task 45
+2019/11/23 19:01:38.21 #|1574535698.216058223|00#| work_queue_worker[1] wq: rx from master: cmd 76
+2019/11/23 19:01:38.21 #|1574535698.216069779|00#| work_queue_worker[1] wq: rx from master: python Create_Corrected_AllLRReads.py ref.fasta.67 corr.out 2> create.err.67
+2019/11/23 19:01:38.21 #|1574535698.216078806|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 19:01:38.21 #|1574535698.216088372|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 19:01:38.21 #|1574535698.216098088|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 19:01:38.21 #|1574535698.216107841|00#| work_queue_worker[1] wq: rx from master: disk 725
+2019/11/23 19:01:38.21 #|1574535698.216117493|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 19:01:38.21 #|1574535698.216127371|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 19:01:38.21 #|1574535698.216167351|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 19:01:38.21 #|1574535698.216182109|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 19:01:38.21 #|1574535698.216194965|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 19:01:38.21 #|1574535698.216206948|00#| work_queue_worker[1] wq: rx from master: infile file-0-048045060f61089a83cce204e6b8f151-corr.out corr.out 1
+2019/11/23 19:01:38.21 #|1574535698.216257781|00#| work_queue_worker[1] wq: rx from master: infile file-0-bc1ca4a7d217f08f6cfed4b9fc896252-ref.fasta.67 ref.fasta.67 1
+2019/11/23 19:01:38.21 #|1574535698.216283660|00#| work_queue_worker[1] wq: rx from master: infile file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py Create_Corrected_AllLRReads.py 1
+2019/11/23 19:01:38.21 #|1574535698.216329205|00#| work_queue_worker[1] wq: rx from master: outfile file-0-4ba12b8ace67fcd816192a3a0ab4ab71-create.err.67 create.err.67 1
+2019/11/23 19:01:38.21 #|1574535698.216353903|00#| work_queue_worker[1] wq: rx from master: outfile file-0-08caa705e78be4c10e0d8b165e57493f-Corrected_ref.fasta.67 Corrected_ref.fasta.67 1
+2019/11/23 19:01:38.21 #|1574535698.216374882|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 19:01:38.21 #|1574535698.216481923|00#| work_queue_worker[1] wq: linking cache/file-0-048045060f61089a83cce204e6b8f151-corr.out to /tmp/worker-0-1/t.45/corr.out
+2019/11/23 19:01:38.21 #|1574535698.216519777|00#| work_queue_worker[1] wq: linking cache/file-0-bc1ca4a7d217f08f6cfed4b9fc896252-ref.fasta.67 to /tmp/worker-0-1/t.45/ref.fasta.67
+2019/11/23 19:01:38.21 #|1574535698.216552434|00#| work_queue_worker[1] wq: linking cache/file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py to /tmp/worker-0-1/t.45/Create_Corrected_AllLRReads.py
+2019/11/23 19:01:38.21 #|1574535698.216581234|00#| work_queue_worker[1] wq: Waiting task 45 has been forsaken.
+2019/11/23 19:01:38.21 #|1574535698.216599102|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/23 19:01:38.21 #|1574535698.216645966|00#| work_queue_worker[1] wq: Sending resource description to master:
+2019/11/23 19:01:38.21 #|1574535698.216659290|00#| work_queue_worker[1] wq:  workers      0 inuse      1 total      1 smallest      1 largest
+2019/11/23 19:01:38.21 #|1574535698.216697295|00#| work_queue_worker[1] wq:     disk    282 inuse    210 total    210 smallest    210 largest
+2019/11/23 19:01:38.21 #|1574535698.216736074|00#| work_queue_worker[1] wq:   memory      0 inuse  11908 total  11908 smallest  11908 largest
+2019/11/23 19:01:38.21 #|1574535698.216774136|00#| work_queue_worker[1] wq:     gpus      0 inuse      0 total      0 smallest      0 largest
+2019/11/23 19:01:38.21 #|1574535698.216811678|00#| work_queue_worker[1] wq:    cores      0 inuse      1 total      1 smallest      1 largest
+2019/11/23 19:01:38.21 #|1574535698.216869268|00#| work_queue_worker[1] wq: tx to master: info end_of_resource_update 0
+2019/11/23 19:01:38.21 #|1574535698.216907500|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:38.21 #|1574535698.216945823|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:38.21 #|1574535698.216984717|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 19:01:38.24 #|1574535698.243988596|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 19:01:38.24 #|1574535698.244048505|00#| work_queue_worker[1] wq: tx to master: result 40 0 0 0 45
+2019/11/23 19:01:38.24 #|1574535698.244112492|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:38.24 #|1574535698.244178021|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:38.24 #|1574535698.244653151|00#| work_queue_worker[1] wq: rx from master: put file-0-7c6b6de8591e484b855e5d604b284b7f-ref.fasta.62 1055000 0644 1
+2019/11/23 19:01:38.24 #|1574535698.244696184|00#| work_queue_worker[1] wq: Putting file file-0-7c6b6de8591e484b855e5d604b284b7f-ref.fasta.62 into workspace
+2019/11/23 19:01:38.24 #|1574535698.247188131|00#| work_queue_worker[1] wq: rx from master: task 50
+2019/11/23 19:01:38.24 #|1574535698.247245384|00#| work_queue_worker[1] wq: rx from master: cmd 76
+2019/11/23 19:01:38.24 #|1574535698.247267716|00#| work_queue_worker[1] wq: rx from master: python Create_Corrected_AllLRReads.py ref.fasta.62 corr.out 2> create.err.62
+2019/11/23 19:01:38.24 #|1574535698.247285952|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 19:01:38.24 #|1574535698.247303203|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 19:01:38.24 #|1574535698.247321110|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 19:01:38.24 #|1574535698.247341534|00#| work_queue_worker[1] wq: rx from master: disk 210
+2019/11/23 19:01:38.24 #|1574535698.247360231|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 19:01:38.24 #|1574535698.247376401|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 19:01:38.24 #|1574535698.247392890|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 19:01:38.24 #|1574535698.247409258|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 19:01:38.24 #|1574535698.247429021|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 19:01:38.24 #|1574535698.247493013|00#| work_queue_worker[1] wq: rx from master: infile file-0-048045060f61089a83cce204e6b8f151-corr.out corr.out 1
+2019/11/23 19:01:38.24 #|1574535698.247574574|00#| work_queue_worker[1] wq: rx from master: infile file-0-7c6b6de8591e484b855e5d604b284b7f-ref.fasta.62 ref.fasta.62 1
+2019/11/23 19:01:38.24 #|1574535698.247611564|00#| work_queue_worker[1] wq: rx from master: infile file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py Create_Corrected_AllLRReads.py 1
+2019/11/23 19:01:38.24 #|1574535698.247644486|00#| work_queue_worker[1] wq: rx from master: outfile file-0-2ec75c26943aa8d07c69c7763c5aaefd-create.err.62 create.err.62 1
+2019/11/23 19:01:38.24 #|1574535698.247686463|00#| work_queue_worker[1] wq: rx from master: outfile file-0-180be77863f797c853281db8208fe598-Corrected_ref.fasta.62 Corrected_ref.fasta.62 1
+2019/11/23 19:01:38.24 #|1574535698.247752364|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 19:01:38.24 #|1574535698.247921112|00#| work_queue_worker[1] wq: linking cache/file-0-048045060f61089a83cce204e6b8f151-corr.out to /tmp/worker-0-1/t.50/corr.out
+2019/11/23 19:01:38.24 #|1574535698.248015600|00#| work_queue_worker[1] wq: linking cache/file-0-7c6b6de8591e484b855e5d604b284b7f-ref.fasta.62 to /tmp/worker-0-1/t.50/ref.fasta.62
+2019/11/23 19:01:38.24 #|1574535698.248069561|00#| work_queue_worker[1] wq: linking cache/file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py to /tmp/worker-0-1/t.50/Create_Corrected_AllLRReads.py
+2019/11/23 19:01:38.24 #|1574535698.248351766|00#| work_queue_worker[1] wq: started process 13: python Create_Corrected_AllLRReads.py ref.fasta.62 corr.out 2> create.err.62
+2019/11/23 19:01:38.24 #|1574535698.248400013|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/23 19:01:38.30 #|1574535698.302250617|00#| work_queue_worker[1] wq: task 50 (pid 13) exited normally with exit code 0
+2019/11/23 19:01:38.30 #|1574535698.302301810|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.50/create.err.62 to cache/file-0-2ec75c26943aa8d07c69c7763c5aaefd-create.err.62
+2019/11/23 19:01:38.30 #|1574535698.302351608|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.50/Corrected_ref.fasta.62 to cache/file-0-180be77863f797c853281db8208fe598-Corrected_ref.fasta.62
+2019/11/23 19:01:38.30 #|1574535698.302385439|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 19:01:38.41 #|1574535698.417767331|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 19:01:38.41 #|1574535698.417812825|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 54131 50
+2019/11/23 19:01:38.41 #|1574535698.417899694|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:38.41 #|1574535698.417959847|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:38.72 #|1574535698.723881986|00#| work_queue_worker[1] wq: rx from master: get file-0-2ec75c26943aa8d07c69c7763c5aaefd-create.err.62 1
+2019/11/23 19:01:38.72 #|1574535698.723934811|00#| work_queue_worker[1] wq: tx to master: file file-0-2ec75c26943aa8d07c69c7763c5aaefd-create.err.62 0
+2019/11/23 19:01:38.72 #|1574535698.724044847|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:38.72 #|1574535698.724308638|00#| work_queue_worker[1] wq: rx from master: get file-0-180be77863f797c853281db8208fe598-Corrected_ref.fasta.62 1
+2019/11/23 19:01:38.72 #|1574535698.724350209|00#| work_queue_worker[1] wq: tx to master: file file-0-180be77863f797c853281db8208fe598-Corrected_ref.fasta.62 1055000
+2019/11/23 19:01:38.72 #|1574535698.726186819|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:38.72 #|1574535698.726704796|00#| work_queue_worker[1] wq: rx from master: kill 50
+2019/11/23 19:01:38.73 #|1574535698.735693488|00#| work_queue_worker[1] wq: rx from master: put file-0-5dddaa02cda0278338ee1a9573d0d495-ref.fasta.58 1055000 0644 1
+2019/11/23 19:01:38.73 #|1574535698.735727355|00#| work_queue_worker[1] wq: Putting file file-0-5dddaa02cda0278338ee1a9573d0d495-ref.fasta.58 into workspace
+2019/11/23 19:01:38.73 #|1574535698.737257406|00#| work_queue_worker[1] wq: rx from master: task 54
+2019/11/23 19:01:38.73 #|1574535698.737312712|00#| work_queue_worker[1] wq: rx from master: cmd 76
+2019/11/23 19:01:38.73 #|1574535698.737328992|00#| work_queue_worker[1] wq: rx from master: python Create_Corrected_AllLRReads.py ref.fasta.58 corr.out 2> create.err.58
+2019/11/23 19:01:38.73 #|1574535698.737340438|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 19:01:38.73 #|1574535698.737481793|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 19:01:38.73 #|1574535698.737536566|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 19:01:38.73 #|1574535698.737551244|00#| work_queue_worker[1] wq: rx from master: disk 210
+2019/11/23 19:01:38.73 #|1574535698.737564003|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 19:01:38.73 #|1574535698.737678829|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 19:01:38.73 #|1574535698.737703023|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 19:01:38.73 #|1574535698.737778207|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 19:01:38.73 #|1574535698.737805889|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 19:01:38.73 #|1574535698.737895486|00#| work_queue_worker[1] wq: rx from master: infile file-0-048045060f61089a83cce204e6b8f151-corr.out corr.out 1
+2019/11/23 19:01:38.73 #|1574535698.737931995|00#| work_queue_worker[1] wq: rx from master: infile file-0-5dddaa02cda0278338ee1a9573d0d495-ref.fasta.58 ref.fasta.58 1
+2019/11/23 19:01:38.73 #|1574535698.738018215|00#| work_queue_worker[1] wq: rx from master: infile file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py Create_Corrected_AllLRReads.py 1
+2019/11/23 19:01:38.73 #|1574535698.738053555|00#| work_queue_worker[1] wq: rx from master: outfile file-0-81886c02fad3d174df51b9715d8bed2b-create.err.58 create.err.58 1
+2019/11/23 19:01:38.73 #|1574535698.738107620|00#| work_queue_worker[1] wq: rx from master: outfile file-0-6e467db5c1520301a1137cab19a0fe91-Corrected_ref.fasta.58 Corrected_ref.fasta.58 1
+2019/11/23 19:01:38.73 #|1574535698.738135759|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 19:01:38.73 #|1574535698.738245645|00#| work_queue_worker[1] wq: linking cache/file-0-048045060f61089a83cce204e6b8f151-corr.out to /tmp/worker-0-1/t.54/corr.out
+2019/11/23 19:01:38.73 #|1574535698.738285845|00#| work_queue_worker[1] wq: linking cache/file-0-5dddaa02cda0278338ee1a9573d0d495-ref.fasta.58 to /tmp/worker-0-1/t.54/ref.fasta.58
+2019/11/23 19:01:38.73 #|1574535698.738319862|00#| work_queue_worker[1] wq: linking cache/file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py to /tmp/worker-0-1/t.54/Create_Corrected_AllLRReads.py
+2019/11/23 19:01:38.73 #|1574535698.738498194|00#| work_queue_worker[1] wq: started process 15: python Create_Corrected_AllLRReads.py ref.fasta.58 corr.out 2> create.err.58
+2019/11/23 19:01:38.73 #|1574535698.738560964|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/23 19:01:38.78 #|1574535698.780498216|00#| work_queue_worker[1] wq: task 54 (pid 15) exited normally with exit code 0
+2019/11/23 19:01:38.78 #|1574535698.780525691|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.54/create.err.58 to cache/file-0-81886c02fad3d174df51b9715d8bed2b-create.err.58
+2019/11/23 19:01:38.78 #|1574535698.780582344|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.54/Corrected_ref.fasta.58 to cache/file-0-6e467db5c1520301a1137cab19a0fe91-Corrected_ref.fasta.58
+2019/11/23 19:01:38.78 #|1574535698.780617706|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 19:01:38.79 #|1574535698.797348375|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 19:01:38.79 #|1574535698.797391162|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 42150 54
+2019/11/23 19:01:38.79 #|1574535698.797465619|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:38.79 #|1574535698.797510789|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:38.79 #|1574535698.797875115|00#| work_queue_worker[1] wq: rx from master: get file-0-81886c02fad3d174df51b9715d8bed2b-create.err.58 1
+2019/11/23 19:01:38.79 #|1574535698.797912739|00#| work_queue_worker[1] wq: tx to master: file file-0-81886c02fad3d174df51b9715d8bed2b-create.err.58 0
+2019/11/23 19:01:38.79 #|1574535698.797968807|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:38.79 #|1574535698.798296432|00#| work_queue_worker[1] wq: rx from master: get file-0-6e467db5c1520301a1137cab19a0fe91-Corrected_ref.fasta.58 1
+2019/11/23 19:01:38.79 #|1574535698.798338380|00#| work_queue_worker[1] wq: tx to master: file file-0-6e467db5c1520301a1137cab19a0fe91-Corrected_ref.fasta.58 1055000
+2019/11/23 19:01:38.79 #|1574535698.799741255|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:38.80 #|1574535698.800535806|00#| work_queue_worker[1] wq: rx from master: kill 54
+2019/11/23 19:01:38.82 #|1574535698.822094452|00#| work_queue_worker[1] wq: rx from master: put file-0-5913a6d569285ed628a484e34fd3c8a4-ref.fasta.53 1055000 0644 1
+2019/11/23 19:01:38.82 #|1574535698.822129496|00#| work_queue_worker[1] wq: Putting file file-0-5913a6d569285ed628a484e34fd3c8a4-ref.fasta.53 into workspace
+2019/11/23 19:01:38.82 #|1574535698.823842081|00#| work_queue_worker[1] wq: rx from master: task 59
+2019/11/23 19:01:38.82 #|1574535698.823893509|00#| work_queue_worker[1] wq: rx from master: cmd 76
+2019/11/23 19:01:38.82 #|1574535698.823911117|00#| work_queue_worker[1] wq: rx from master: python Create_Corrected_AllLRReads.py ref.fasta.53 corr.out 2> create.err.53
+2019/11/23 19:01:38.82 #|1574535698.824056542|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 19:01:38.82 #|1574535698.824078012|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 19:01:38.82 #|1574535698.824116155|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 19:01:38.82 #|1574535698.824136966|00#| work_queue_worker[1] wq: rx from master: disk 210
+2019/11/23 19:01:38.82 #|1574535698.824307638|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 19:01:38.82 #|1574535698.824354662|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 19:01:38.82 #|1574535698.824370438|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 19:01:38.82 #|1574535698.824383596|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 19:01:38.82 #|1574535698.824481804|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 19:01:38.82 #|1574535698.824533804|00#| work_queue_worker[1] wq: rx from master: infile file-0-048045060f61089a83cce204e6b8f151-corr.out corr.out 1
+2019/11/23 19:01:38.82 #|1574535698.824603156|00#| work_queue_worker[1] wq: rx from master: infile file-0-5913a6d569285ed628a484e34fd3c8a4-ref.fasta.53 ref.fasta.53 1
+2019/11/23 19:01:38.82 #|1574535698.824632399|00#| work_queue_worker[1] wq: rx from master: infile file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py Create_Corrected_AllLRReads.py 1
+2019/11/23 19:01:38.82 #|1574535698.824712232|00#| work_queue_worker[1] wq: rx from master: outfile file-0-a2de61c2e6335e92613fdff2acdf63f5-create.err.53 create.err.53 1
+2019/11/23 19:01:38.82 #|1574535698.824766849|00#| work_queue_worker[1] wq: rx from master: outfile file-0-4c4e163664dad5997cd468d2b937998f-Corrected_ref.fasta.53 Corrected_ref.fasta.53 1
+2019/11/23 19:01:38.82 #|1574535698.824847833|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 19:01:38.82 #|1574535698.824958180|00#| work_queue_worker[1] wq: linking cache/file-0-048045060f61089a83cce204e6b8f151-corr.out to /tmp/worker-0-1/t.59/corr.out
+2019/11/23 19:01:38.82 #|1574535698.824996409|00#| work_queue_worker[1] wq: linking cache/file-0-5913a6d569285ed628a484e34fd3c8a4-ref.fasta.53 to /tmp/worker-0-1/t.59/ref.fasta.53
+2019/11/23 19:01:38.82 #|1574535698.825028951|00#| work_queue_worker[1] wq: linking cache/file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py to /tmp/worker-0-1/t.59/Create_Corrected_AllLRReads.py
+2019/11/23 19:01:38.82 #|1574535698.825210886|00#| work_queue_worker[1] wq: started process 17: python Create_Corrected_AllLRReads.py ref.fasta.53 corr.out 2> create.err.53
+2019/11/23 19:01:38.82 #|1574535698.825244094|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/23 19:01:38.86 #|1574535698.868376381|00#| work_queue_worker[1] wq: task 59 (pid 17) exited normally with exit code 0
+2019/11/23 19:01:38.86 #|1574535698.868414118|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.59/create.err.53 to cache/file-0-a2de61c2e6335e92613fdff2acdf63f5-create.err.53
+2019/11/23 19:01:38.86 #|1574535698.868469635|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.59/Corrected_ref.fasta.53 to cache/file-0-4c4e163664dad5997cd468d2b937998f-Corrected_ref.fasta.53
+2019/11/23 19:01:38.86 #|1574535698.868504922|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 19:01:38.86 #|1574535698.868778716|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 19:01:38.86 #|1574535698.868814068|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 43329 59
+2019/11/23 19:01:38.86 #|1574535698.868872404|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:38.86 #|1574535698.868915598|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:38.86 #|1574535698.869445842|00#| work_queue_worker[1] wq: rx from master: get file-0-a2de61c2e6335e92613fdff2acdf63f5-create.err.53 1
+2019/11/23 19:01:38.86 #|1574535698.869484192|00#| work_queue_worker[1] wq: tx to master: file file-0-a2de61c2e6335e92613fdff2acdf63f5-create.err.53 0
+2019/11/23 19:01:38.86 #|1574535698.869545538|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:38.86 #|1574535698.869898766|00#| work_queue_worker[1] wq: rx from master: get file-0-4c4e163664dad5997cd468d2b937998f-Corrected_ref.fasta.53 1
+2019/11/23 19:01:38.86 #|1574535698.869930414|00#| work_queue_worker[1] wq: tx to master: file file-0-4c4e163664dad5997cd468d2b937998f-Corrected_ref.fasta.53 1055000
+2019/11/23 19:01:38.87 #|1574535698.871191211|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:38.87 #|1574535698.872713130|00#| work_queue_worker[1] wq: rx from master: kill 59
+2019/11/23 19:01:38.87 #|1574535698.874197349|00#| work_queue_worker[1] wq: rx from master: put file-0-2bcc686d6c516d8fbae85feb7f639cd2-ref.fasta.46 1055000 0644 1
+2019/11/23 19:01:38.87 #|1574535698.874228858|00#| work_queue_worker[1] wq: Putting file file-0-2bcc686d6c516d8fbae85feb7f639cd2-ref.fasta.46 into workspace
+2019/11/23 19:01:38.87 #|1574535698.875900990|00#| work_queue_worker[1] wq: rx from master: task 66
+2019/11/23 19:01:38.87 #|1574535698.875921880|00#| work_queue_worker[1] wq: rx from master: cmd 76
+2019/11/23 19:01:38.87 #|1574535698.875933204|00#| work_queue_worker[1] wq: rx from master: python Create_Corrected_AllLRReads.py ref.fasta.46 corr.out 2> create.err.46
+2019/11/23 19:01:38.87 #|1574535698.875974481|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 19:01:38.87 #|1574535698.875989062|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 19:01:38.87 #|1574535698.876002050|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 19:01:38.87 #|1574535698.876153904|00#| work_queue_worker[1] wq: rx from master: disk 210
+2019/11/23 19:01:38.87 #|1574535698.876198229|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 19:01:38.87 #|1574535698.876212240|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 19:01:38.87 #|1574535698.876225516|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 19:01:38.87 #|1574535698.876372231|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 19:01:38.87 #|1574535698.876395727|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 19:01:38.87 #|1574535698.876435807|00#| work_queue_worker[1] wq: rx from master: infile file-0-048045060f61089a83cce204e6b8f151-corr.out corr.out 1
+2019/11/23 19:01:38.87 #|1574535698.876466786|00#| work_queue_worker[1] wq: rx from master: infile file-0-2bcc686d6c516d8fbae85feb7f639cd2-ref.fasta.46 ref.fasta.46 1
+2019/11/23 19:01:38.87 #|1574535698.876561383|00#| work_queue_worker[1] wq: rx from master: infile file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py Create_Corrected_AllLRReads.py 1
+2019/11/23 19:01:38.87 #|1574535698.876595067|00#| work_queue_worker[1] wq: rx from master: outfile file-0-714017bdc1d273b2b1aaba6b9d996a25-create.err.46 create.err.46 1
+2019/11/23 19:01:38.87 #|1574535698.876671124|00#| work_queue_worker[1] wq: rx from master: outfile file-0-4d21dc160f37af405d3dd6ae3ba18bef-Corrected_ref.fasta.46 Corrected_ref.fasta.46 1
+2019/11/23 19:01:38.87 #|1574535698.876700340|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 19:01:38.87 #|1574535698.876813106|00#| work_queue_worker[1] wq: linking cache/file-0-048045060f61089a83cce204e6b8f151-corr.out to /tmp/worker-0-1/t.66/corr.out
+2019/11/23 19:01:38.87 #|1574535698.876855586|00#| work_queue_worker[1] wq: linking cache/file-0-2bcc686d6c516d8fbae85feb7f639cd2-ref.fasta.46 to /tmp/worker-0-1/t.66/ref.fasta.46
+2019/11/23 19:01:38.87 #|1574535698.876892103|00#| work_queue_worker[1] wq: linking cache/file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py to /tmp/worker-0-1/t.66/Create_Corrected_AllLRReads.py
+2019/11/23 19:01:38.87 #|1574535698.877104035|00#| work_queue_worker[1] wq: started process 19: python Create_Corrected_AllLRReads.py ref.fasta.46 corr.out 2> create.err.46
+2019/11/23 19:01:38.87 #|1574535698.877147672|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/23 19:01:38.91 #|1574535698.918588359|00#| work_queue_worker[1] wq: task 66 (pid 19) exited normally with exit code 0
+2019/11/23 19:01:38.91 #|1574535698.918612650|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.66/create.err.46 to cache/file-0-714017bdc1d273b2b1aaba6b9d996a25-create.err.46
+2019/11/23 19:01:38.91 #|1574535698.918656568|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.66/Corrected_ref.fasta.46 to cache/file-0-4d21dc160f37af405d3dd6ae3ba18bef-Corrected_ref.fasta.46
+2019/11/23 19:01:38.91 #|1574535698.918690244|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 19:01:39.06 #|1574535699.60733721|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 19:01:39.06 #|1574535699.60774959|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 41667 66
+2019/11/23 19:01:39.06 #|1574535699.60850227|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:39.06 #|1574535699.60904445|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:39.06 #|1574535699.65662171|00#| work_queue_worker[1] wq: rx from master: get file-0-714017bdc1d273b2b1aaba6b9d996a25-create.err.46 1
+2019/11/23 19:01:39.06 #|1574535699.65711067|00#| work_queue_worker[1] wq: tx to master: file file-0-714017bdc1d273b2b1aaba6b9d996a25-create.err.46 0
+2019/11/23 19:01:39.06 #|1574535699.65796862|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:39.06 #|1574535699.66157181|00#| work_queue_worker[1] wq: rx from master: get file-0-4d21dc160f37af405d3dd6ae3ba18bef-Corrected_ref.fasta.46 1
+2019/11/23 19:01:39.06 #|1574535699.66202142|00#| work_queue_worker[1] wq: tx to master: file file-0-4d21dc160f37af405d3dd6ae3ba18bef-Corrected_ref.fasta.46 1055000
+2019/11/23 19:01:39.06 #|1574535699.69357533|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:39.07 #|1574535699.70306283|00#| work_queue_worker[1] wq: rx from master: kill 66
+2019/11/23 19:01:39.07 #|1574535699.73795347|00#| work_queue_worker[1] wq: rx from master: put file-0-b08bcaca0d4661ed0eebfe2af92bbce7-ref.fasta.44 1055000 0644 1
+2019/11/23 19:01:39.07 #|1574535699.73835930|00#| work_queue_worker[1] wq: Putting file file-0-b08bcaca0d4661ed0eebfe2af92bbce7-ref.fasta.44 into workspace
+2019/11/23 19:01:39.07 #|1574535699.75519013|00#| work_queue_worker[1] wq: rx from master: task 68
+2019/11/23 19:01:39.07 #|1574535699.75541782|00#| work_queue_worker[1] wq: rx from master: cmd 76
+2019/11/23 19:01:39.07 #|1574535699.75554350|00#| work_queue_worker[1] wq: rx from master: python Create_Corrected_AllLRReads.py ref.fasta.44 corr.out 2> create.err.44
+2019/11/23 19:01:39.07 #|1574535699.75564340|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 19:01:39.07 #|1574535699.75574730|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 19:01:39.07 #|1574535699.75592659|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 19:01:39.07 #|1574535699.75604072|00#| work_queue_worker[1] wq: rx from master: disk 210
+2019/11/23 19:01:39.07 #|1574535699.75614993|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 19:01:39.07 #|1574535699.75626130|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 19:01:39.07 #|1574535699.75638109|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 19:01:39.07 #|1574535699.75649175|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 19:01:39.07 #|1574535699.75694781|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 19:01:39.07 #|1574535699.75714188|00#| work_queue_worker[1] wq: rx from master: infile file-0-048045060f61089a83cce204e6b8f151-corr.out corr.out 1
+2019/11/23 19:01:39.07 #|1574535699.75740234|00#| work_queue_worker[1] wq: rx from master: infile file-0-b08bcaca0d4661ed0eebfe2af92bbce7-ref.fasta.44 ref.fasta.44 1
+2019/11/23 19:01:39.07 #|1574535699.75761898|00#| work_queue_worker[1] wq: rx from master: infile file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py Create_Corrected_AllLRReads.py 1
+2019/11/23 19:01:39.07 #|1574535699.75784245|00#| work_queue_worker[1] wq: rx from master: outfile file-0-759c338e0bf5825807103627c2156716-create.err.44 create.err.44 1
+2019/11/23 19:01:39.07 #|1574535699.75836983|00#| work_queue_worker[1] wq: rx from master: outfile file-0-72344f12ee6c9fa248d949b3076e36d0-Corrected_ref.fasta.44 Corrected_ref.fasta.44 1
+2019/11/23 19:01:39.07 #|1574535699.75864610|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 19:01:39.07 #|1574535699.75973842|00#| work_queue_worker[1] wq: linking cache/file-0-048045060f61089a83cce204e6b8f151-corr.out to /tmp/worker-0-1/t.68/corr.out
+2019/11/23 19:01:39.07 #|1574535699.76015265|00#| work_queue_worker[1] wq: linking cache/file-0-b08bcaca0d4661ed0eebfe2af92bbce7-ref.fasta.44 to /tmp/worker-0-1/t.68/ref.fasta.44
+2019/11/23 19:01:39.07 #|1574535699.76051113|00#| work_queue_worker[1] wq: linking cache/file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py to /tmp/worker-0-1/t.68/Create_Corrected_AllLRReads.py
+2019/11/23 19:01:39.07 #|1574535699.76234561|00#| work_queue_worker[1] wq: started process 21: python Create_Corrected_AllLRReads.py ref.fasta.44 corr.out 2> create.err.44
+2019/11/23 19:01:39.07 #|1574535699.76273974|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/23 19:01:39.12 #|1574535699.121406995|00#| work_queue_worker[1] wq: task 68 (pid 21) exited normally with exit code 0
+2019/11/23 19:01:39.12 #|1574535699.121441785|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.68/create.err.44 to cache/file-0-759c338e0bf5825807103627c2156716-create.err.44
+2019/11/23 19:01:39.12 #|1574535699.121494037|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.68/Corrected_ref.fasta.44 to cache/file-0-72344f12ee6c9fa248d949b3076e36d0-Corrected_ref.fasta.44
+2019/11/23 19:01:39.12 #|1574535699.121529715|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 19:01:39.17 #|1574535699.175700218|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 19:01:39.17 #|1574535699.175747166|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 45327 68
+2019/11/23 19:01:39.17 #|1574535699.175829401|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:39.17 #|1574535699.175890701|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:39.48 #|1574535699.482111701|00#| work_queue_worker[1] wq: rx from master: get file-0-759c338e0bf5825807103627c2156716-create.err.44 1
+2019/11/23 19:01:39.48 #|1574535699.482166104|00#| work_queue_worker[1] wq: tx to master: file file-0-759c338e0bf5825807103627c2156716-create.err.44 0
+2019/11/23 19:01:39.48 #|1574535699.482280615|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:39.48 #|1574535699.482573405|00#| work_queue_worker[1] wq: rx from master: get file-0-72344f12ee6c9fa248d949b3076e36d0-Corrected_ref.fasta.44 1
+2019/11/23 19:01:39.48 #|1574535699.482627058|00#| work_queue_worker[1] wq: tx to master: file file-0-72344f12ee6c9fa248d949b3076e36d0-Corrected_ref.fasta.44 1055000
+2019/11/23 19:01:39.48 #|1574535699.484078873|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:39.48 #|1574535699.484624997|00#| work_queue_worker[1] wq: rx from master: kill 68
+2019/11/23 19:01:39.59 #|1574535699.592120771|00#| work_queue_worker[1] wq: rx from master: put file-0-7649efd0db4ef988da69fb585788a4dd-ref.fasta.39 1055000 0644 1
+2019/11/23 19:01:39.59 #|1574535699.592161996|00#| work_queue_worker[1] wq: Putting file file-0-7649efd0db4ef988da69fb585788a4dd-ref.fasta.39 into workspace
+2019/11/23 19:01:39.59 #|1574535699.595337537|00#| work_queue_worker[1] wq: rx from master: task 73
+2019/11/23 19:01:39.59 #|1574535699.595365552|00#| work_queue_worker[1] wq: rx from master: cmd 76
+2019/11/23 19:01:39.59 #|1574535699.595380085|00#| work_queue_worker[1] wq: rx from master: python Create_Corrected_AllLRReads.py ref.fasta.39 corr.out 2> create.err.39
+2019/11/23 19:01:39.59 #|1574535699.595391501|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 19:01:39.59 #|1574535699.595403516|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 19:01:39.59 #|1574535699.595416282|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 19:01:39.59 #|1574535699.595428794|00#| work_queue_worker[1] wq: rx from master: disk 210
+2019/11/23 19:01:39.59 #|1574535699.595441284|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 19:01:39.59 #|1574535699.595453933|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 19:01:39.59 #|1574535699.595467471|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 19:01:39.59 #|1574535699.595480617|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 19:01:39.59 #|1574535699.595495904|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 19:01:39.59 #|1574535699.595511030|00#| work_queue_worker[1] wq: rx from master: infile file-0-048045060f61089a83cce204e6b8f151-corr.out corr.out 1
+2019/11/23 19:01:39.59 #|1574535699.595538687|00#| work_queue_worker[1] wq: rx from master: infile file-0-7649efd0db4ef988da69fb585788a4dd-ref.fasta.39 ref.fasta.39 1
+2019/11/23 19:01:39.59 #|1574535699.595563097|00#| work_queue_worker[1] wq: rx from master: infile file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py Create_Corrected_AllLRReads.py 1
+2019/11/23 19:01:39.59 #|1574535699.595587469|00#| work_queue_worker[1] wq: rx from master: outfile file-0-7886ca568cd81d2e59784c1283544aca-create.err.39 create.err.39 1
+2019/11/23 19:01:39.59 #|1574535699.595611680|00#| work_queue_worker[1] wq: rx from master: outfile file-0-ee5026c6f227b96681c1c3b187dde9cc-Corrected_ref.fasta.39 Corrected_ref.fasta.39 1
+2019/11/23 19:01:39.59 #|1574535699.595635180|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 19:01:39.59 #|1574535699.595770307|00#| work_queue_worker[1] wq: linking cache/file-0-048045060f61089a83cce204e6b8f151-corr.out to /tmp/worker-0-1/t.73/corr.out
+2019/11/23 19:01:39.59 #|1574535699.595817835|00#| work_queue_worker[1] wq: linking cache/file-0-7649efd0db4ef988da69fb585788a4dd-ref.fasta.39 to /tmp/worker-0-1/t.73/ref.fasta.39
+2019/11/23 19:01:39.59 #|1574535699.595858467|00#| work_queue_worker[1] wq: linking cache/file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py to /tmp/worker-0-1/t.73/Create_Corrected_AllLRReads.py
+2019/11/23 19:01:39.59 #|1574535699.596083744|00#| work_queue_worker[1] wq: started process 23: python Create_Corrected_AllLRReads.py ref.fasta.39 corr.out 2> create.err.39
+2019/11/23 19:01:39.59 #|1574535699.596144160|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/23 19:01:39.63 #|1574535699.639527142|00#| work_queue_worker[1] wq: task 73 (pid 23) exited normally with exit code 0
+2019/11/23 19:01:39.63 #|1574535699.639554836|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.73/create.err.39 to cache/file-0-7886ca568cd81d2e59784c1283544aca-create.err.39
+2019/11/23 19:01:39.63 #|1574535699.639608619|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.73/Corrected_ref.fasta.39 to cache/file-0-ee5026c6f227b96681c1c3b187dde9cc-Corrected_ref.fasta.39
+2019/11/23 19:01:39.63 #|1574535699.639647449|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 19:01:39.64 #|1574535699.643411674|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 19:01:39.64 #|1574535699.643447915|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 43625 73
+2019/11/23 19:01:39.64 #|1574535699.643515148|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:39.64 #|1574535699.643563476|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:39.64 #|1574535699.643962832|00#| work_queue_worker[1] wq: rx from master: get file-0-7886ca568cd81d2e59784c1283544aca-create.err.39 1
+2019/11/23 19:01:39.64 #|1574535699.644002926|00#| work_queue_worker[1] wq: tx to master: file file-0-7886ca568cd81d2e59784c1283544aca-create.err.39 0
+2019/11/23 19:01:39.64 #|1574535699.644073535|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:39.64 #|1574535699.644439706|00#| work_queue_worker[1] wq: rx from master: get file-0-ee5026c6f227b96681c1c3b187dde9cc-Corrected_ref.fasta.39 1
+2019/11/23 19:01:39.64 #|1574535699.644476177|00#| work_queue_worker[1] wq: tx to master: file file-0-ee5026c6f227b96681c1c3b187dde9cc-Corrected_ref.fasta.39 1055000
+2019/11/23 19:01:39.64 #|1574535699.645541218|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:39.64 #|1574535699.646127989|00#| work_queue_worker[1] wq: rx from master: kill 73
+2019/11/23 19:01:39.65 #|1574535699.655916088|00#| work_queue_worker[1] wq: rx from master: put file-0-4e6844944429687ec56a0ba20d350bc8-ref.fasta.34 1055000 0644 1
+2019/11/23 19:01:39.65 #|1574535699.655949706|00#| work_queue_worker[1] wq: Putting file file-0-4e6844944429687ec56a0ba20d350bc8-ref.fasta.34 into workspace
+2019/11/23 19:01:39.65 #|1574535699.657393887|00#| work_queue_worker[1] wq: rx from master: task 78
+2019/11/23 19:01:39.65 #|1574535699.657417081|00#| work_queue_worker[1] wq: rx from master: cmd 76
+2019/11/23 19:01:39.65 #|1574535699.657430176|00#| work_queue_worker[1] wq: rx from master: python Create_Corrected_AllLRReads.py ref.fasta.34 corr.out 2> create.err.34
+2019/11/23 19:01:39.65 #|1574535699.657440572|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 19:01:39.65 #|1574535699.657451985|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 19:01:39.65 #|1574535699.657463831|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 19:01:39.65 #|1574535699.657475392|00#| work_queue_worker[1] wq: rx from master: disk 210
+2019/11/23 19:01:39.65 #|1574535699.657486730|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 19:01:39.65 #|1574535699.657498823|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 19:01:39.65 #|1574535699.657511323|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 19:01:39.65 #|1574535699.657523171|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 19:01:39.65 #|1574535699.657537165|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 19:01:39.65 #|1574535699.657590210|00#| work_queue_worker[1] wq: rx from master: infile file-0-048045060f61089a83cce204e6b8f151-corr.out corr.out 1
+2019/11/23 19:01:39.65 #|1574535699.657622617|00#| work_queue_worker[1] wq: rx from master: infile file-0-4e6844944429687ec56a0ba20d350bc8-ref.fasta.34 ref.fasta.34 1
+2019/11/23 19:01:39.65 #|1574535699.657646646|00#| work_queue_worker[1] wq: rx from master: infile file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py Create_Corrected_AllLRReads.py 1
+2019/11/23 19:01:39.65 #|1574535699.657670245|00#| work_queue_worker[1] wq: rx from master: outfile file-0-c37fe37630dc24da2d23dea04e2e9413-create.err.34 create.err.34 1
+2019/11/23 19:01:39.65 #|1574535699.657701668|00#| work_queue_worker[1] wq: rx from master: outfile file-0-a6c21354c1e5de08ece97ed63e2eb0dc-Corrected_ref.fasta.34 Corrected_ref.fasta.34 1
+2019/11/23 19:01:39.65 #|1574535699.657724005|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 19:01:39.65 #|1574535699.657843716|00#| work_queue_worker[1] wq: linking cache/file-0-048045060f61089a83cce204e6b8f151-corr.out to /tmp/worker-0-1/t.78/corr.out
+2019/11/23 19:01:39.65 #|1574535699.657887809|00#| work_queue_worker[1] wq: linking cache/file-0-4e6844944429687ec56a0ba20d350bc8-ref.fasta.34 to /tmp/worker-0-1/t.78/ref.fasta.34
+2019/11/23 19:01:39.65 #|1574535699.657925281|00#| work_queue_worker[1] wq: linking cache/file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py to /tmp/worker-0-1/t.78/Create_Corrected_AllLRReads.py
+2019/11/23 19:01:39.65 #|1574535699.658121760|00#| work_queue_worker[1] wq: started process 25: python Create_Corrected_AllLRReads.py ref.fasta.34 corr.out 2> create.err.34
+2019/11/23 19:01:39.65 #|1574535699.658163666|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/23 19:01:39.72 #|1574535699.721387451|00#| work_queue_worker[1] wq: task 78 (pid 25) exited normally with exit code 0
+2019/11/23 19:01:39.72 #|1574535699.721411394|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.78/create.err.34 to cache/file-0-c37fe37630dc24da2d23dea04e2e9413-create.err.34
+2019/11/23 19:01:39.72 #|1574535699.721457709|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.78/Corrected_ref.fasta.34 to cache/file-0-a6c21354c1e5de08ece97ed63e2eb0dc-Corrected_ref.fasta.34
+2019/11/23 19:01:39.72 #|1574535699.721491966|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 19:01:39.72 #|1574535699.723574299|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 19:01:39.72 #|1574535699.723609269|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 63426 78
+2019/11/23 19:01:39.72 #|1574535699.723674200|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:39.72 #|1574535699.723718377|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:39.72 #|1574535699.724107448|00#| work_queue_worker[1] wq: rx from master: get file-0-c37fe37630dc24da2d23dea04e2e9413-create.err.34 1
+2019/11/23 19:01:39.72 #|1574535699.724146815|00#| work_queue_worker[1] wq: tx to master: file file-0-c37fe37630dc24da2d23dea04e2e9413-create.err.34 0
+2019/11/23 19:01:39.72 #|1574535699.724217766|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:39.72 #|1574535699.724444540|00#| work_queue_worker[1] wq: rx from master: get file-0-a6c21354c1e5de08ece97ed63e2eb0dc-Corrected_ref.fasta.34 1
+2019/11/23 19:01:39.72 #|1574535699.724486761|00#| work_queue_worker[1] wq: tx to master: file file-0-a6c21354c1e5de08ece97ed63e2eb0dc-Corrected_ref.fasta.34 1055000
+2019/11/23 19:01:39.72 #|1574535699.725642855|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:39.72 #|1574535699.726224345|00#| work_queue_worker[1] wq: rx from master: kill 78
+2019/11/23 19:01:39.73 #|1574535699.731162986|00#| work_queue_worker[1] wq: rx from master: put file-0-17ddf63c75cb0ddda4648bacc86a279d-ref.fasta.26 1055000 0644 1
+2019/11/23 19:01:39.73 #|1574535699.731197466|00#| work_queue_worker[1] wq: Putting file file-0-17ddf63c75cb0ddda4648bacc86a279d-ref.fasta.26 into workspace
+2019/11/23 19:01:39.73 #|1574535699.732666581|00#| work_queue_worker[1] wq: rx from master: task 86
+2019/11/23 19:01:39.73 #|1574535699.732687283|00#| work_queue_worker[1] wq: rx from master: cmd 76
+2019/11/23 19:01:39.73 #|1574535699.732699181|00#| work_queue_worker[1] wq: rx from master: python Create_Corrected_AllLRReads.py ref.fasta.26 corr.out 2> create.err.26
+2019/11/23 19:01:39.73 #|1574535699.732708469|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 19:01:39.73 #|1574535699.732719037|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 19:01:39.73 #|1574535699.732740992|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 19:01:39.73 #|1574535699.732761864|00#| work_queue_worker[1] wq: rx from master: disk 210
+2019/11/23 19:01:39.73 #|1574535699.732776074|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 19:01:39.73 #|1574535699.732787005|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 19:01:39.73 #|1574535699.732798568|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 19:01:39.73 #|1574535699.732809064|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 19:01:39.73 #|1574535699.732822434|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 19:01:39.73 #|1574535699.732872027|00#| work_queue_worker[1] wq: rx from master: infile file-0-048045060f61089a83cce204e6b8f151-corr.out corr.out 1
+2019/11/23 19:01:39.73 #|1574535699.732903912|00#| work_queue_worker[1] wq: rx from master: infile file-0-17ddf63c75cb0ddda4648bacc86a279d-ref.fasta.26 ref.fasta.26 1
+2019/11/23 19:01:39.73 #|1574535699.732924778|00#| work_queue_worker[1] wq: rx from master: infile file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py Create_Corrected_AllLRReads.py 1
+2019/11/23 19:01:39.73 #|1574535699.732945569|00#| work_queue_worker[1] wq: rx from master: outfile file-0-b938cfef471c7914470cc2538c4dd148-create.err.26 create.err.26 1
+2019/11/23 19:01:39.73 #|1574535699.732965972|00#| work_queue_worker[1] wq: rx from master: outfile file-0-5bc78da18023a80e9d5edb1c6eb97dea-Corrected_ref.fasta.26 Corrected_ref.fasta.26 1
+2019/11/23 19:01:39.73 #|1574535699.732997761|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 19:01:39.73 #|1574535699.733115490|00#| work_queue_worker[1] wq: linking cache/file-0-048045060f61089a83cce204e6b8f151-corr.out to /tmp/worker-0-1/t.86/corr.out
+2019/11/23 19:01:39.73 #|1574535699.733155410|00#| work_queue_worker[1] wq: linking cache/file-0-17ddf63c75cb0ddda4648bacc86a279d-ref.fasta.26 to /tmp/worker-0-1/t.86/ref.fasta.26
+2019/11/23 19:01:39.73 #|1574535699.733188947|00#| work_queue_worker[1] wq: linking cache/file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py to /tmp/worker-0-1/t.86/Create_Corrected_AllLRReads.py
+2019/11/23 19:01:39.73 #|1574535699.733396780|00#| work_queue_worker[1] wq: started process 27: python Create_Corrected_AllLRReads.py ref.fasta.26 corr.out 2> create.err.26
+2019/11/23 19:01:39.73 #|1574535699.733434464|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/23 19:01:39.79 #|1574535699.791661736|00#| work_queue_worker[1] wq: task 86 (pid 27) exited normally with exit code 0
+2019/11/23 19:01:39.79 #|1574535699.791696312|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.86/create.err.26 to cache/file-0-b938cfef471c7914470cc2538c4dd148-create.err.26
+2019/11/23 19:01:39.79 #|1574535699.791758467|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.86/Corrected_ref.fasta.26 to cache/file-0-5bc78da18023a80e9d5edb1c6eb97dea-Corrected_ref.fasta.26
+2019/11/23 19:01:39.79 #|1574535699.791794884|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 19:01:39.91 #|1574535699.912914925|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 19:01:39.91 #|1574535699.912952904|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 58434 86
+2019/11/23 19:01:39.91 #|1574535699.913050271|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:39.91 #|1574535699.913142580|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:39.91 #|1574535699.913603698|00#| work_queue_worker[1] wq: rx from master: get file-0-b938cfef471c7914470cc2538c4dd148-create.err.26 1
+2019/11/23 19:01:39.91 #|1574535699.913648907|00#| work_queue_worker[1] wq: tx to master: file file-0-b938cfef471c7914470cc2538c4dd148-create.err.26 0
+2019/11/23 19:01:39.91 #|1574535699.913729179|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:39.91 #|1574535699.914090140|00#| work_queue_worker[1] wq: rx from master: get file-0-5bc78da18023a80e9d5edb1c6eb97dea-Corrected_ref.fasta.26 1
+2019/11/23 19:01:39.91 #|1574535699.914140600|00#| work_queue_worker[1] wq: tx to master: file file-0-5bc78da18023a80e9d5edb1c6eb97dea-Corrected_ref.fasta.26 1055000
+2019/11/23 19:01:39.91 #|1574535699.916234097|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:39.91 #|1574535699.917195762|00#| work_queue_worker[1] wq: rx from master: kill 86
+2019/11/23 19:01:39.93 #|1574535699.930486435|00#| work_queue_worker[1] wq: rx from master: put file-0-8c12b2e81dd684a2bea395d788356753-ref.fasta.20 1055000 0644 1
+2019/11/23 19:01:39.93 #|1574535699.930558879|00#| work_queue_worker[1] wq: Putting file file-0-8c12b2e81dd684a2bea395d788356753-ref.fasta.20 into workspace
+2019/11/23 19:01:39.93 #|1574535699.932786378|00#| work_queue_worker[1] wq: rx from master: task 92
+2019/11/23 19:01:39.93 #|1574535699.932817312|00#| work_queue_worker[1] wq: rx from master: cmd 76
+2019/11/23 19:01:39.93 #|1574535699.932837985|00#| work_queue_worker[1] wq: rx from master: python Create_Corrected_AllLRReads.py ref.fasta.20 corr.out 2> create.err.20
+2019/11/23 19:01:39.93 #|1574535699.932856086|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 19:01:39.93 #|1574535699.932873295|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 19:01:39.93 #|1574535699.932890961|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 19:01:39.93 #|1574535699.932947172|00#| work_queue_worker[1] wq: rx from master: disk 210
+2019/11/23 19:01:39.93 #|1574535699.932970067|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 19:01:39.93 #|1574535699.932986601|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 19:01:39.93 #|1574535699.933010827|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 19:01:39.93 #|1574535699.933069491|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 19:01:39.93 #|1574535699.933099912|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 19:01:39.93 #|1574535699.933161861|00#| work_queue_worker[1] wq: rx from master: infile file-0-048045060f61089a83cce204e6b8f151-corr.out corr.out 1
+2019/11/23 19:01:39.93 #|1574535699.933205685|00#| work_queue_worker[1] wq: rx from master: infile file-0-8c12b2e81dd684a2bea395d788356753-ref.fasta.20 ref.fasta.20 1
+2019/11/23 19:01:39.93 #|1574535699.933299983|00#| work_queue_worker[1] wq: rx from master: infile file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py Create_Corrected_AllLRReads.py 1
+2019/11/23 19:01:39.93 #|1574535699.933343995|00#| work_queue_worker[1] wq: rx from master: outfile file-0-552f257d8dc3bcf01b40f4631a4115bd-create.err.20 create.err.20 1
+2019/11/23 19:01:39.93 #|1574535699.933418776|00#| work_queue_worker[1] wq: rx from master: outfile file-0-acbeb6f0169946d34eed3b43d8c346c7-Corrected_ref.fasta.20 Corrected_ref.fasta.20 1
+2019/11/23 19:01:39.93 #|1574535699.933459143|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 19:01:39.93 #|1574535699.933601519|00#| work_queue_worker[1] wq: linking cache/file-0-048045060f61089a83cce204e6b8f151-corr.out to /tmp/worker-0-1/t.92/corr.out
+2019/11/23 19:01:39.93 #|1574535699.933663177|00#| work_queue_worker[1] wq: linking cache/file-0-8c12b2e81dd684a2bea395d788356753-ref.fasta.20 to /tmp/worker-0-1/t.92/ref.fasta.20
+2019/11/23 19:01:39.93 #|1574535699.933717103|00#| work_queue_worker[1] wq: linking cache/file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py to /tmp/worker-0-1/t.92/Create_Corrected_AllLRReads.py
+2019/11/23 19:01:39.93 #|1574535699.933956427|00#| work_queue_worker[1] wq: started process 29: python Create_Corrected_AllLRReads.py ref.fasta.20 corr.out 2> create.err.20
+2019/11/23 19:01:39.93 #|1574535699.934003290|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/23 19:01:39.97 #|1574535699.975690491|00#| work_queue_worker[1] wq: task 92 (pid 29) exited normally with exit code 0
+2019/11/23 19:01:39.97 #|1574535699.975740017|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.92/create.err.20 to cache/file-0-552f257d8dc3bcf01b40f4631a4115bd-create.err.20
+2019/11/23 19:01:39.97 #|1574535699.975797992|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.92/Corrected_ref.fasta.20 to cache/file-0-acbeb6f0169946d34eed3b43d8c346c7-Corrected_ref.fasta.20
+2019/11/23 19:01:39.97 #|1574535699.975854983|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 19:01:40.05 #|1574535700.52877842|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 19:01:40.05 #|1574535700.52917480|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 41940 92
+2019/11/23 19:01:40.05 #|1574535700.52995175|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:40.05 #|1574535700.53074577|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:40.24 #|1574535700.245101436|00#| work_queue_worker[1] wq: rx from master: get file-0-552f257d8dc3bcf01b40f4631a4115bd-create.err.20 1
+2019/11/23 19:01:40.24 #|1574535700.245149184|00#| work_queue_worker[1] wq: tx to master: file file-0-552f257d8dc3bcf01b40f4631a4115bd-create.err.20 0
+2019/11/23 19:01:40.24 #|1574535700.245230140|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:40.24 #|1574535700.245540222|00#| work_queue_worker[1] wq: rx from master: get file-0-acbeb6f0169946d34eed3b43d8c346c7-Corrected_ref.fasta.20 1
+2019/11/23 19:01:40.24 #|1574535700.245579302|00#| work_queue_worker[1] wq: tx to master: file file-0-acbeb6f0169946d34eed3b43d8c346c7-Corrected_ref.fasta.20 1055000
+2019/11/23 19:01:40.24 #|1574535700.247816252|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:40.24 #|1574535700.248514921|00#| work_queue_worker[1] wq: rx from master: kill 92
+2019/11/23 19:01:40.25 #|1574535700.253600594|00#| work_queue_worker[1] wq: rx from master: put file-0-2b408ecce6b0355d371c80b651c889f8-ref.fasta.18 1055000 0644 1
+2019/11/23 19:01:40.25 #|1574535700.253641503|00#| work_queue_worker[1] wq: Putting file file-0-2b408ecce6b0355d371c80b651c889f8-ref.fasta.18 into workspace
+2019/11/23 19:01:40.25 #|1574535700.255288380|00#| work_queue_worker[1] wq: rx from master: task 94
+2019/11/23 19:01:40.25 #|1574535700.255309408|00#| work_queue_worker[1] wq: rx from master: cmd 76
+2019/11/23 19:01:40.25 #|1574535700.255320961|00#| work_queue_worker[1] wq: rx from master: python Create_Corrected_AllLRReads.py ref.fasta.18 corr.out 2> create.err.18
+2019/11/23 19:01:40.25 #|1574535700.255330144|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 19:01:40.25 #|1574535700.255339917|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 19:01:40.25 #|1574535700.255350310|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 19:01:40.25 #|1574535700.255360516|00#| work_queue_worker[1] wq: rx from master: disk 210
+2019/11/23 19:01:40.25 #|1574535700.255370624|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 19:01:40.25 #|1574535700.255381020|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 19:01:40.25 #|1574535700.255427338|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 19:01:40.25 #|1574535700.255443186|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 19:01:40.25 #|1574535700.255456372|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 19:01:40.25 #|1574535700.255468922|00#| work_queue_worker[1] wq: rx from master: infile file-0-048045060f61089a83cce204e6b8f151-corr.out corr.out 1
+2019/11/23 19:01:40.25 #|1574535700.255518867|00#| work_queue_worker[1] wq: rx from master: infile file-0-2b408ecce6b0355d371c80b651c889f8-ref.fasta.18 ref.fasta.18 1
+2019/11/23 19:01:40.25 #|1574535700.255544618|00#| work_queue_worker[1] wq: rx from master: infile file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py Create_Corrected_AllLRReads.py 1
+2019/11/23 19:01:40.25 #|1574535700.255565542|00#| work_queue_worker[1] wq: rx from master: outfile file-0-595fb4693af43d75b1cbc82edbb69ac0-create.err.18 create.err.18 1
+2019/11/23 19:01:40.25 #|1574535700.255623850|00#| work_queue_worker[1] wq: rx from master: outfile file-0-88d5d5079ab7eb98b74022c75a72ed72-Corrected_ref.fasta.18 Corrected_ref.fasta.18 1
+2019/11/23 19:01:40.25 #|1574535700.255650026|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 19:01:40.25 #|1574535700.255759725|00#| work_queue_worker[1] wq: linking cache/file-0-048045060f61089a83cce204e6b8f151-corr.out to /tmp/worker-0-1/t.94/corr.out
+2019/11/23 19:01:40.25 #|1574535700.255799559|00#| work_queue_worker[1] wq: linking cache/file-0-2b408ecce6b0355d371c80b651c889f8-ref.fasta.18 to /tmp/worker-0-1/t.94/ref.fasta.18
+2019/11/23 19:01:40.25 #|1574535700.255833087|00#| work_queue_worker[1] wq: linking cache/file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py to /tmp/worker-0-1/t.94/Create_Corrected_AllLRReads.py
+2019/11/23 19:01:40.25 #|1574535700.256047390|00#| work_queue_worker[1] wq: started process 31: python Create_Corrected_AllLRReads.py ref.fasta.18 corr.out 2> create.err.18
+2019/11/23 19:01:40.25 #|1574535700.256108116|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/23 19:01:40.31 #|1574535700.318743723|00#| work_queue_worker[1] wq: task 94 (pid 31) exited normally with exit code 0
+2019/11/23 19:01:40.31 #|1574535700.318772888|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.94/create.err.18 to cache/file-0-595fb4693af43d75b1cbc82edbb69ac0-create.err.18
+2019/11/23 19:01:40.31 #|1574535700.318828906|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.94/Corrected_ref.fasta.18 to cache/file-0-88d5d5079ab7eb98b74022c75a72ed72-Corrected_ref.fasta.18
+2019/11/23 19:01:40.31 #|1574535700.318864443|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 19:01:40.31 #|1574535700.319185620|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 19:01:40.31 #|1574535700.319221526|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 62883 94
+2019/11/23 19:01:40.31 #|1574535700.319284752|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:40.31 #|1574535700.319329382|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:40.31 #|1574535700.319810052|00#| work_queue_worker[1] wq: rx from master: get file-0-595fb4693af43d75b1cbc82edbb69ac0-create.err.18 1
+2019/11/23 19:01:40.31 #|1574535700.319852978|00#| work_queue_worker[1] wq: tx to master: file file-0-595fb4693af43d75b1cbc82edbb69ac0-create.err.18 0
+2019/11/23 19:01:40.31 #|1574535700.319917684|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:40.32 #|1574535700.320317705|00#| work_queue_worker[1] wq: rx from master: get file-0-88d5d5079ab7eb98b74022c75a72ed72-Corrected_ref.fasta.18 1
+2019/11/23 19:01:40.32 #|1574535700.320359857|00#| work_queue_worker[1] wq: tx to master: file file-0-88d5d5079ab7eb98b74022c75a72ed72-Corrected_ref.fasta.18 1055000
+2019/11/23 19:01:40.32 #|1574535700.321450602|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:40.32 #|1574535700.322953986|00#| work_queue_worker[1] wq: rx from master: kill 94
+2019/11/23 19:01:40.32 #|1574535700.328869431|00#| work_queue_worker[1] wq: rx from master: put file-0-4cc40b4a6723ddd648f7b5efe2086e68-ref.fasta.8 1053000 0644 1
+2019/11/23 19:01:40.32 #|1574535700.328904354|00#| work_queue_worker[1] wq: Putting file file-0-4cc40b4a6723ddd648f7b5efe2086e68-ref.fasta.8 into workspace
+2019/11/23 19:01:40.33 #|1574535700.330389908|00#| work_queue_worker[1] wq: rx from master: task 104
+2019/11/23 19:01:40.33 #|1574535700.330441747|00#| work_queue_worker[1] wq: rx from master: cmd 74
+2019/11/23 19:01:40.33 #|1574535700.330457693|00#| work_queue_worker[1] wq: rx from master: python Create_Corrected_AllLRReads.py ref.fasta.8 corr.out 2> create.err.8
+2019/11/23 19:01:40.33 #|1574535700.330486005|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 19:01:40.33 #|1574535700.330619929|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 19:01:40.33 #|1574535700.330647721|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 19:01:40.33 #|1574535700.330816763|00#| work_queue_worker[1] wq: rx from master: disk 210
+2019/11/23 19:01:40.33 #|1574535700.330836484|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 19:01:40.33 #|1574535700.330850244|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 19:01:40.33 #|1574535700.330909457|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 19:01:40.33 #|1574535700.330928851|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 19:01:40.33 #|1574535700.331100015|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 19:01:40.33 #|1574535700.331150265|00#| work_queue_worker[1] wq: rx from master: infile file-0-048045060f61089a83cce204e6b8f151-corr.out corr.out 1
+2019/11/23 19:01:40.33 #|1574535700.331180787|00#| work_queue_worker[1] wq: rx from master: infile file-0-4cc40b4a6723ddd648f7b5efe2086e68-ref.fasta.8 ref.fasta.8 1
+2019/11/23 19:01:40.33 #|1574535700.331203063|00#| work_queue_worker[1] wq: rx from master: infile file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py Create_Corrected_AllLRReads.py 1
+2019/11/23 19:01:40.33 #|1574535700.331268559|00#| work_queue_worker[1] wq: rx from master: outfile file-0-2185560409a0fe2ace31ac3c536aaae2-create.err.8 create.err.8 1
+2019/11/23 19:01:40.33 #|1574535700.331297800|00#| work_queue_worker[1] wq: rx from master: outfile file-0-f608e1acd65280ade4ffbdb14037b1c0-Corrected_ref.fasta.8 Corrected_ref.fasta.8 1
+2019/11/23 19:01:40.33 #|1574535700.331379957|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 19:01:40.33 #|1574535700.331499026|00#| work_queue_worker[1] wq: linking cache/file-0-048045060f61089a83cce204e6b8f151-corr.out to /tmp/worker-0-1/t.104/corr.out
+2019/11/23 19:01:40.33 #|1574535700.331536916|00#| work_queue_worker[1] wq: linking cache/file-0-4cc40b4a6723ddd648f7b5efe2086e68-ref.fasta.8 to /tmp/worker-0-1/t.104/ref.fasta.8
+2019/11/23 19:01:40.33 #|1574535700.331571308|00#| work_queue_worker[1] wq: linking cache/file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py to /tmp/worker-0-1/t.104/Create_Corrected_AllLRReads.py
+2019/11/23 19:01:40.33 #|1574535700.331765618|00#| work_queue_worker[1] wq: started process 33: python Create_Corrected_AllLRReads.py ref.fasta.8 corr.out 2> create.err.8
+2019/11/23 19:01:40.33 #|1574535700.331812608|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/23 19:01:40.38 #|1574535700.387413685|00#| work_queue_worker[1] wq: task 104 (pid 33) exited normally with exit code 0
+2019/11/23 19:01:40.38 #|1574535700.387449618|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.104/create.err.8 to cache/file-0-2185560409a0fe2ace31ac3c536aaae2-create.err.8
+2019/11/23 19:01:40.38 #|1574535700.387519189|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.104/Corrected_ref.fasta.8 to cache/file-0-f608e1acd65280ade4ffbdb14037b1c0-Corrected_ref.fasta.8
+2019/11/23 19:01:40.38 #|1574535700.387571732|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 19:01:40.38 #|1574535700.387855879|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 19:01:40.38 #|1574535700.387891386|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 55820 104
+2019/11/23 19:01:40.38 #|1574535700.387961985|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:40.38 #|1574535700.388024411|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:40.38 #|1574535700.388347838|00#| work_queue_worker[1] wq: rx from master: get file-0-2185560409a0fe2ace31ac3c536aaae2-create.err.8 1
+2019/11/23 19:01:40.38 #|1574535700.388383952|00#| work_queue_worker[1] wq: tx to master: file file-0-2185560409a0fe2ace31ac3c536aaae2-create.err.8 0
+2019/11/23 19:01:40.38 #|1574535700.388455101|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:40.38 #|1574535700.388735564|00#| work_queue_worker[1] wq: rx from master: get file-0-f608e1acd65280ade4ffbdb14037b1c0-Corrected_ref.fasta.8 1
+2019/11/23 19:01:40.38 #|1574535700.388767753|00#| work_queue_worker[1] wq: tx to master: file file-0-f608e1acd65280ade4ffbdb14037b1c0-Corrected_ref.fasta.8 1053000
+2019/11/23 19:01:40.39 #|1574535700.390316130|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:40.39 #|1574535700.391177361|00#| work_queue_worker[1] wq: rx from master: kill 104
+2019/11/23 19:01:40.39 #|1574535700.395710374|00#| work_queue_worker[1] wq: rx from master: put file-0-d53b7362d9ad27f7af3cd0cb7105a051-ref.fasta.4 1053000 0644 1
+2019/11/23 19:01:40.39 #|1574535700.395747453|00#| work_queue_worker[1] wq: Putting file file-0-d53b7362d9ad27f7af3cd0cb7105a051-ref.fasta.4 into workspace
+2019/11/23 19:01:40.39 #|1574535700.397241203|00#| work_queue_worker[1] wq: rx from master: task 108
+2019/11/23 19:01:40.39 #|1574535700.397264156|00#| work_queue_worker[1] wq: rx from master: cmd 74
+2019/11/23 19:01:40.39 #|1574535700.397275749|00#| work_queue_worker[1] wq: rx from master: python Create_Corrected_AllLRReads.py ref.fasta.4 corr.out 2> create.err.4
+2019/11/23 19:01:40.39 #|1574535700.397284368|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 19:01:40.39 #|1574535700.397294450|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 19:01:40.39 #|1574535700.397304248|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 19:01:40.39 #|1574535700.397323850|00#| work_queue_worker[1] wq: rx from master: disk 210
+2019/11/23 19:01:40.39 #|1574535700.397336795|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 19:01:40.39 #|1574535700.397347154|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 19:01:40.39 #|1574535700.397357964|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 19:01:40.39 #|1574535700.397399938|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 19:01:40.39 #|1574535700.397418120|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 19:01:40.39 #|1574535700.397430383|00#| work_queue_worker[1] wq: rx from master: infile file-0-048045060f61089a83cce204e6b8f151-corr.out corr.out 1
+2019/11/23 19:01:40.39 #|1574535700.397454652|00#| work_queue_worker[1] wq: rx from master: infile file-0-d53b7362d9ad27f7af3cd0cb7105a051-ref.fasta.4 ref.fasta.4 1
+2019/11/23 19:01:40.39 #|1574535700.397473927|00#| work_queue_worker[1] wq: rx from master: infile file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py Create_Corrected_AllLRReads.py 1
+2019/11/23 19:01:40.39 #|1574535700.397523523|00#| work_queue_worker[1] wq: rx from master: outfile file-0-e6b72afc05214eedda0ecef5162d4c91-create.err.4 create.err.4 1
+2019/11/23 19:01:40.39 #|1574535700.397548746|00#| work_queue_worker[1] wq: rx from master: outfile file-0-0251fcaf3fa2b2d38290aebd4b1388ee-Corrected_ref.fasta.4 Corrected_ref.fasta.4 1
+2019/11/23 19:01:40.39 #|1574535700.397577870|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 19:01:40.39 #|1574535700.397693439|00#| work_queue_worker[1] wq: linking cache/file-0-048045060f61089a83cce204e6b8f151-corr.out to /tmp/worker-0-1/t.108/corr.out
+2019/11/23 19:01:40.39 #|1574535700.397735664|00#| work_queue_worker[1] wq: linking cache/file-0-d53b7362d9ad27f7af3cd0cb7105a051-ref.fasta.4 to /tmp/worker-0-1/t.108/ref.fasta.4
+2019/11/23 19:01:40.39 #|1574535700.397767908|00#| work_queue_worker[1] wq: linking cache/file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py to /tmp/worker-0-1/t.108/Create_Corrected_AllLRReads.py
+2019/11/23 19:01:40.39 #|1574535700.397996983|00#| work_queue_worker[1] wq: started process 35: python Create_Corrected_AllLRReads.py ref.fasta.4 corr.out 2> create.err.4
+2019/11/23 19:01:40.39 #|1574535700.398044591|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/23 19:01:40.46 #|1574535700.461052255|00#| work_queue_worker[1] wq: task 108 (pid 35) exited normally with exit code 0
+2019/11/23 19:01:40.46 #|1574535700.461086622|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.108/create.err.4 to cache/file-0-e6b72afc05214eedda0ecef5162d4c91-create.err.4
+2019/11/23 19:01:40.46 #|1574535700.461132970|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.108/Corrected_ref.fasta.4 to cache/file-0-0251fcaf3fa2b2d38290aebd4b1388ee-Corrected_ref.fasta.4
+2019/11/23 19:01:40.46 #|1574535700.461167022|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 19:01:40.46 #|1574535700.461709589|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 19:01:40.46 #|1574535700.461737305|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 63252 108
+2019/11/23 19:01:40.46 #|1574535700.461792884|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:40.46 #|1574535700.461836831|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:40.46 #|1574535700.462183091|00#| work_queue_worker[1] wq: rx from master: get file-0-e6b72afc05214eedda0ecef5162d4c91-create.err.4 1
+2019/11/23 19:01:40.46 #|1574535700.462211071|00#| work_queue_worker[1] wq: tx to master: file file-0-e6b72afc05214eedda0ecef5162d4c91-create.err.4 0
+2019/11/23 19:01:40.46 #|1574535700.462265376|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:40.46 #|1574535700.462583173|00#| work_queue_worker[1] wq: rx from master: get file-0-0251fcaf3fa2b2d38290aebd4b1388ee-Corrected_ref.fasta.4 1
+2019/11/23 19:01:40.46 #|1574535700.462609517|00#| work_queue_worker[1] wq: tx to master: file file-0-0251fcaf3fa2b2d38290aebd4b1388ee-Corrected_ref.fasta.4 1053000
+2019/11/23 19:01:40.46 #|1574535700.463794490|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:40.46 #|1574535700.464871070|00#| work_queue_worker[1] wq: rx from master: kill 108
+2019/11/23 19:01:40.46 #|1574535700.466022995|00#| work_queue_worker[1] wq: rx from master: put file-0-11ac100e7c885c7ba05e6e81cabe3d13-ref.fasta.98 1055000 0644 1
+2019/11/23 19:01:40.46 #|1574535700.466080331|00#| work_queue_worker[1] wq: Putting file file-0-11ac100e7c885c7ba05e6e81cabe3d13-ref.fasta.98 into workspace
+2019/11/23 19:01:40.46 #|1574535700.467735475|00#| work_queue_worker[1] wq: rx from master: task 14
+2019/11/23 19:01:40.46 #|1574535700.467757561|00#| work_queue_worker[1] wq: rx from master: cmd 76
+2019/11/23 19:01:40.46 #|1574535700.467825554|00#| work_queue_worker[1] wq: rx from master: python Create_Corrected_AllLRReads.py ref.fasta.98 corr.out 2> create.err.98
+2019/11/23 19:01:40.46 #|1574535700.467839413|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 19:01:40.46 #|1574535700.467852405|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 19:01:40.46 #|1574535700.467887163|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 19:01:40.46 #|1574535700.467935232|00#| work_queue_worker[1] wq: rx from master: disk 210
+2019/11/23 19:01:40.46 #|1574535700.468023219|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 19:01:40.46 #|1574535700.468047144|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 19:01:40.46 #|1574535700.468157509|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 19:01:40.46 #|1574535700.468181475|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 19:01:40.46 #|1574535700.468292069|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 19:01:40.46 #|1574535700.468314507|00#| work_queue_worker[1] wq: rx from master: infile file-0-048045060f61089a83cce204e6b8f151-corr.out corr.out 1
+2019/11/23 19:01:40.46 #|1574535700.468370801|00#| work_queue_worker[1] wq: rx from master: infile file-0-11ac100e7c885c7ba05e6e81cabe3d13-ref.fasta.98 ref.fasta.98 1
+2019/11/23 19:01:40.46 #|1574535700.468398229|00#| work_queue_worker[1] wq: rx from master: infile file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py Create_Corrected_AllLRReads.py 1
+2019/11/23 19:01:40.46 #|1574535700.468479616|00#| work_queue_worker[1] wq: rx from master: outfile file-0-81af70a3a91e7b863b8c6f8507692725-create.err.98 create.err.98 1
+2019/11/23 19:01:40.46 #|1574535700.468549392|00#| work_queue_worker[1] wq: rx from master: outfile file-0-32e124a98748c1cbc30db68693a75dae-Corrected_ref.fasta.98 Corrected_ref.fasta.98 1
+2019/11/23 19:01:40.46 #|1574535700.468601433|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 19:01:40.46 #|1574535700.468718326|00#| work_queue_worker[1] wq: linking cache/file-0-048045060f61089a83cce204e6b8f151-corr.out to /tmp/worker-0-1/t.14/corr.out
+2019/11/23 19:01:40.46 #|1574535700.468783650|00#| work_queue_worker[1] wq: linking cache/file-0-11ac100e7c885c7ba05e6e81cabe3d13-ref.fasta.98 to /tmp/worker-0-1/t.14/ref.fasta.98
+2019/11/23 19:01:40.46 #|1574535700.468823127|00#| work_queue_worker[1] wq: linking cache/file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py to /tmp/worker-0-1/t.14/Create_Corrected_AllLRReads.py
+2019/11/23 19:01:40.46 #|1574535700.469018325|00#| work_queue_worker[1] wq: started process 37: python Create_Corrected_AllLRReads.py ref.fasta.98 corr.out 2> create.err.98
+2019/11/23 19:01:40.46 #|1574535700.469061214|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/23 19:01:40.52 #|1574535700.525774210|00#| work_queue_worker[1] wq: task 14 (pid 37) exited normally with exit code 0
+2019/11/23 19:01:40.52 #|1574535700.525805629|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.14/create.err.98 to cache/file-0-81af70a3a91e7b863b8c6f8507692725-create.err.98
+2019/11/23 19:01:40.52 #|1574535700.525865047|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.14/Corrected_ref.fasta.98 to cache/file-0-32e124a98748c1cbc30db68693a75dae-Corrected_ref.fasta.98
+2019/11/23 19:01:40.52 #|1574535700.525900814|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 19:01:40.52 #|1574535700.526126283|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 19:01:40.52 #|1574535700.526161513|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 56920 14
+2019/11/23 19:01:40.52 #|1574535700.526221416|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:40.52 #|1574535700.526285792|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:40.52 #|1574535700.526625517|00#| work_queue_worker[1] wq: rx from master: get file-0-81af70a3a91e7b863b8c6f8507692725-create.err.98 1
+2019/11/23 19:01:40.52 #|1574535700.526662439|00#| work_queue_worker[1] wq: tx to master: file file-0-81af70a3a91e7b863b8c6f8507692725-create.err.98 0
+2019/11/23 19:01:40.52 #|1574535700.526722763|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:40.52 #|1574535700.526991619|00#| work_queue_worker[1] wq: rx from master: get file-0-32e124a98748c1cbc30db68693a75dae-Corrected_ref.fasta.98 1
+2019/11/23 19:01:40.52 #|1574535700.527016493|00#| work_queue_worker[1] wq: tx to master: file file-0-32e124a98748c1cbc30db68693a75dae-Corrected_ref.fasta.98 1055000
+2019/11/23 19:01:40.52 #|1574535700.528803959|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:40.52 #|1574535700.529301685|00#| work_queue_worker[1] wq: rx from master: kill 14
+2019/11/23 19:01:40.53 #|1574535700.530200018|00#| work_queue_worker[1] wq: rx from master: put file-0-7c5feeaf69ccc86ea59ef0ec05f2de87-ref.fasta.90 1055000 0644 1
+2019/11/23 19:01:40.53 #|1574535700.530243553|00#| work_queue_worker[1] wq: Putting file file-0-7c5feeaf69ccc86ea59ef0ec05f2de87-ref.fasta.90 into workspace
+2019/11/23 19:01:40.53 #|1574535700.532553350|00#| work_queue_worker[1] wq: rx from master: task 22
+2019/11/23 19:01:40.53 #|1574535700.532586632|00#| work_queue_worker[1] wq: rx from master: cmd 76
+2019/11/23 19:01:40.53 #|1574535700.532605595|00#| work_queue_worker[1] wq: rx from master: python Create_Corrected_AllLRReads.py ref.fasta.90 corr.out 2> create.err.90
+2019/11/23 19:01:40.53 #|1574535700.532623217|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 19:01:40.53 #|1574535700.532640947|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 19:01:40.53 #|1574535700.532669312|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 19:01:40.53 #|1574535700.532690723|00#| work_queue_worker[1] wq: rx from master: disk 210
+2019/11/23 19:01:40.53 #|1574535700.532708978|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 19:01:40.53 #|1574535700.532729552|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 19:01:40.53 #|1574535700.532749843|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 19:01:40.53 #|1574535700.532814812|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 19:01:40.53 #|1574535700.532840953|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 19:01:40.53 #|1574535700.532864542|00#| work_queue_worker[1] wq: rx from master: infile file-0-048045060f61089a83cce204e6b8f151-corr.out corr.out 1
+2019/11/23 19:01:40.53 #|1574535700.532904161|00#| work_queue_worker[1] wq: rx from master: infile file-0-7c5feeaf69ccc86ea59ef0ec05f2de87-ref.fasta.90 ref.fasta.90 1
+2019/11/23 19:01:40.53 #|1574535700.532938919|00#| work_queue_worker[1] wq: rx from master: infile file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py Create_Corrected_AllLRReads.py 1
+2019/11/23 19:01:40.53 #|1574535700.533021198|00#| work_queue_worker[1] wq: rx from master: outfile file-0-6357d0a0111c6eb91c2d8019db3ab379-create.err.90 create.err.90 1
+2019/11/23 19:01:40.53 #|1574535700.533056220|00#| work_queue_worker[1] wq: rx from master: outfile file-0-fdf05fd329a08e4189946dcd85f9bb63-Corrected_ref.fasta.90 Corrected_ref.fasta.90 1
+2019/11/23 19:01:40.53 #|1574535700.533086408|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 19:01:40.53 #|1574535700.533243750|00#| work_queue_worker[1] wq: linking cache/file-0-048045060f61089a83cce204e6b8f151-corr.out to /tmp/worker-0-1/t.22/corr.out
+2019/11/23 19:01:40.53 #|1574535700.533308370|00#| work_queue_worker[1] wq: linking cache/file-0-7c5feeaf69ccc86ea59ef0ec05f2de87-ref.fasta.90 to /tmp/worker-0-1/t.22/ref.fasta.90
+2019/11/23 19:01:40.53 #|1574535700.533359025|00#| work_queue_worker[1] wq: linking cache/file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py to /tmp/worker-0-1/t.22/Create_Corrected_AllLRReads.py
+2019/11/23 19:01:40.53 #|1574535700.533593583|00#| work_queue_worker[1] wq: started process 39: python Create_Corrected_AllLRReads.py ref.fasta.90 corr.out 2> create.err.90
+2019/11/23 19:01:40.53 #|1574535700.533641158|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/23 19:01:40.57 #|1574535700.575811775|00#| work_queue_worker[1] wq: task 22 (pid 39) exited normally with exit code 0
+2019/11/23 19:01:40.57 #|1574535700.575836018|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.22/create.err.90 to cache/file-0-6357d0a0111c6eb91c2d8019db3ab379-create.err.90
+2019/11/23 19:01:40.57 #|1574535700.575889743|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.22/Corrected_ref.fasta.90 to cache/file-0-fdf05fd329a08e4189946dcd85f9bb63-Corrected_ref.fasta.90
+2019/11/23 19:01:40.57 #|1574535700.575929813|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 19:01:40.66 #|1574535700.668147472|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 19:01:40.66 #|1574535700.668195168|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 42403 22
+2019/11/23 19:01:40.66 #|1574535700.668274818|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:40.66 #|1574535700.668334658|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:40.68 #|1574535700.680073678|00#| work_queue_worker[1] wq: rx from master: get file-0-6357d0a0111c6eb91c2d8019db3ab379-create.err.90 1
+2019/11/23 19:01:40.68 #|1574535700.680132143|00#| work_queue_worker[1] wq: tx to master: file file-0-6357d0a0111c6eb91c2d8019db3ab379-create.err.90 0
+2019/11/23 19:01:40.68 #|1574535700.680220352|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:40.68 #|1574535700.680537143|00#| work_queue_worker[1] wq: rx from master: get file-0-fdf05fd329a08e4189946dcd85f9bb63-Corrected_ref.fasta.90 1
+2019/11/23 19:01:40.68 #|1574535700.680579397|00#| work_queue_worker[1] wq: tx to master: file file-0-fdf05fd329a08e4189946dcd85f9bb63-Corrected_ref.fasta.90 1055000
+2019/11/23 19:01:40.68 #|1574535700.681692472|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:40.68 #|1574535700.682310516|00#| work_queue_worker[1] wq: rx from master: kill 22
+2019/11/23 19:01:40.97 #|1574535700.976150386|00#| work_queue_worker[1] wq: rx from master: put file-0-9ae624b2bed16864dec7d9179e0d8396-ref.fasta.63 1055000 0644 1
+2019/11/23 19:01:40.97 #|1574535700.976195083|00#| work_queue_worker[1] wq: Putting file file-0-9ae624b2bed16864dec7d9179e0d8396-ref.fasta.63 into workspace
+2019/11/23 19:01:40.97 #|1574535700.978770581|00#| work_queue_worker[1] wq: rx from master: task 49
+2019/11/23 19:01:40.97 #|1574535700.978796993|00#| work_queue_worker[1] wq: rx from master: cmd 76
+2019/11/23 19:01:40.97 #|1574535700.978811523|00#| work_queue_worker[1] wq: rx from master: python Create_Corrected_AllLRReads.py ref.fasta.63 corr.out 2> create.err.63
+2019/11/23 19:01:40.97 #|1574535700.978823043|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/23 19:01:40.97 #|1574535700.978834914|00#| work_queue_worker[1] wq: rx from master: cores 1
+2019/11/23 19:01:40.97 #|1574535700.978847351|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/23 19:01:40.97 #|1574535700.978859605|00#| work_queue_worker[1] wq: rx from master: disk 210
+2019/11/23 19:01:40.97 #|1574535700.978871956|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/23 19:01:40.97 #|1574535700.978884571|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/23 19:01:40.97 #|1574535700.978898030|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/23 19:01:40.97 #|1574535700.978910760|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/23 19:01:40.97 #|1574535700.978925744|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/23 19:01:40.97 #|1574535700.978940849|00#| work_queue_worker[1] wq: rx from master: infile file-0-048045060f61089a83cce204e6b8f151-corr.out corr.out 1
+2019/11/23 19:01:40.97 #|1574535700.978967949|00#| work_queue_worker[1] wq: rx from master: infile file-0-9ae624b2bed16864dec7d9179e0d8396-ref.fasta.63 ref.fasta.63 1
+2019/11/23 19:01:40.97 #|1574535700.978992619|00#| work_queue_worker[1] wq: rx from master: infile file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py Create_Corrected_AllLRReads.py 1
+2019/11/23 19:01:40.97 #|1574535700.979017151|00#| work_queue_worker[1] wq: rx from master: outfile file-0-e085c475a2177f6534a2c92ed8014928-create.err.63 create.err.63 1
+2019/11/23 19:01:40.97 #|1574535700.979041290|00#| work_queue_worker[1] wq: rx from master: outfile file-0-a1162005e351fa1db4819e955162739b-Corrected_ref.fasta.63 Corrected_ref.fasta.63 1
+2019/11/23 19:01:40.97 #|1574535700.979064316|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/23 19:01:40.97 #|1574535700.979185799|00#| work_queue_worker[1] wq: linking cache/file-0-048045060f61089a83cce204e6b8f151-corr.out to /tmp/worker-0-1/t.49/corr.out
+2019/11/23 19:01:40.97 #|1574535700.979233214|00#| work_queue_worker[1] wq: linking cache/file-0-9ae624b2bed16864dec7d9179e0d8396-ref.fasta.63 to /tmp/worker-0-1/t.49/ref.fasta.63
+2019/11/23 19:01:40.97 #|1574535700.979274298|00#| work_queue_worker[1] wq: linking cache/file-0-ddd728dc31a49bcd4cacae5676b4e7f7-Create_Corrected_AllLRReads.py to /tmp/worker-0-1/t.49/Create_Corrected_AllLRReads.py
+2019/11/23 19:01:40.97 #|1574535700.979483986|00#| work_queue_worker[1] wq: started process 41: python Create_Corrected_AllLRReads.py ref.fasta.63 corr.out 2> create.err.63
+2019/11/23 19:01:40.97 #|1574535700.979527410|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/23 19:01:41.02 #|1574535701.22316204|00#| work_queue_worker[1] wq: task 49 (pid 41) exited normally with exit code 0
+2019/11/23 19:01:41.02 #|1574535701.22356514|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.49/create.err.63 to cache/file-0-e085c475a2177f6534a2c92ed8014928-create.err.63
+2019/11/23 19:01:41.02 #|1574535701.22428777|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.49/Corrected_ref.fasta.63 to cache/file-0-a1162005e351fa1db4819e955162739b-Corrected_ref.fasta.63
+2019/11/23 19:01:41.02 #|1574535701.22566574|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/23 19:01:41.02 #|1574535701.22817231|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/23 19:01:41.02 #|1574535701.22851462|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 43013 49
+2019/11/23 19:01:41.02 #|1574535701.22925182|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/23 19:01:41.02 #|1574535701.22986164|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:41.02 #|1574535701.23264335|00#| work_queue_worker[1] wq: rx from master: get file-0-e085c475a2177f6534a2c92ed8014928-create.err.63 1
+2019/11/23 19:01:41.02 #|1574535701.23299903|00#| work_queue_worker[1] wq: tx to master: file file-0-e085c475a2177f6534a2c92ed8014928-create.err.63 0
+2019/11/23 19:01:41.02 #|1574535701.23375438|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:41.02 #|1574535701.23593194|00#| work_queue_worker[1] wq: rx from master: get file-0-a1162005e351fa1db4819e955162739b-Corrected_ref.fasta.63 1
+2019/11/23 19:01:41.02 #|1574535701.23625048|00#| work_queue_worker[1] wq: tx to master: file file-0-a1162005e351fa1db4819e955162739b-Corrected_ref.fasta.63 1055000
+2019/11/23 19:01:41.02 #|1574535701.25228288|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/23 19:01:41.02 #|1574535701.25395038|00#| work_queue_worker[1] wq: rx from master: kill 49
+2019/11/23 19:01:41.16 #|1574535701.169093519|00#| work_queue_worker[1] wq: rx from master: release
+2019/11/23 19:01:41.16 #|1574535701.169125385|00#| work_queue_worker[1] wq: released by master 10.0.138.11:1026.
+2019/11/23 19:01:41.16 #|1574535701.169146638|00#| work_queue_worker[1] wq: cleaning workspace /tmp/worker-0-1
+2019/11/23 19:01:41.23 #|1574535701.232653808|00#| work_queue_worker[1] wq: disconnecting from master 10.0.138.11:1026
+2019/11/23 19:01:41.23 #|1574535701.232745002|00#| work_queue_worker[1] tcp: disconnected from 10.0.138.11 port 1026
+2019/11/23 19:01:41.23 #|1574535701.232762515|00#| work_queue_worker[1] wq: killing all outstanding tasks
+2019/11/23 19:01:41.23 #|1574535701.232813844|00#| work_queue_worker[1] wq: all data structures are clean
+2019/11/23 19:01:42.23 #|1574535702.232994112|00#| work_queue_worker[1] tcp: connecting to 10.0.138.11 port 1026

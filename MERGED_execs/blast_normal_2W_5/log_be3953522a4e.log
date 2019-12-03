@@ -1,0 +1,473 @@
+2019/11/25 17:55:45.34 #|1574704545.344807703|00#| work_queue_worker[1] debug: /root/cctools/bin/work_queue_worker version 8.0.0 DEVELOPMENT (released 2019-11-14 15:35:16 +0000)
+2019/11/25 17:55:45.34 #|1574704545.344843180|00#| work_queue_worker[1] debug: Built by root@7e9ecba79f43 on 2019-11-14 15:35:16 +0000
+2019/11/25 17:55:45.34 #|1574704545.344853528|00#| work_queue_worker[1] debug: System: Linux 7e9ecba79f43 5.0.0-32-generic #34~18.04.2-Ubuntu SMP Thu Oct 10 10:36:02 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+2019/11/25 17:55:45.34 #|1574704545.344862303|00#| work_queue_worker[1] debug: Configuration: --prefix /root/cctools
+2019/11/25 17:55:45.34 #|1574704545.345033707|00#| work_queue_worker[1] wq: WORK_QUEUE_SANDBOX set to /tmp/worker-0-1.
+2019/11/25 17:55:45.34 #|1574704545.345546467|00#| work_queue_worker[1] debug: error reading disk usage on directory: ./cache.
+2019/11/25 17:55:45.34 #|1574704545.345574858|00#| work_queue_worker[1] dns: looking up name master
+2019/11/25 17:55:45.34 #|1574704545.347774923|00#| work_queue_worker[1] dns: couldn't look up master: Name or service not known
+2019/11/25 17:55:47.34 #|1574704547.347888278|00#| work_queue_worker[1] dns: looking up name master
+2019/11/25 17:55:47.34 #|1574704547.349600235|00#| work_queue_worker[1] dns: couldn't look up master: Name or service not known
+2019/11/25 17:55:49.34 #|1574704549.349750414|00#| work_queue_worker[1] dns: looking up name master
+2019/11/25 17:55:49.35 #|1574704549.350094837|00#| work_queue_worker[1] dns: master is 10.0.159.5
+2019/11/25 17:55:49.35 #|1574704549.350138683|00#| work_queue_worker[1] tcp: connecting to 10.0.159.5 port 1026
+2019/11/25 17:55:49.35 #|1574704549.350418698|00#| work_queue_worker[1] tcp: made connection to 10.0.159.5 port 1026
+2019/11/25 17:55:49.35 #|1574704549.350445672|00#| work_queue_worker[1] wq: connected to master master:1026 via local address 10.0.159.3:39522
+2019/11/25 17:55:49.35 #|1574704549.350459911|00#| work_queue_worker[1] wq: preparing workspace /tmp/worker-0-1
+2019/11/25 17:55:49.35 #|1574704549.350664946|00#| work_queue_worker[1] dns: looking up name be3953522a4e
+2019/11/25 17:55:49.35 #|1574704549.350729267|00#| work_queue_worker[1] dns: be3953522a4e is 10.0.159.3
+2019/11/25 17:55:49.35 #|1574704549.350746976|00#| work_queue_worker[1] dns: looking up addr 10.0.159.3
+2019/11/25 17:55:49.35 #|1574704549.350783515|00#| work_queue_worker[1] dns: 10.0.159.3 is be3953522a4e
+2019/11/25 17:55:49.35 #|1574704549.350798594|00#| work_queue_worker[1] dns: finding my hostname: uname = be3953522a4e, address = 10.0.159.3, hostname = be3953522a4e
+2019/11/25 17:55:49.35 #|1574704549.350817374|00#| work_queue_worker[1] wq: tx to master: workqueue 8 be3953522a4e Linux x86_64 8.0.0
+2019/11/25 17:55:49.35 #|1574704549.350917775|00#| work_queue_worker[1] wq: tx to master: info worker-id worker-78d060a13588aa96dd5aa17a1e52c078
+2019/11/25 17:55:49.35 #|1574704549.350993632|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/25 17:55:49.35 #|1574704549.351066105|00#| work_queue_worker[1] wq: Sending resource description to master:
+2019/11/25 17:55:49.35 #|1574704549.351083514|00#| work_queue_worker[1] wq:  workers      0 inuse      1 total      1 smallest      1 largest
+2019/11/25 17:55:49.35 #|1574704549.351152162|00#| work_queue_worker[1] wq:     disk      0 inuse   2524 total   2524 smallest   2524 largest
+2019/11/25 17:55:49.35 #|1574704549.351223007|00#| work_queue_worker[1] wq:   memory      0 inuse  11908 total  11908 smallest  11908 largest
+2019/11/25 17:55:49.35 #|1574704549.351294874|00#| work_queue_worker[1] wq:     gpus      0 inuse      0 total      0 smallest      0 largest
+2019/11/25 17:55:49.35 #|1574704549.351365649|00#| work_queue_worker[1] wq:    cores      0 inuse      7 total      7 smallest      7 largest
+2019/11/25 17:55:49.35 #|1574704549.351479570|00#| work_queue_worker[1] wq: tx to master: info end_of_resource_update 0
+2019/11/25 17:55:49.35 #|1574704549.351549590|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/25 17:55:49.35 #|1574704549.351619590|00#| work_queue_worker[1] wq: working for master at 10.0.159.5:1026.
+2019/11/25 17:55:49.35 #|1574704549.352260672|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.bti 14920392 0644 1
+2019/11/25 17:55:49.35 #|1574704549.352339942|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.bti into workspace
+2019/11/25 17:55:49.37 #|1574704549.375339601|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.nal 752 0644 1
+2019/11/25 17:55:49.37 #|1574704549.375381685|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.nal into workspace
+2019/11/25 17:55:49.37 #|1574704549.375471755|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nni 27220 0644 1
+2019/11/25 17:55:49.37 #|1574704549.375493849|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nni into workspace
+2019/11/25 17:55:49.37 #|1574704549.375595506|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nog 3378248 0644 1
+2019/11/25 17:55:49.37 #|1574704549.375619343|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nog into workspace
+2019/11/25 17:55:49.38 #|1574704549.380322785|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.btd 141628361 0644 1
+2019/11/25 17:55:49.38 #|1574704549.380357852|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.btd into workspace
+2019/11/25 17:55:49.56 #|1574704549.566817954|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhr 148534336 0644 1
+2019/11/25 17:55:49.56 #|1574704549.566862261|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhr into workspace
+2019/11/25 17:55:49.76 #|1574704549.763169087|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhi 338004 0644 1
+2019/11/25 17:55:49.76 #|1574704549.763213066|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhi into workspace
+2019/11/25 17:55:49.76 #|1574704549.763794452|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nnd 6955488 0644 1
+2019/11/25 17:55:49.76 #|1574704549.763819294|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nnd into workspace
+2019/11/25 17:55:49.77 #|1574704549.772902289|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhd 14869748 0644 1
+2019/11/25 17:55:49.77 #|1574704549.772946042|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhd into workspace
+2019/11/25 17:55:49.79 #|1574704549.792676552|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq 974099786 0644 1
+2019/11/25 17:55:49.79 #|1574704549.792720612|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq into workspace
+2019/11/25 17:55:51.12 #|1574704551.121620413|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nin 10134740 0644 1
+2019/11/25 17:55:51.12 #|1574704551.121668026|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nin into workspace
+2019/11/25 17:55:51.13 #|1574704551.135332577|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsi 764650 0644 1
+2019/11/25 17:55:51.13 #|1574704551.135375814|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsi into workspace
+2019/11/25 17:55:51.13 #|1574704551.136534156|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsd 33299557 0644 1
+2019/11/25 17:55:51.13 #|1574704551.136559572|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsd into workspace
+2019/11/25 17:55:51.18 #|1574704551.180326698|00#| work_queue_worker[1] wq: rx from master: put file-0-91e2799df52756191dbca22d7b7cd23c-test.fasta.19 10120 0644 1
+2019/11/25 17:55:51.18 #|1574704551.180367510|00#| work_queue_worker[1] wq: Putting file file-0-91e2799df52756191dbca22d7b7cd23c-test.fasta.19 into workspace
+2019/11/25 17:55:51.18 #|1574704551.180470164|00#| work_queue_worker[1] wq: rx from master: put file-0-daa9c57850b857b80eefebbca6aa18ce-blastall 7687410 0755 1
+2019/11/25 17:55:51.18 #|1574704551.180493002|00#| work_queue_worker[1] wq: Putting file file-0-daa9c57850b857b80eefebbca6aa18ce-blastall into workspace
+2019/11/25 17:55:51.18 #|1574704551.188495868|00#| work_queue_worker[1] wq: rx from master: task 1
+2019/11/25 17:55:51.18 #|1574704551.188532024|00#| work_queue_worker[1] wq: rx from master: cmd 88
+2019/11/25 17:55:51.18 #|1574704551.188547896|00#| work_queue_worker[1] wq: rx from master: ./blastall -p blastn -d nt/nt -i test.fasta.19 -o test.fasta.19.out 2> test.fasta.19.err
+2019/11/25 17:55:51.18 #|1574704551.188556744|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/25 17:55:51.18 #|1574704551.188567086|00#| work_queue_worker[1] wq: rx from master: cores 7
+2019/11/25 17:55:51.18 #|1574704551.188576964|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/25 17:55:51.18 #|1574704551.188586672|00#| work_queue_worker[1] wq: rx from master: disk 2524
+2019/11/25 17:55:51.18 #|1574704551.188596270|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/25 17:55:51.18 #|1574704551.188606153|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/25 17:55:51.18 #|1574704551.188616844|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/25 17:55:51.18 #|1574704551.188626879|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/25 17:55:51.18 #|1574704551.188639365|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/25 17:55:51.18 #|1574704551.188651023|00#| work_queue_worker[1] wq: rx from master: infile file-0-25930e3036f13852cb0b29694bbab611-nt nt 1
+2019/11/25 17:55:51.18 #|1574704551.188679117|00#| work_queue_worker[1] wq: rx from master: infile file-0-91e2799df52756191dbca22d7b7cd23c-test.fasta.19 test.fasta.19 1
+2019/11/25 17:55:51.18 #|1574704551.188697766|00#| work_queue_worker[1] wq: rx from master: infile file-0-daa9c57850b857b80eefebbca6aa18ce-blastall blastall 1
+2019/11/25 17:55:51.18 #|1574704551.188714764|00#| work_queue_worker[1] wq: rx from master: outfile file-0-8eab36096679637a447522c8eb5ec8c1-test.fasta.19.err test.fasta.19.err 1
+2019/11/25 17:55:51.18 #|1574704551.188733095|00#| work_queue_worker[1] wq: rx from master: outfile file-0-9883c7748ac27d46878553d23e293154-test.fasta.19.out test.fasta.19.out 1
+2019/11/25 17:55:51.18 #|1574704551.188750493|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/25 17:55:51.18 #|1574704551.188889711|00#| work_queue_worker[1] wq: linking cache/file-0-25930e3036f13852cb0b29694bbab611-nt to /tmp/worker-0-1/t.1/nt
+2019/11/25 17:55:51.18 #|1574704551.189124918|00#| work_queue_worker[1] wq: linking cache/file-0-91e2799df52756191dbca22d7b7cd23c-test.fasta.19 to /tmp/worker-0-1/t.1/test.fasta.19
+2019/11/25 17:55:51.18 #|1574704551.189160113|00#| work_queue_worker[1] wq: linking cache/file-0-daa9c57850b857b80eefebbca6aa18ce-blastall to /tmp/worker-0-1/t.1/blastall
+2019/11/25 17:55:51.18 #|1574704551.189187922|00#| work_queue_worker[1] wq: Waiting task 1 has been forsaken.
+2019/11/25 17:55:51.18 #|1574704551.189198848|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/25 17:55:51.18 #|1574704551.189249757|00#| work_queue_worker[1] wq: Sending resource description to master:
+2019/11/25 17:55:51.18 #|1574704551.189262693|00#| work_queue_worker[1] wq:  workers      0 inuse      1 total      1 smallest      1 largest
+2019/11/25 17:55:51.18 #|1574704551.189302681|00#| work_queue_worker[1] wq:     disk   1245 inuse   1280 total   1280 smallest   1280 largest
+2019/11/25 17:55:51.18 #|1574704551.189349965|00#| work_queue_worker[1] wq:   memory      0 inuse  11908 total  11908 smallest  11908 largest
+2019/11/25 17:55:51.18 #|1574704551.189388548|00#| work_queue_worker[1] wq:     gpus      0 inuse      0 total      0 smallest      0 largest
+2019/11/25 17:55:51.18 #|1574704551.189426270|00#| work_queue_worker[1] wq:    cores      0 inuse      7 total      7 smallest      7 largest
+2019/11/25 17:55:51.18 #|1574704551.189482492|00#| work_queue_worker[1] wq: tx to master: info end_of_resource_update 0
+2019/11/25 17:55:51.18 #|1574704551.189520040|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/25 17:55:51.18 #|1574704551.189557012|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/25 17:55:51.18 #|1574704551.189594798|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/25 17:56:03.16 #|1574704563.169157974|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/25 17:56:03.16 #|1574704563.169214059|00#| work_queue_worker[1] wq: tx to master: result 40 0 0 0 1
+2019/11/25 17:56:03.16 #|1574704563.169378003|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/25 17:56:03.16 #|1574704563.169486440|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:56:03.16 #|1574704563.169767665|00#| work_queue_worker[1] wq: rx from master: put file-0-e12986ebc464dac7f0b0058f77809607-test.fasta.17 10120 0644 1
+2019/11/25 17:56:03.16 #|1574704563.169806601|00#| work_queue_worker[1] wq: Putting file file-0-e12986ebc464dac7f0b0058f77809607-test.fasta.17 into workspace
+2019/11/25 17:56:03.16 #|1574704563.169999599|00#| work_queue_worker[1] wq: rx from master: task 3
+2019/11/25 17:56:03.17 #|1574704563.170061817|00#| work_queue_worker[1] wq: rx from master: cmd 88
+2019/11/25 17:56:03.17 #|1574704563.170082881|00#| work_queue_worker[1] wq: rx from master: ./blastall -p blastn -d nt/nt -i test.fasta.17 -o test.fasta.17.out 2> test.fasta.17.err
+2019/11/25 17:56:03.17 #|1574704563.170096759|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/25 17:56:03.17 #|1574704563.170112072|00#| work_queue_worker[1] wq: rx from master: cores 7
+2019/11/25 17:56:03.17 #|1574704563.170128486|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/25 17:56:03.17 #|1574704563.170144330|00#| work_queue_worker[1] wq: rx from master: disk 1280
+2019/11/25 17:56:03.17 #|1574704563.170160131|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/25 17:56:03.17 #|1574704563.170176113|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/25 17:56:03.17 #|1574704563.170232732|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/25 17:56:03.17 #|1574704563.170254196|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/25 17:56:03.17 #|1574704563.170275176|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/25 17:56:03.17 #|1574704563.170294167|00#| work_queue_worker[1] wq: rx from master: infile file-0-25930e3036f13852cb0b29694bbab611-nt nt 1
+2019/11/25 17:56:03.17 #|1574704563.170365866|00#| work_queue_worker[1] wq: rx from master: infile file-0-e12986ebc464dac7f0b0058f77809607-test.fasta.17 test.fasta.17 1
+2019/11/25 17:56:03.17 #|1574704563.170402086|00#| work_queue_worker[1] wq: rx from master: infile file-0-daa9c57850b857b80eefebbca6aa18ce-blastall blastall 1
+2019/11/25 17:56:03.17 #|1574704563.170430680|00#| work_queue_worker[1] wq: rx from master: outfile file-0-a129512727b8611dd481b510083b1e5a-test.fasta.17.err test.fasta.17.err 1
+2019/11/25 17:56:03.17 #|1574704563.170459778|00#| work_queue_worker[1] wq: rx from master: outfile file-0-31cc3d9edc6c94c4f306d137aed5bbf6-test.fasta.17.out test.fasta.17.out 1
+2019/11/25 17:56:03.17 #|1574704563.170496288|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/25 17:56:03.17 #|1574704563.170671935|00#| work_queue_worker[1] wq: linking cache/file-0-25930e3036f13852cb0b29694bbab611-nt to /tmp/worker-0-1/t.3/nt
+2019/11/25 17:56:03.17 #|1574704563.171157948|00#| work_queue_worker[1] wq: linking cache/file-0-e12986ebc464dac7f0b0058f77809607-test.fasta.17 to /tmp/worker-0-1/t.3/test.fasta.17
+2019/11/25 17:56:03.17 #|1574704563.171242755|00#| work_queue_worker[1] wq: linking cache/file-0-daa9c57850b857b80eefebbca6aa18ce-blastall to /tmp/worker-0-1/t.3/blastall
+2019/11/25 17:56:03.17 #|1574704563.171566663|00#| work_queue_worker[1] wq: started process 9: ./blastall -p blastn -d nt/nt -i test.fasta.17 -o test.fasta.17.out 2> test.fasta.17.err
+2019/11/25 17:56:03.17 #|1574704563.171629141|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/25 17:56:20.19 #|1574704580.193454051|00#| work_queue_worker[1] wq: task 3 (pid 9) exited normally with exit code 0
+2019/11/25 17:56:20.19 #|1574704580.193502448|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.3/test.fasta.17.err to cache/file-0-a129512727b8611dd481b510083b1e5a-test.fasta.17.err
+2019/11/25 17:56:20.19 #|1574704580.193574618|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.3/test.fasta.17.out to cache/file-0-31cc3d9edc6c94c4f306d137aed5bbf6-test.fasta.17.out
+2019/11/25 17:56:20.19 #|1574704580.193616264|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/25 17:58:08.55 #|1574704688.553317651|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/25 17:58:08.55 #|1574704688.553375324|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 17022146 3
+2019/11/25 17:58:08.55 #|1574704688.553493940|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/25 17:58:08.55 #|1574704688.553576703|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:58:08.55 #|1574704688.553895428|00#| work_queue_worker[1] wq: rx from master: get file-0-a129512727b8611dd481b510083b1e5a-test.fasta.17.err 1
+2019/11/25 17:58:08.55 #|1574704688.553944469|00#| work_queue_worker[1] wq: tx to master: file file-0-a129512727b8611dd481b510083b1e5a-test.fasta.17.err 0
+2019/11/25 17:58:08.55 #|1574704688.554020266|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:58:08.55 #|1574704688.554446836|00#| work_queue_worker[1] wq: rx from master: get file-0-31cc3d9edc6c94c4f306d137aed5bbf6-test.fasta.17.out 1
+2019/11/25 17:58:08.55 #|1574704688.554486563|00#| work_queue_worker[1] wq: tx to master: file file-0-31cc3d9edc6c94c4f306d137aed5bbf6-test.fasta.17.out 142847
+2019/11/25 17:58:08.55 #|1574704688.555055880|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:58:08.55 #|1574704688.555447187|00#| work_queue_worker[1] wq: rx from master: kill 3
+2019/11/25 17:58:08.59 #|1574704688.593724267|00#| work_queue_worker[1] wq: rx from master: put file-0-0008645a00ac79d3f3bea1ddf871bace-test.fasta.15 10120 0644 1
+2019/11/25 17:58:08.59 #|1574704688.593784525|00#| work_queue_worker[1] wq: Putting file file-0-0008645a00ac79d3f3bea1ddf871bace-test.fasta.15 into workspace
+2019/11/25 17:58:08.59 #|1574704688.594027363|00#| work_queue_worker[1] wq: rx from master: task 5
+2019/11/25 17:58:08.59 #|1574704688.594142394|00#| work_queue_worker[1] wq: rx from master: cmd 88
+2019/11/25 17:58:08.59 #|1574704688.594179296|00#| work_queue_worker[1] wq: rx from master: ./blastall -p blastn -d nt/nt -i test.fasta.15 -o test.fasta.15.out 2> test.fasta.15.err
+2019/11/25 17:58:08.59 #|1574704688.594301771|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/25 17:58:08.59 #|1574704688.594337987|00#| work_queue_worker[1] wq: rx from master: cores 7
+2019/11/25 17:58:08.59 #|1574704688.594459973|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/25 17:58:08.59 #|1574704688.594497584|00#| work_queue_worker[1] wq: rx from master: disk 1280
+2019/11/25 17:58:08.59 #|1574704688.594749773|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/25 17:58:08.59 #|1574704688.594826323|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/25 17:58:08.59 #|1574704688.594849312|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/25 17:58:08.59 #|1574704688.594868439|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/25 17:58:08.59 #|1574704688.594942708|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/25 17:58:08.59 #|1574704688.594970113|00#| work_queue_worker[1] wq: rx from master: infile file-0-25930e3036f13852cb0b29694bbab611-nt nt 1
+2019/11/25 17:58:08.59 #|1574704688.595043827|00#| work_queue_worker[1] wq: rx from master: infile file-0-0008645a00ac79d3f3bea1ddf871bace-test.fasta.15 test.fasta.15 1
+2019/11/25 17:58:08.59 #|1574704688.595113405|00#| work_queue_worker[1] wq: rx from master: infile file-0-daa9c57850b857b80eefebbca6aa18ce-blastall blastall 1
+2019/11/25 17:58:08.59 #|1574704688.595146786|00#| work_queue_worker[1] wq: rx from master: outfile file-0-018f568daaa4c9813af138b9acc80300-test.fasta.15.err test.fasta.15.err 1
+2019/11/25 17:58:08.59 #|1574704688.595179610|00#| work_queue_worker[1] wq: rx from master: outfile file-0-b230c590bc23b5b924df9e9d98a59cf3-test.fasta.15.out test.fasta.15.out 1
+2019/11/25 17:58:08.59 #|1574704688.595243780|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/25 17:58:08.59 #|1574704688.595404110|00#| work_queue_worker[1] wq: linking cache/file-0-25930e3036f13852cb0b29694bbab611-nt to /tmp/worker-0-1/t.5/nt
+2019/11/25 17:58:08.59 #|1574704688.595716469|00#| work_queue_worker[1] wq: linking cache/file-0-0008645a00ac79d3f3bea1ddf871bace-test.fasta.15 to /tmp/worker-0-1/t.5/test.fasta.15
+2019/11/25 17:58:08.59 #|1574704688.595767677|00#| work_queue_worker[1] wq: linking cache/file-0-daa9c57850b857b80eefebbca6aa18ce-blastall to /tmp/worker-0-1/t.5/blastall
+2019/11/25 17:58:08.59 #|1574704688.595997254|00#| work_queue_worker[1] wq: started process 11: ./blastall -p blastn -d nt/nt -i test.fasta.15 -o test.fasta.15.out 2> test.fasta.15.err
+2019/11/25 17:58:08.59 #|1574704688.596048019|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/25 17:58:08.59 #|1574704688.596142163|00#| work_queue_worker[1] wq: rx from master: check
+2019/11/25 17:58:08.59 #|1574704688.596172347|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/25 17:58:08.59 #|1574704688.596228840|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/25 17:58:21.96 #|1574704701.968030459|00#| work_queue_worker[1] wq: task 5 (pid 11) exited normally with exit code 0
+2019/11/25 17:58:21.96 #|1574704701.968064773|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.5/test.fasta.15.err to cache/file-0-018f568daaa4c9813af138b9acc80300-test.fasta.15.err
+2019/11/25 17:58:21.96 #|1574704701.968138215|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.5/test.fasta.15.out to cache/file-0-b230c590bc23b5b924df9e9d98a59cf3-test.fasta.15.out
+2019/11/25 17:58:21.96 #|1574704701.968184344|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/25 17:58:21.96 #|1574704701.968603506|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/25 17:58:21.96 #|1574704701.968644440|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 13372224 5
+2019/11/25 17:58:21.96 #|1574704701.968727064|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/25 17:58:21.96 #|1574704701.968788852|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:58:21.96 #|1574704701.969249008|00#| work_queue_worker[1] wq: rx from master: get file-0-018f568daaa4c9813af138b9acc80300-test.fasta.15.err 1
+2019/11/25 17:58:21.96 #|1574704701.969297987|00#| work_queue_worker[1] wq: tx to master: file file-0-018f568daaa4c9813af138b9acc80300-test.fasta.15.err 0
+2019/11/25 17:58:21.96 #|1574704701.969388086|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:58:21.96 #|1574704701.969800836|00#| work_queue_worker[1] wq: rx from master: get file-0-b230c590bc23b5b924df9e9d98a59cf3-test.fasta.15.out 1
+2019/11/25 17:58:21.96 #|1574704701.969841215|00#| work_queue_worker[1] wq: tx to master: file file-0-b230c590bc23b5b924df9e9d98a59cf3-test.fasta.15.out 14251
+2019/11/25 17:58:21.97 #|1574704701.970053817|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:58:21.97 #|1574704701.970265612|00#| work_queue_worker[1] wq: rx from master: kill 5
+2019/11/25 17:58:21.97 #|1574704701.971217379|00#| work_queue_worker[1] wq: rx from master: put file-0-af4883bae18b8169ace09c1fbbe4e952-test.fasta.12 10120 0644 1
+2019/11/25 17:58:21.97 #|1574704701.971260862|00#| work_queue_worker[1] wq: Putting file file-0-af4883bae18b8169ace09c1fbbe4e952-test.fasta.12 into workspace
+2019/11/25 17:58:21.97 #|1574704701.971421141|00#| work_queue_worker[1] wq: rx from master: task 8
+2019/11/25 17:58:21.97 #|1574704701.971448003|00#| work_queue_worker[1] wq: rx from master: cmd 88
+2019/11/25 17:58:21.97 #|1574704701.971510001|00#| work_queue_worker[1] wq: rx from master: ./blastall -p blastn -d nt/nt -i test.fasta.12 -o test.fasta.12.out 2> test.fasta.12.err
+2019/11/25 17:58:21.97 #|1574704701.971527900|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/25 17:58:21.97 #|1574704701.971542305|00#| work_queue_worker[1] wq: rx from master: cores 7
+2019/11/25 17:58:21.97 #|1574704701.971589873|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/25 17:58:21.97 #|1574704701.971609337|00#| work_queue_worker[1] wq: rx from master: disk 1280
+2019/11/25 17:58:21.97 #|1574704701.971626889|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/25 17:58:21.97 #|1574704701.971672948|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/25 17:58:21.97 #|1574704701.971696022|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/25 17:58:21.97 #|1574704701.971875990|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/25 17:58:21.97 #|1574704701.971907047|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/25 17:58:21.97 #|1574704701.971968782|00#| work_queue_worker[1] wq: rx from master: infile file-0-25930e3036f13852cb0b29694bbab611-nt nt 1
+2019/11/25 17:58:21.97 #|1574704701.972011058|00#| work_queue_worker[1] wq: rx from master: infile file-0-af4883bae18b8169ace09c1fbbe4e952-test.fasta.12 test.fasta.12 1
+2019/11/25 17:58:21.97 #|1574704701.972079853|00#| work_queue_worker[1] wq: rx from master: infile file-0-daa9c57850b857b80eefebbca6aa18ce-blastall blastall 1
+2019/11/25 17:58:21.97 #|1574704701.972113444|00#| work_queue_worker[1] wq: rx from master: outfile file-0-95cba511760cf5607a658110dca9e4d2-test.fasta.12.err test.fasta.12.err 1
+2019/11/25 17:58:21.97 #|1574704701.972179840|00#| work_queue_worker[1] wq: rx from master: outfile file-0-b023ebea6f17836ab62822f542cbcf46-test.fasta.12.out test.fasta.12.out 1
+2019/11/25 17:58:21.97 #|1574704701.972213911|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/25 17:58:21.97 #|1574704701.972359458|00#| work_queue_worker[1] wq: linking cache/file-0-25930e3036f13852cb0b29694bbab611-nt to /tmp/worker-0-1/t.8/nt
+2019/11/25 17:58:21.97 #|1574704701.972671052|00#| work_queue_worker[1] wq: linking cache/file-0-af4883bae18b8169ace09c1fbbe4e952-test.fasta.12 to /tmp/worker-0-1/t.8/test.fasta.12
+2019/11/25 17:58:21.97 #|1574704701.972719850|00#| work_queue_worker[1] wq: linking cache/file-0-daa9c57850b857b80eefebbca6aa18ce-blastall to /tmp/worker-0-1/t.8/blastall
+2019/11/25 17:58:21.97 #|1574704701.972935963|00#| work_queue_worker[1] wq: started process 13: ./blastall -p blastn -d nt/nt -i test.fasta.12 -o test.fasta.12.out 2> test.fasta.12.err
+2019/11/25 17:58:21.97 #|1574704701.972979289|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/25 17:58:35.56 #|1574704715.565393801|00#| work_queue_worker[1] wq: task 8 (pid 13) exited normally with exit code 0
+2019/11/25 17:58:35.56 #|1574704715.565429957|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.8/test.fasta.12.err to cache/file-0-95cba511760cf5607a658110dca9e4d2-test.fasta.12.err
+2019/11/25 17:58:35.56 #|1574704715.565505485|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.8/test.fasta.12.out to cache/file-0-b023ebea6f17836ab62822f542cbcf46-test.fasta.12.out
+2019/11/25 17:58:35.56 #|1574704715.565550013|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/25 17:58:35.56 #|1574704715.565917405|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/25 17:58:35.56 #|1574704715.565960328|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 13592638 8
+2019/11/25 17:58:35.56 #|1574704715.566031983|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/25 17:58:35.56 #|1574704715.566090256|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:58:35.56 #|1574704715.566478588|00#| work_queue_worker[1] wq: rx from master: get file-0-95cba511760cf5607a658110dca9e4d2-test.fasta.12.err 1
+2019/11/25 17:58:35.56 #|1574704715.566549953|00#| work_queue_worker[1] wq: tx to master: file file-0-95cba511760cf5607a658110dca9e4d2-test.fasta.12.err 0
+2019/11/25 17:58:35.56 #|1574704715.566630135|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:58:35.56 #|1574704715.567050650|00#| work_queue_worker[1] wq: rx from master: get file-0-b023ebea6f17836ab62822f542cbcf46-test.fasta.12.out 1
+2019/11/25 17:58:35.56 #|1574704715.567095983|00#| work_queue_worker[1] wq: tx to master: file file-0-b023ebea6f17836ab62822f542cbcf46-test.fasta.12.out 34494
+2019/11/25 17:58:35.56 #|1574704715.567398670|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:58:35.56 #|1574704715.567679795|00#| work_queue_worker[1] wq: rx from master: kill 8
+2019/11/25 17:58:35.56 #|1574704715.568584848|00#| work_queue_worker[1] wq: rx from master: put file-0-396e442289ce14a42a6f16a9e7d1098a-test.fasta.10 10120 0644 1
+2019/11/25 17:58:35.56 #|1574704715.568626291|00#| work_queue_worker[1] wq: Putting file file-0-396e442289ce14a42a6f16a9e7d1098a-test.fasta.10 into workspace
+2019/11/25 17:58:35.56 #|1574704715.568786508|00#| work_queue_worker[1] wq: rx from master: task 10
+2019/11/25 17:58:35.56 #|1574704715.568813887|00#| work_queue_worker[1] wq: rx from master: cmd 88
+2019/11/25 17:58:35.56 #|1574704715.568830799|00#| work_queue_worker[1] wq: rx from master: ./blastall -p blastn -d nt/nt -i test.fasta.10 -o test.fasta.10.out 2> test.fasta.10.err
+2019/11/25 17:58:35.56 #|1574704715.568884562|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/25 17:58:35.56 #|1574704715.568903867|00#| work_queue_worker[1] wq: rx from master: cores 7
+2019/11/25 17:58:35.56 #|1574704715.568950962|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/25 17:58:35.56 #|1574704715.568970087|00#| work_queue_worker[1] wq: rx from master: disk 1280
+2019/11/25 17:58:35.56 #|1574704715.568987344|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/25 17:58:35.56 #|1574704715.569036022|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/25 17:58:35.56 #|1574704715.569059381|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/25 17:58:35.56 #|1574704715.569170550|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/25 17:58:35.56 #|1574704715.569200086|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/25 17:58:35.56 #|1574704715.569305167|00#| work_queue_worker[1] wq: rx from master: infile file-0-25930e3036f13852cb0b29694bbab611-nt nt 1
+2019/11/25 17:58:35.56 #|1574704715.569386185|00#| work_queue_worker[1] wq: rx from master: infile file-0-396e442289ce14a42a6f16a9e7d1098a-test.fasta.10 test.fasta.10 1
+2019/11/25 17:58:35.56 #|1574704715.569421158|00#| work_queue_worker[1] wq: rx from master: infile file-0-daa9c57850b857b80eefebbca6aa18ce-blastall blastall 1
+2019/11/25 17:58:35.56 #|1574704715.569480924|00#| work_queue_worker[1] wq: rx from master: outfile file-0-400c24b98082241c2985bbd9995eb1ac-test.fasta.10.err test.fasta.10.err 1
+2019/11/25 17:58:35.56 #|1574704715.569515487|00#| work_queue_worker[1] wq: rx from master: outfile file-0-64d383240390d4f9cc137c625132db75-test.fasta.10.out test.fasta.10.out 1
+2019/11/25 17:58:35.56 #|1574704715.569545266|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/25 17:58:35.56 #|1574704715.569690406|00#| work_queue_worker[1] wq: linking cache/file-0-25930e3036f13852cb0b29694bbab611-nt to /tmp/worker-0-1/t.10/nt
+2019/11/25 17:58:35.57 #|1574704715.570012720|00#| work_queue_worker[1] wq: linking cache/file-0-396e442289ce14a42a6f16a9e7d1098a-test.fasta.10 to /tmp/worker-0-1/t.10/test.fasta.10
+2019/11/25 17:58:35.57 #|1574704715.570062443|00#| work_queue_worker[1] wq: linking cache/file-0-daa9c57850b857b80eefebbca6aa18ce-blastall to /tmp/worker-0-1/t.10/blastall
+2019/11/25 17:58:35.57 #|1574704715.570283833|00#| work_queue_worker[1] wq: started process 15: ./blastall -p blastn -d nt/nt -i test.fasta.10 -o test.fasta.10.out 2> test.fasta.10.err
+2019/11/25 17:58:35.57 #|1574704715.570328379|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/25 17:58:50.85 #|1574704730.854027536|00#| work_queue_worker[1] wq: task 10 (pid 15) exited normally with exit code 0
+2019/11/25 17:58:50.85 #|1574704730.854065799|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.10/test.fasta.10.err to cache/file-0-400c24b98082241c2985bbd9995eb1ac-test.fasta.10.err
+2019/11/25 17:58:50.85 #|1574704730.854143557|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.10/test.fasta.10.out to cache/file-0-64d383240390d4f9cc137c625132db75-test.fasta.10.out
+2019/11/25 17:58:50.85 #|1574704730.854189200|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/25 17:58:50.85 #|1574704730.854583054|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/25 17:58:50.85 #|1574704730.854626582|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 15283929 10
+2019/11/25 17:58:50.85 #|1574704730.854699112|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/25 17:58:50.85 #|1574704730.854760610|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:58:50.85 #|1574704730.855216879|00#| work_queue_worker[1] wq: rx from master: get file-0-400c24b98082241c2985bbd9995eb1ac-test.fasta.10.err 1
+2019/11/25 17:58:50.85 #|1574704730.855267034|00#| work_queue_worker[1] wq: tx to master: file file-0-400c24b98082241c2985bbd9995eb1ac-test.fasta.10.err 0
+2019/11/25 17:58:50.85 #|1574704730.855353209|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:58:50.85 #|1574704730.855767919|00#| work_queue_worker[1] wq: rx from master: get file-0-64d383240390d4f9cc137c625132db75-test.fasta.10.out 1
+2019/11/25 17:58:50.85 #|1574704730.855811020|00#| work_queue_worker[1] wq: tx to master: file file-0-64d383240390d4f9cc137c625132db75-test.fasta.10.out 102868
+2019/11/25 17:58:50.85 #|1574704730.856258564|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:58:50.85 #|1574704730.856551599|00#| work_queue_worker[1] wq: rx from master: kill 10
+2019/11/25 17:58:50.85 #|1574704730.857468856|00#| work_queue_worker[1] wq: rx from master: put file-0-9f04d57561db456f4f47dcdca9feb103-test.fasta.7 10110 0644 1
+2019/11/25 17:58:50.85 #|1574704730.857510297|00#| work_queue_worker[1] wq: Putting file file-0-9f04d57561db456f4f47dcdca9feb103-test.fasta.7 into workspace
+2019/11/25 17:58:50.85 #|1574704730.857672192|00#| work_queue_worker[1] wq: rx from master: task 13
+2019/11/25 17:58:50.85 #|1574704730.857697476|00#| work_queue_worker[1] wq: rx from master: cmd 85
+2019/11/25 17:58:50.85 #|1574704730.857714985|00#| work_queue_worker[1] wq: rx from master: ./blastall -p blastn -d nt/nt -i test.fasta.7 -o test.fasta.7.out 2> test.fasta.7.err
+2019/11/25 17:58:50.85 #|1574704730.857793612|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/25 17:58:50.85 #|1574704730.857821504|00#| work_queue_worker[1] wq: rx from master: cores 7
+2019/11/25 17:58:50.85 #|1574704730.857837436|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/25 17:58:50.85 #|1574704730.857892286|00#| work_queue_worker[1] wq: rx from master: disk 1280
+2019/11/25 17:58:50.85 #|1574704730.857912921|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/25 17:58:50.85 #|1574704730.857960999|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/25 17:58:50.85 #|1574704730.857982348|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/25 17:58:50.85 #|1574704730.858011072|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/25 17:58:50.85 #|1574704730.858063275|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/25 17:58:50.85 #|1574704730.858089067|00#| work_queue_worker[1] wq: rx from master: infile file-0-25930e3036f13852cb0b29694bbab611-nt nt 1
+2019/11/25 17:58:50.85 #|1574704730.858178939|00#| work_queue_worker[1] wq: rx from master: infile file-0-9f04d57561db456f4f47dcdca9feb103-test.fasta.7 test.fasta.7 1
+2019/11/25 17:58:50.85 #|1574704730.858218375|00#| work_queue_worker[1] wq: rx from master: infile file-0-daa9c57850b857b80eefebbca6aa18ce-blastall blastall 1
+2019/11/25 17:58:50.85 #|1574704730.858278348|00#| work_queue_worker[1] wq: rx from master: outfile file-0-d08e27aac9e49582c455b76197081fb3-test.fasta.7.err test.fasta.7.err 1
+2019/11/25 17:58:50.85 #|1574704730.858314916|00#| work_queue_worker[1] wq: rx from master: outfile file-0-c17c0db997ae1cdb7af1ea386e447bb4-test.fasta.7.out test.fasta.7.out 1
+2019/11/25 17:58:50.85 #|1574704730.858378024|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/25 17:58:50.85 #|1574704730.858540496|00#| work_queue_worker[1] wq: linking cache/file-0-25930e3036f13852cb0b29694bbab611-nt to /tmp/worker-0-1/t.13/nt
+2019/11/25 17:58:50.85 #|1574704730.858853215|00#| work_queue_worker[1] wq: linking cache/file-0-9f04d57561db456f4f47dcdca9feb103-test.fasta.7 to /tmp/worker-0-1/t.13/test.fasta.7
+2019/11/25 17:58:50.85 #|1574704730.858902348|00#| work_queue_worker[1] wq: linking cache/file-0-daa9c57850b857b80eefebbca6aa18ce-blastall to /tmp/worker-0-1/t.13/blastall
+2019/11/25 17:58:50.85 #|1574704730.859125223|00#| work_queue_worker[1] wq: started process 17: ./blastall -p blastn -d nt/nt -i test.fasta.7 -o test.fasta.7.out 2> test.fasta.7.err
+2019/11/25 17:58:50.85 #|1574704730.859169459|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/25 17:59:04.14 #|1574704744.144172063|00#| work_queue_worker[1] wq: task 13 (pid 17) exited normally with exit code 0
+2019/11/25 17:59:04.14 #|1574704744.144206949|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.13/test.fasta.7.err to cache/file-0-d08e27aac9e49582c455b76197081fb3-test.fasta.7.err
+2019/11/25 17:59:04.14 #|1574704744.144280624|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.13/test.fasta.7.out to cache/file-0-c17c0db997ae1cdb7af1ea386e447bb4-test.fasta.7.out
+2019/11/25 17:59:04.14 #|1574704744.144324752|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/25 17:59:04.14 #|1574704744.144725138|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/25 17:59:04.14 #|1574704744.144770101|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 13285230 13
+2019/11/25 17:59:04.14 #|1574704744.144851858|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/25 17:59:04.14 #|1574704744.144914369|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:59:04.14 #|1574704744.145333376|00#| work_queue_worker[1] wq: rx from master: get file-0-d08e27aac9e49582c455b76197081fb3-test.fasta.7.err 1
+2019/11/25 17:59:04.14 #|1574704744.145379312|00#| work_queue_worker[1] wq: tx to master: file file-0-d08e27aac9e49582c455b76197081fb3-test.fasta.7.err 0
+2019/11/25 17:59:04.14 #|1574704744.145452817|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:59:04.14 #|1574704744.145874965|00#| work_queue_worker[1] wq: rx from master: get file-0-c17c0db997ae1cdb7af1ea386e447bb4-test.fasta.7.out 1
+2019/11/25 17:59:04.14 #|1574704744.145915951|00#| work_queue_worker[1] wq: tx to master: file file-0-c17c0db997ae1cdb7af1ea386e447bb4-test.fasta.7.out 20517
+2019/11/25 17:59:04.14 #|1574704744.146138310|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:59:04.14 #|1574704744.146369625|00#| work_queue_worker[1] wq: rx from master: kill 13
+2019/11/25 17:59:04.14 #|1574704744.147293764|00#| work_queue_worker[1] wq: rx from master: put file-0-fc9a4f7caa888a46e12e2e1209ae754c-test.fasta.5 10110 0644 1
+2019/11/25 17:59:04.14 #|1574704744.147350515|00#| work_queue_worker[1] wq: Putting file file-0-fc9a4f7caa888a46e12e2e1209ae754c-test.fasta.5 into workspace
+2019/11/25 17:59:04.14 #|1574704744.147508377|00#| work_queue_worker[1] wq: rx from master: task 15
+2019/11/25 17:59:04.14 #|1574704744.147535461|00#| work_queue_worker[1] wq: rx from master: cmd 85
+2019/11/25 17:59:04.14 #|1574704744.147552375|00#| work_queue_worker[1] wq: rx from master: ./blastall -p blastn -d nt/nt -i test.fasta.5 -o test.fasta.5.out 2> test.fasta.5.err
+2019/11/25 17:59:04.14 #|1574704744.147606768|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/25 17:59:04.14 #|1574704744.147626380|00#| work_queue_worker[1] wq: rx from master: cores 7
+2019/11/25 17:59:04.14 #|1574704744.147673926|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/25 17:59:04.14 #|1574704744.147693180|00#| work_queue_worker[1] wq: rx from master: disk 1280
+2019/11/25 17:59:04.14 #|1574704744.147710515|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/25 17:59:04.14 #|1574704744.147755988|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/25 17:59:04.14 #|1574704744.147779130|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/25 17:59:04.14 #|1574704744.147936167|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/25 17:59:04.14 #|1574704744.148009789|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/25 17:59:04.14 #|1574704744.148035453|00#| work_queue_worker[1] wq: rx from master: infile file-0-25930e3036f13852cb0b29694bbab611-nt nt 1
+2019/11/25 17:59:04.14 #|1574704744.148111590|00#| work_queue_worker[1] wq: rx from master: infile file-0-fc9a4f7caa888a46e12e2e1209ae754c-test.fasta.5 test.fasta.5 1
+2019/11/25 17:59:04.14 #|1574704744.148147574|00#| work_queue_worker[1] wq: rx from master: infile file-0-daa9c57850b857b80eefebbca6aa18ce-blastall blastall 1
+2019/11/25 17:59:04.14 #|1574704744.148212382|00#| work_queue_worker[1] wq: rx from master: outfile file-0-a828eb0064de4217d91adefe024593ea-test.fasta.5.err test.fasta.5.err 1
+2019/11/25 17:59:04.14 #|1574704744.148247956|00#| work_queue_worker[1] wq: rx from master: outfile file-0-fbd2f53190114c61134d5302430022bd-test.fasta.5.out test.fasta.5.out 1
+2019/11/25 17:59:04.14 #|1574704744.148277795|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/25 17:59:04.14 #|1574704744.148425754|00#| work_queue_worker[1] wq: linking cache/file-0-25930e3036f13852cb0b29694bbab611-nt to /tmp/worker-0-1/t.15/nt
+2019/11/25 17:59:04.14 #|1574704744.148734928|00#| work_queue_worker[1] wq: linking cache/file-0-fc9a4f7caa888a46e12e2e1209ae754c-test.fasta.5 to /tmp/worker-0-1/t.15/test.fasta.5
+2019/11/25 17:59:04.14 #|1574704744.148784367|00#| work_queue_worker[1] wq: linking cache/file-0-daa9c57850b857b80eefebbca6aa18ce-blastall to /tmp/worker-0-1/t.15/blastall
+2019/11/25 17:59:04.14 #|1574704744.149008884|00#| work_queue_worker[1] wq: started process 19: ./blastall -p blastn -d nt/nt -i test.fasta.5 -o test.fasta.5.out 2> test.fasta.5.err
+2019/11/25 17:59:04.14 #|1574704744.149054412|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/25 17:59:17.68 #|1574704757.686734801|00#| work_queue_worker[1] wq: task 15 (pid 19) exited normally with exit code 0
+2019/11/25 17:59:17.68 #|1574704757.686774317|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.15/test.fasta.5.err to cache/file-0-a828eb0064de4217d91adefe024593ea-test.fasta.5.err
+2019/11/25 17:59:17.68 #|1574704757.686854889|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.15/test.fasta.5.out to cache/file-0-fbd2f53190114c61134d5302430022bd-test.fasta.5.out
+2019/11/25 17:59:17.68 #|1574704757.686899765|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/25 17:59:17.68 #|1574704757.687283577|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/25 17:59:17.68 #|1574704757.687328195|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 13537918 15
+2019/11/25 17:59:17.68 #|1574704757.687409835|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/25 17:59:17.68 #|1574704757.687485854|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:59:17.68 #|1574704757.687913127|00#| work_queue_worker[1] wq: rx from master: get file-0-a828eb0064de4217d91adefe024593ea-test.fasta.5.err 1
+2019/11/25 17:59:17.68 #|1574704757.687962008|00#| work_queue_worker[1] wq: tx to master: file file-0-a828eb0064de4217d91adefe024593ea-test.fasta.5.err 0
+2019/11/25 17:59:17.68 #|1574704757.688047110|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:59:17.68 #|1574704757.688468767|00#| work_queue_worker[1] wq: rx from master: get file-0-fbd2f53190114c61134d5302430022bd-test.fasta.5.out 1
+2019/11/25 17:59:17.68 #|1574704757.688514076|00#| work_queue_worker[1] wq: tx to master: file file-0-fbd2f53190114c61134d5302430022bd-test.fasta.5.out 26060
+2019/11/25 17:59:17.68 #|1574704757.688854171|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:59:17.68 #|1574704757.689080925|00#| work_queue_worker[1] wq: rx from master: kill 15
+2019/11/25 17:59:17.68 #|1574704757.689989493|00#| work_queue_worker[1] wq: rx from master: put file-0-44e691287a28f8fe43f6653302546d8f-test.fasta.2 10110 0644 1
+2019/11/25 17:59:17.69 #|1574704757.690030467|00#| work_queue_worker[1] wq: Putting file file-0-44e691287a28f8fe43f6653302546d8f-test.fasta.2 into workspace
+2019/11/25 17:59:17.69 #|1574704757.690184314|00#| work_queue_worker[1] wq: rx from master: task 18
+2019/11/25 17:59:17.69 #|1574704757.690210978|00#| work_queue_worker[1] wq: rx from master: cmd 85
+2019/11/25 17:59:17.69 #|1574704757.690227492|00#| work_queue_worker[1] wq: rx from master: ./blastall -p blastn -d nt/nt -i test.fasta.2 -o test.fasta.2.out 2> test.fasta.2.err
+2019/11/25 17:59:17.69 #|1574704757.690284745|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/25 17:59:17.69 #|1574704757.690304177|00#| work_queue_worker[1] wq: rx from master: cores 7
+2019/11/25 17:59:17.69 #|1574704757.690351358|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/25 17:59:17.69 #|1574704757.690370692|00#| work_queue_worker[1] wq: rx from master: disk 1280
+2019/11/25 17:59:17.69 #|1574704757.690388194|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/25 17:59:17.69 #|1574704757.690455679|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/25 17:59:17.69 #|1574704757.690480761|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/25 17:59:17.69 #|1574704757.690578137|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/25 17:59:17.69 #|1574704757.690608361|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/25 17:59:17.69 #|1574704757.690760458|00#| work_queue_worker[1] wq: rx from master: infile file-0-25930e3036f13852cb0b29694bbab611-nt nt 1
+2019/11/25 17:59:17.69 #|1574704757.690848138|00#| work_queue_worker[1] wq: rx from master: infile file-0-44e691287a28f8fe43f6653302546d8f-test.fasta.2 test.fasta.2 1
+2019/11/25 17:59:17.69 #|1574704757.690884889|00#| work_queue_worker[1] wq: rx from master: infile file-0-daa9c57850b857b80eefebbca6aa18ce-blastall blastall 1
+2019/11/25 17:59:17.69 #|1574704757.690952619|00#| work_queue_worker[1] wq: rx from master: outfile file-0-ebce3b3f9d6d56ee92ad0f680eacabb2-test.fasta.2.err test.fasta.2.err 1
+2019/11/25 17:59:17.69 #|1574704757.690988713|00#| work_queue_worker[1] wq: rx from master: outfile file-0-6efdc0d3dafa140b6743f2b63849bb1e-test.fasta.2.out test.fasta.2.out 1
+2019/11/25 17:59:17.69 #|1574704757.691015967|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/25 17:59:17.69 #|1574704757.691161424|00#| work_queue_worker[1] wq: linking cache/file-0-25930e3036f13852cb0b29694bbab611-nt to /tmp/worker-0-1/t.18/nt
+2019/11/25 17:59:17.69 #|1574704757.691473168|00#| work_queue_worker[1] wq: linking cache/file-0-44e691287a28f8fe43f6653302546d8f-test.fasta.2 to /tmp/worker-0-1/t.18/test.fasta.2
+2019/11/25 17:59:17.69 #|1574704757.691522191|00#| work_queue_worker[1] wq: linking cache/file-0-daa9c57850b857b80eefebbca6aa18ce-blastall to /tmp/worker-0-1/t.18/blastall
+2019/11/25 17:59:17.69 #|1574704757.691760098|00#| work_queue_worker[1] wq: started process 21: ./blastall -p blastn -d nt/nt -i test.fasta.2 -o test.fasta.2.out 2> test.fasta.2.err
+2019/11/25 17:59:17.69 #|1574704757.691805344|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/25 17:59:31.26 #|1574704771.265953238|00#| work_queue_worker[1] wq: task 18 (pid 21) exited normally with exit code 0
+2019/11/25 17:59:31.26 #|1574704771.265980993|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.18/test.fasta.2.err to cache/file-0-ebce3b3f9d6d56ee92ad0f680eacabb2-test.fasta.2.err
+2019/11/25 17:59:31.26 #|1574704771.266038840|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.18/test.fasta.2.out to cache/file-0-6efdc0d3dafa140b6743f2b63849bb1e-test.fasta.2.out
+2019/11/25 17:59:31.26 #|1574704771.266071285|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/25 17:59:31.26 #|1574704771.266385076|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/25 17:59:31.26 #|1574704771.266419231|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 13574376 18
+2019/11/25 17:59:31.26 #|1574704771.266473891|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/25 17:59:31.26 #|1574704771.266592946|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:59:31.26 #|1574704771.266967182|00#| work_queue_worker[1] wq: rx from master: get file-0-ebce3b3f9d6d56ee92ad0f680eacabb2-test.fasta.2.err 1
+2019/11/25 17:59:31.26 #|1574704771.267017798|00#| work_queue_worker[1] wq: tx to master: file file-0-ebce3b3f9d6d56ee92ad0f680eacabb2-test.fasta.2.err 0
+2019/11/25 17:59:31.26 #|1574704771.267108505|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:59:31.26 #|1574704771.267540132|00#| work_queue_worker[1] wq: rx from master: get file-0-6efdc0d3dafa140b6743f2b63849bb1e-test.fasta.2.out 1
+2019/11/25 17:59:31.26 #|1574704771.267583456|00#| work_queue_worker[1] wq: tx to master: file file-0-6efdc0d3dafa140b6743f2b63849bb1e-test.fasta.2.out 18765
+2019/11/25 17:59:31.26 #|1574704771.267831204|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:59:31.26 #|1574704771.268100642|00#| work_queue_worker[1] wq: rx from master: kill 18
+2019/11/25 17:59:31.26 #|1574704771.268919256|00#| work_queue_worker[1] wq: rx from master: put file-0-40fd5f960224a9a20c2e8e46163bd3bc-test.fasta.0 10101 0644 1
+2019/11/25 17:59:31.26 #|1574704771.268961844|00#| work_queue_worker[1] wq: Putting file file-0-40fd5f960224a9a20c2e8e46163bd3bc-test.fasta.0 into workspace
+2019/11/25 17:59:31.26 #|1574704771.269122469|00#| work_queue_worker[1] wq: rx from master: task 20
+2019/11/25 17:59:31.26 #|1574704771.269194331|00#| work_queue_worker[1] wq: rx from master: cmd 85
+2019/11/25 17:59:31.26 #|1574704771.269217533|00#| work_queue_worker[1] wq: rx from master: ./blastall -p blastn -d nt/nt -i test.fasta.0 -o test.fasta.0.out 2> test.fasta.0.err
+2019/11/25 17:59:31.26 #|1574704771.269264419|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/25 17:59:31.26 #|1574704771.269283823|00#| work_queue_worker[1] wq: rx from master: cores 7
+2019/11/25 17:59:31.26 #|1574704771.269302515|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/25 17:59:31.26 #|1574704771.269348103|00#| work_queue_worker[1] wq: rx from master: disk 1280
+2019/11/25 17:59:31.26 #|1574704771.269370257|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/25 17:59:31.26 #|1574704771.269480201|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/25 17:59:31.26 #|1574704771.269507852|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/25 17:59:31.26 #|1574704771.269558733|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/25 17:59:31.26 #|1574704771.269584907|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/25 17:59:31.26 #|1574704771.269691441|00#| work_queue_worker[1] wq: rx from master: infile file-0-25930e3036f13852cb0b29694bbab611-nt nt 1
+2019/11/25 17:59:31.26 #|1574704771.269782948|00#| work_queue_worker[1] wq: rx from master: infile file-0-40fd5f960224a9a20c2e8e46163bd3bc-test.fasta.0 test.fasta.0 1
+2019/11/25 17:59:31.26 #|1574704771.269818704|00#| work_queue_worker[1] wq: rx from master: infile file-0-daa9c57850b857b80eefebbca6aa18ce-blastall blastall 1
+2019/11/25 17:59:31.26 #|1574704771.269878307|00#| work_queue_worker[1] wq: rx from master: outfile file-0-d3c5f1deffb290ea5b83fcdb7aa44689-test.fasta.0.err test.fasta.0.err 1
+2019/11/25 17:59:31.26 #|1574704771.269912971|00#| work_queue_worker[1] wq: rx from master: outfile file-0-19aaebb99ff439298563042059681cfe-test.fasta.0.out test.fasta.0.out 1
+2019/11/25 17:59:31.26 #|1574704771.269942680|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/25 17:59:31.27 #|1574704771.270085987|00#| work_queue_worker[1] wq: linking cache/file-0-25930e3036f13852cb0b29694bbab611-nt to /tmp/worker-0-1/t.20/nt
+2019/11/25 17:59:31.27 #|1574704771.270395973|00#| work_queue_worker[1] wq: linking cache/file-0-40fd5f960224a9a20c2e8e46163bd3bc-test.fasta.0 to /tmp/worker-0-1/t.20/test.fasta.0
+2019/11/25 17:59:31.27 #|1574704771.270445522|00#| work_queue_worker[1] wq: linking cache/file-0-daa9c57850b857b80eefebbca6aa18ce-blastall to /tmp/worker-0-1/t.20/blastall
+2019/11/25 17:59:31.27 #|1574704771.270688436|00#| work_queue_worker[1] wq: started process 23: ./blastall -p blastn -d nt/nt -i test.fasta.0 -o test.fasta.0.out 2> test.fasta.0.err
+2019/11/25 17:59:31.27 #|1574704771.270736246|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/25 17:59:44.94 #|1574704784.946712933|00#| work_queue_worker[1] wq: task 20 (pid 23) exited normally with exit code 0
+2019/11/25 17:59:44.94 #|1574704784.946753812|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.20/test.fasta.0.err to cache/file-0-d3c5f1deffb290ea5b83fcdb7aa44689-test.fasta.0.err
+2019/11/25 17:59:44.94 #|1574704784.946831769|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.20/test.fasta.0.out to cache/file-0-19aaebb99ff439298563042059681cfe-test.fasta.0.out
+2019/11/25 17:59:44.94 #|1574704784.947329516|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/25 17:59:44.94 #|1574704784.947715088|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/25 17:59:44.94 #|1574704784.947760143|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 13676223 20
+2019/11/25 17:59:44.94 #|1574704784.947841553|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/25 17:59:44.94 #|1574704784.947901927|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:59:44.94 #|1574704784.948328781|00#| work_queue_worker[1] wq: rx from master: get file-0-d3c5f1deffb290ea5b83fcdb7aa44689-test.fasta.0.err 1
+2019/11/25 17:59:44.94 #|1574704784.948377587|00#| work_queue_worker[1] wq: tx to master: file file-0-d3c5f1deffb290ea5b83fcdb7aa44689-test.fasta.0.err 0
+2019/11/25 17:59:44.94 #|1574704784.948463132|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:59:44.94 #|1574704784.948904488|00#| work_queue_worker[1] wq: rx from master: get file-0-19aaebb99ff439298563042059681cfe-test.fasta.0.out 1
+2019/11/25 17:59:44.94 #|1574704784.948949541|00#| work_queue_worker[1] wq: tx to master: file file-0-19aaebb99ff439298563042059681cfe-test.fasta.0.out 42704
+2019/11/25 17:59:44.94 #|1574704784.949267253|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:59:44.94 #|1574704784.949538908|00#| work_queue_worker[1] wq: rx from master: kill 20
+2019/11/25 17:59:44.95 #|1574704784.950243723|00#| work_queue_worker[1] wq: rx from master: put file-0-e7f309af480f7b15cfe71180f5284818-test.fasta.16 10120 0644 1
+2019/11/25 17:59:44.95 #|1574704784.950284197|00#| work_queue_worker[1] wq: Putting file file-0-e7f309af480f7b15cfe71180f5284818-test.fasta.16 into workspace
+2019/11/25 17:59:44.95 #|1574704784.950403438|00#| work_queue_worker[1] wq: rx from master: task 4
+2019/11/25 17:59:44.95 #|1574704784.950422434|00#| work_queue_worker[1] wq: rx from master: cmd 88
+2019/11/25 17:59:44.95 #|1574704784.950439730|00#| work_queue_worker[1] wq: rx from master: ./blastall -p blastn -d nt/nt -i test.fasta.16 -o test.fasta.16.out 2> test.fasta.16.err
+2019/11/25 17:59:44.95 #|1574704784.950478575|00#| work_queue_worker[1] wq: rx from master: category default
+2019/11/25 17:59:44.95 #|1574704784.950492230|00#| work_queue_worker[1] wq: rx from master: cores 7
+2019/11/25 17:59:44.95 #|1574704784.950594943|00#| work_queue_worker[1] wq: rx from master: memory 11908
+2019/11/25 17:59:44.95 #|1574704784.950611347|00#| work_queue_worker[1] wq: rx from master: disk 1280
+2019/11/25 17:59:44.95 #|1574704784.950649929|00#| work_queue_worker[1] wq: rx from master: gpus 0
+2019/11/25 17:59:44.95 #|1574704784.950664281|00#| work_queue_worker[1] wq: rx from master: end_time 18446744073709551615
+2019/11/25 17:59:44.95 #|1574704784.950698334|00#| work_queue_worker[1] wq: rx from master: wall_time 18446744073709551615
+2019/11/25 17:59:44.95 #|1574704784.950711972|00#| work_queue_worker[1] wq: rx from master: env 7
+2019/11/25 17:59:44.95 #|1574704784.950726518|00#| work_queue_worker[1] wq: rx from master: env 17
+2019/11/25 17:59:44.95 #|1574704784.950829427|00#| work_queue_worker[1] wq: rx from master: infile file-0-25930e3036f13852cb0b29694bbab611-nt nt 1
+2019/11/25 17:59:44.95 #|1574704784.950909419|00#| work_queue_worker[1] wq: rx from master: infile file-0-e7f309af480f7b15cfe71180f5284818-test.fasta.16 test.fasta.16 1
+2019/11/25 17:59:44.95 #|1574704784.950934843|00#| work_queue_worker[1] wq: rx from master: infile file-0-daa9c57850b857b80eefebbca6aa18ce-blastall blastall 1
+2019/11/25 17:59:44.95 #|1574704784.950980261|00#| work_queue_worker[1] wq: rx from master: outfile file-0-49428ca6e9788cb4d3ba878e251f88c4-test.fasta.16.err test.fasta.16.err 1
+2019/11/25 17:59:44.95 #|1574704784.951005114|00#| work_queue_worker[1] wq: rx from master: outfile file-0-6d79746b10289399b975e24593cae1b2-test.fasta.16.out test.fasta.16.out 1
+2019/11/25 17:59:44.95 #|1574704784.951025254|00#| work_queue_worker[1] wq: rx from master: end
+2019/11/25 17:59:44.95 #|1574704784.951126788|00#| work_queue_worker[1] wq: linking cache/file-0-25930e3036f13852cb0b29694bbab611-nt to /tmp/worker-0-1/t.4/nt
+2019/11/25 17:59:44.95 #|1574704784.951343440|00#| work_queue_worker[1] wq: linking cache/file-0-e7f309af480f7b15cfe71180f5284818-test.fasta.16 to /tmp/worker-0-1/t.4/test.fasta.16
+2019/11/25 17:59:44.95 #|1574704784.951377777|00#| work_queue_worker[1] wq: linking cache/file-0-daa9c57850b857b80eefebbca6aa18ce-blastall to /tmp/worker-0-1/t.4/blastall
+2019/11/25 17:59:44.95 #|1574704784.951537045|00#| work_queue_worker[1] wq: started process 25: ./blastall -p blastn -d nt/nt -i test.fasta.16 -o test.fasta.16.out 2> test.fasta.16.err
+2019/11/25 17:59:44.95 #|1574704784.951569850|00#| work_queue_worker[1] wq: tx to master: info tasks_running 1
+2019/11/25 17:59:58.78 #|1574704798.788389499|00#| work_queue_worker[1] wq: task 4 (pid 25) exited normally with exit code 0
+2019/11/25 17:59:58.78 #|1574704798.788424568|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.4/test.fasta.16.err to cache/file-0-49428ca6e9788cb4d3ba878e251f88c4-test.fasta.16.err
+2019/11/25 17:59:58.78 #|1574704798.788502525|00#| work_queue_worker[1] wq: moving output file from /tmp/worker-0-1/t.4/test.fasta.16.out to cache/file-0-6d79746b10289399b975e24593cae1b2-test.fasta.16.out
+2019/11/25 17:59:58.78 #|1574704798.788547936|00#| work_queue_worker[1] wq: tx to master: available_results
+2019/11/25 17:59:58.78 #|1574704798.788942114|00#| work_queue_worker[1] wq: rx from master: send_results -1
+2019/11/25 17:59:58.78 #|1574704798.788986670|00#| work_queue_worker[1] wq: tx to master: result 0 0 0 13836991 4
+2019/11/25 17:59:58.78 #|1574704798.789068305|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/25 17:59:58.78 #|1574704798.789130163|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:59:58.78 #|1574704798.789575794|00#| work_queue_worker[1] wq: rx from master: get file-0-49428ca6e9788cb4d3ba878e251f88c4-test.fasta.16.err 1
+2019/11/25 17:59:58.78 #|1574704798.789636665|00#| work_queue_worker[1] wq: tx to master: file file-0-49428ca6e9788cb4d3ba878e251f88c4-test.fasta.16.err 0
+2019/11/25 17:59:58.78 #|1574704798.789721499|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:59:58.79 #|1574704798.790080009|00#| work_queue_worker[1] wq: rx from master: get file-0-6d79746b10289399b975e24593cae1b2-test.fasta.16.out 1
+2019/11/25 17:59:58.79 #|1574704798.790120825|00#| work_queue_worker[1] wq: tx to master: file file-0-6d79746b10289399b975e24593cae1b2-test.fasta.16.out 21904
+2019/11/25 17:59:58.79 #|1574704798.790355887|00#| work_queue_worker[1] wq: tx to master: end
+2019/11/25 17:59:58.79 #|1574704798.790553062|00#| work_queue_worker[1] wq: rx from master: kill 4
+2019/11/25 17:59:58.86 #|1574704798.861490039|00#| work_queue_worker[1] wq: rx from master: release
+2019/11/25 17:59:58.86 #|1574704798.861519800|00#| work_queue_worker[1] wq: released by master 10.0.159.5:1026.
+2019/11/25 17:59:58.86 #|1574704798.861540107|00#| work_queue_worker[1] wq: cleaning workspace /tmp/worker-0-1
+2019/11/25 17:59:59.06 #|1574704799.69408872|00#| work_queue_worker[1] wq: disconnecting from master 10.0.159.5:1026
+2019/11/25 17:59:59.06 #|1574704799.69500969|00#| work_queue_worker[1] tcp: disconnected from 10.0.159.5 port 1026
+2019/11/25 17:59:59.06 #|1574704799.69517229|00#| work_queue_worker[1] wq: killing all outstanding tasks
+2019/11/25 17:59:59.06 #|1574704799.69549767|00#| work_queue_worker[1] wq: all data structures are clean
+2019/11/25 18:00:00.06 #|1574704800.69969845|00#| work_queue_worker[1] debug: error reading disk usage on directory: ./cache.
+2019/11/25 18:00:00.07 #|1574704800.70032388|00#| work_queue_worker[1] tcp: connecting to 10.0.159.5 port 1026
+2019/11/25 18:00:02.33 #|1574704802.330851504|00#| work_queue_worker[1] tcp: connection to 10.0.159.5 port 1026 failed (No route to host)

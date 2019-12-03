@@ -1,0 +1,474 @@
+2019/11/22 20:27:00.20 #|1574454420.209587322|00#| work_queue_worker[1] debug: /root/cctools/bin/work_queue_worker version 8.0.0 DEVELOPMENT (released 2019-11-14 15:35:16 +0000)
+2019/11/22 20:27:00.20 #|1574454420.209634316|00#| work_queue_worker[1] debug: Built by root@7e9ecba79f43 on 2019-11-14 15:35:16 +0000
+2019/11/22 20:27:00.20 #|1574454420.209648012|00#| work_queue_worker[1] debug: System: Linux 7e9ecba79f43 5.0.0-32-generic #34~18.04.2-Ubuntu SMP Thu Oct 10 10:36:02 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+2019/11/22 20:27:00.20 #|1574454420.209659633|00#| work_queue_worker[1] debug: Configuration: --prefix /root/cctools
+2019/11/22 20:27:00.20 #|1574454420.209867131|00#| work_queue_worker[1] wq: WORK_QUEUE_SANDBOX set to /tmp/worker-0-1.
+2019/11/22 20:27:00.21 #|1574454420.210548552|00#| work_queue_worker[1] debug: error reading disk usage on directory: ./cache.
+2019/11/22 20:27:00.21 #|1574454420.210589516|00#| work_queue_worker[1] dns: looking up name master
+2019/11/22 20:27:00.21 #|1574454420.212900613|00#| work_queue_worker[1] dns: couldn't look up master: Name or service not known
+2019/11/22 20:27:02.21 #|1574454422.213042346|00#| work_queue_worker[1] dns: looking up name master
+2019/11/22 20:27:02.21 #|1574454422.213422920|00#| work_queue_worker[1] dns: master is 10.0.108.11
+2019/11/22 20:27:02.21 #|1574454422.213465327|00#| work_queue_worker[1] tcp: connecting to 10.0.108.11 port 1026
+2019/11/22 20:27:02.21 #|1574454422.213690005|00#| work_queue_worker[1] tcp: made connection to 10.0.108.11 port 1026
+2019/11/22 20:27:02.21 #|1574454422.213713823|00#| work_queue_worker[1] wq: connected to master master:1026 via local address 10.0.108.7:55240
+2019/11/22 20:27:02.21 #|1574454422.213726166|00#| work_queue_worker[1] wq: preparing workspace /tmp/worker-0-1
+2019/11/22 20:27:02.21 #|1574454422.213896045|00#| work_queue_worker[1] dns: looking up name 0473a2dd78cf
+2019/11/22 20:27:02.21 #|1574454422.213949088|00#| work_queue_worker[1] dns: 0473a2dd78cf is 10.0.108.7
+2019/11/22 20:27:02.21 #|1574454422.213964119|00#| work_queue_worker[1] dns: looking up addr 10.0.108.7
+2019/11/22 20:27:02.21 #|1574454422.213996728|00#| work_queue_worker[1] dns: 10.0.108.7 is 0473a2dd78cf
+2019/11/22 20:27:02.21 #|1574454422.214010166|00#| work_queue_worker[1] dns: finding my hostname: uname = 0473a2dd78cf, address = 10.0.108.7, hostname = 0473a2dd78cf
+2019/11/22 20:27:02.21 #|1574454422.214026258|00#| work_queue_worker[1] wq: tx to master: workqueue 8 0473a2dd78cf Linux x86_64 8.0.0
+2019/11/22 20:27:02.21 #|1574454422.214101639|00#| work_queue_worker[1] wq: tx to master: info worker-id worker-c2dcf2b05c21c8eb17a72734da1de240
+2019/11/22 20:27:02.21 #|1574454422.214166663|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/22 20:27:02.21 #|1574454422.214227605|00#| work_queue_worker[1] wq: Sending resource description to master:
+2019/11/22 20:27:02.21 #|1574454422.214242902|00#| work_queue_worker[1] wq:  workers      0 inuse      1 total      1 smallest      1 largest
+2019/11/22 20:27:02.21 #|1574454422.214302190|00#| work_queue_worker[1] wq:     disk      0 inuse   2398 total   2398 smallest   2398 largest
+2019/11/22 20:27:02.21 #|1574454422.214363820|00#| work_queue_worker[1] wq:   memory      0 inuse  11908 total  11908 smallest  11908 largest
+2019/11/22 20:27:02.21 #|1574454422.214431389|00#| work_queue_worker[1] wq:     gpus      0 inuse      0 total      0 smallest      0 largest
+2019/11/22 20:27:02.21 #|1574454422.214533844|00#| work_queue_worker[1] wq:    cores      0 inuse      1 total      1 smallest      1 largest
+2019/11/22 20:27:02.21 #|1574454422.214680254|00#| work_queue_worker[1] wq: tx to master: info end_of_resource_update 0
+2019/11/22 20:27:02.21 #|1574454422.214772594|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/22 20:27:02.21 #|1574454422.214857281|00#| work_queue_worker[1] wq: working for master at 10.0.108.11:1026.
+2019/11/22 20:27:04.96 #|1574454424.965004547|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.bti 14920392 0644 1
+2019/11/22 20:27:04.96 #|1574454424.965086200|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.bti into workspace
+2019/11/22 20:27:04.98 #|1574454424.985350262|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.nal 752 0644 1
+2019/11/22 20:27:04.98 #|1574454424.985392598|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.nal into workspace
+2019/11/22 20:27:04.98 #|1574454424.985484192|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nni 27220 0644 1
+2019/11/22 20:27:04.98 #|1574454424.985504827|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nni into workspace
+2019/11/22 20:27:04.98 #|1574454424.985633695|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nog 3378248 0644 1
+2019/11/22 20:27:04.98 #|1574454424.985657225|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nog into workspace
+2019/11/22 20:27:04.99 #|1574454424.990220386|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.btd 141628361 0644 1
+2019/11/22 20:27:04.99 #|1574454424.990262696|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.btd into workspace
+2019/11/22 20:27:05.16 #|1574454425.169315394|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhr 148534336 0644 1
+2019/11/22 20:27:05.16 #|1574454425.169351853|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhr into workspace
+2019/11/22 20:27:05.35 #|1574454425.355958129|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhi 338004 0644 1
+2019/11/22 20:27:05.35 #|1574454425.356004366|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhi into workspace
+2019/11/22 20:27:05.35 #|1574454425.356525938|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nnd 6955488 0644 1
+2019/11/22 20:27:05.35 #|1574454425.356548925|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nnd into workspace
+2019/11/22 20:27:05.36 #|1574454425.365381169|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhd 14869748 0644 1
+2019/11/22 20:27:05.36 #|1574454425.365422927|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhd into workspace
+2019/11/22 20:27:05.38 #|1574454425.384385744|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq 974099786 0644 1
+2019/11/22 20:27:05.38 #|1574454425.384429449|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq into workspace
+2019/11/22 20:27:05.38 #|1574454425.384442762|00#| work_queue_worker[1] debug: File of size 928 MB will lower available disk space (889 MB) below threshold (0 MB).
+2019/11/22 20:27:05.38 #|1574454425.384458479|00#| work_queue_worker[1] wq: Could not put file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq, not enough disk space (974099786 bytes needed)
+2019/11/22 20:27:05.38 #|1574454425.384470047|00#| work_queue_worker[1] wq: cleaning workspace /tmp/worker-0-1
+2019/11/22 20:27:05.43 #|1574454425.437976013|00#| work_queue_worker[1] wq: disconnecting from master 10.0.108.11:1026
+2019/11/22 20:27:05.43 #|1574454425.438157725|00#| work_queue_worker[1] tcp: disconnected from 10.0.108.11 port 1026
+2019/11/22 20:27:05.43 #|1574454425.438172730|00#| work_queue_worker[1] wq: killing all outstanding tasks
+2019/11/22 20:27:05.43 #|1574454425.438183777|00#| work_queue_worker[1] wq: all data structures are clean
+2019/11/22 20:27:11.43 #|1574454431.438679525|00#| work_queue_worker[1] debug: error reading disk usage on directory: ./cache.
+2019/11/22 20:27:11.43 #|1574454431.438731615|00#| work_queue_worker[1] tcp: connecting to 10.0.108.11 port 1026
+2019/11/22 20:27:11.43 #|1574454431.438914273|00#| work_queue_worker[1] tcp: made connection to 10.0.108.11 port 1026
+2019/11/22 20:27:11.43 #|1574454431.438932754|00#| work_queue_worker[1] wq: connected to master master:1026 via local address 10.0.108.7:55260
+2019/11/22 20:27:11.43 #|1574454431.438941658|00#| work_queue_worker[1] wq: preparing workspace /tmp/worker-0-1
+2019/11/22 20:27:11.43 #|1574454431.439052467|00#| work_queue_worker[1] dns: finding my hostname: uname = 0473a2dd78cf, address = 10.0.108.7, hostname = 0473a2dd78cf
+2019/11/22 20:27:11.43 #|1574454431.439065120|00#| work_queue_worker[1] wq: tx to master: workqueue 8 0473a2dd78cf Linux x86_64 8.0.0
+2019/11/22 20:27:11.43 #|1574454431.439133220|00#| work_queue_worker[1] wq: tx to master: info worker-id worker-c2dcf2b05c21c8eb17a72734da1de240
+2019/11/22 20:27:11.43 #|1574454431.439186847|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/22 20:27:11.43 #|1574454431.439233252|00#| work_queue_worker[1] wq: Sending resource description to master:
+2019/11/22 20:27:11.43 #|1574454431.439244871|00#| work_queue_worker[1] wq:  workers      0 inuse      1 total      1 smallest      1 largest
+2019/11/22 20:27:11.43 #|1574454431.439289351|00#| work_queue_worker[1] wq:     disk      0 inuse   1257 total   1257 smallest   1257 largest
+2019/11/22 20:27:11.43 #|1574454431.439343300|00#| work_queue_worker[1] wq:   memory      0 inuse  11908 total  11908 smallest  11908 largest
+2019/11/22 20:27:11.43 #|1574454431.439400613|00#| work_queue_worker[1] wq:     gpus      0 inuse      0 total      0 smallest      0 largest
+2019/11/22 20:27:11.43 #|1574454431.439448766|00#| work_queue_worker[1] wq:    cores      0 inuse      1 total      1 smallest      1 largest
+2019/11/22 20:27:11.43 #|1574454431.439522490|00#| work_queue_worker[1] wq: tx to master: info end_of_resource_update 0
+2019/11/22 20:27:11.43 #|1574454431.439569340|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/22 20:27:11.43 #|1574454431.439628520|00#| work_queue_worker[1] wq: working for master at 10.0.108.11:1026.
+2019/11/22 20:31:18.31 #|1574454678.311491285|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.bti 14920392 0644 1
+2019/11/22 20:31:18.31 #|1574454678.311529012|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.bti into workspace
+2019/11/22 20:31:18.33 #|1574454678.333854633|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.nal 752 0644 1
+2019/11/22 20:31:18.33 #|1574454678.333920914|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.nal into workspace
+2019/11/22 20:31:18.33 #|1574454678.334016077|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nni 27220 0644 1
+2019/11/22 20:31:18.33 #|1574454678.334038272|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nni into workspace
+2019/11/22 20:31:18.33 #|1574454678.334165097|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nog 3378248 0644 1
+2019/11/22 20:31:18.33 #|1574454678.334193270|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nog into workspace
+2019/11/22 20:31:18.33 #|1574454678.339151048|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.btd 141628361 0644 1
+2019/11/22 20:31:18.33 #|1574454678.339194488|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.btd into workspace
+2019/11/22 20:31:18.53 #|1574454678.538084280|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhr 148534336 0644 1
+2019/11/22 20:31:18.53 #|1574454678.538132402|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhr into workspace
+2019/11/22 20:31:18.73 #|1574454678.730357354|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhi 338004 0644 1
+2019/11/22 20:31:18.73 #|1574454678.730400516|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhi into workspace
+2019/11/22 20:31:18.73 #|1574454678.730979512|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nnd 6955488 0644 1
+2019/11/22 20:31:18.73 #|1574454678.731005339|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nnd into workspace
+2019/11/22 20:31:18.74 #|1574454678.740045257|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhd 14869748 0644 1
+2019/11/22 20:31:18.74 #|1574454678.740091335|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhd into workspace
+2019/11/22 20:31:18.75 #|1574454678.759448665|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq 974099786 0644 1
+2019/11/22 20:31:18.75 #|1574454678.759495240|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq into workspace
+2019/11/22 20:31:18.75 #|1574454678.759509052|00#| work_queue_worker[1] debug: File of size 928 MB will lower available disk space (888 MB) below threshold (0 MB).
+2019/11/22 20:31:18.75 #|1574454678.759517777|00#| work_queue_worker[1] wq: Could not put file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq, not enough disk space (974099786 bytes needed)
+2019/11/22 20:31:18.75 #|1574454678.759529592|00#| work_queue_worker[1] wq: cleaning workspace /tmp/worker-0-1
+2019/11/22 20:31:18.81 #|1574454678.815110900|00#| work_queue_worker[1] wq: disconnecting from master 10.0.108.11:1026
+2019/11/22 20:31:18.81 #|1574454678.815302937|00#| work_queue_worker[1] tcp: disconnected from 10.0.108.11 port 1026
+2019/11/22 20:31:18.81 #|1574454678.815317480|00#| work_queue_worker[1] wq: killing all outstanding tasks
+2019/11/22 20:31:18.81 #|1574454678.815328421|00#| work_queue_worker[1] wq: all data structures are clean
+2019/11/22 20:31:24.81 #|1574454684.815725644|00#| work_queue_worker[1] debug: error reading disk usage on directory: ./cache.
+2019/11/22 20:31:24.81 #|1574454684.815781838|00#| work_queue_worker[1] tcp: connecting to 10.0.108.11 port 1026
+2019/11/22 20:31:24.81 #|1574454684.815967082|00#| work_queue_worker[1] tcp: made connection to 10.0.108.11 port 1026
+2019/11/22 20:31:24.81 #|1574454684.815986205|00#| work_queue_worker[1] wq: connected to master master:1026 via local address 10.0.108.7:55322
+2019/11/22 20:31:24.81 #|1574454684.815995490|00#| work_queue_worker[1] wq: preparing workspace /tmp/worker-0-1
+2019/11/22 20:31:24.81 #|1574454684.816151178|00#| work_queue_worker[1] dns: finding my hostname: uname = 0473a2dd78cf, address = 10.0.108.7, hostname = 0473a2dd78cf
+2019/11/22 20:31:24.81 #|1574454684.816164890|00#| work_queue_worker[1] wq: tx to master: workqueue 8 0473a2dd78cf Linux x86_64 8.0.0
+2019/11/22 20:31:24.81 #|1574454684.816211931|00#| work_queue_worker[1] wq: tx to master: info worker-id worker-c2dcf2b05c21c8eb17a72734da1de240
+2019/11/22 20:31:24.81 #|1574454684.816253079|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/22 20:31:24.81 #|1574454684.816309038|00#| work_queue_worker[1] wq: Sending resource description to master:
+2019/11/22 20:31:24.81 #|1574454684.816321773|00#| work_queue_worker[1] wq:  workers      0 inuse      1 total      1 smallest      1 largest
+2019/11/22 20:31:24.81 #|1574454684.816359239|00#| work_queue_worker[1] wq:     disk      0 inuse   1104 total   1104 smallest   1104 largest
+2019/11/22 20:31:24.81 #|1574454684.816395284|00#| work_queue_worker[1] wq:   memory      0 inuse  11908 total  11908 smallest  11908 largest
+2019/11/22 20:31:24.81 #|1574454684.816430620|00#| work_queue_worker[1] wq:     gpus      0 inuse      0 total      0 smallest      0 largest
+2019/11/22 20:31:24.81 #|1574454684.816465504|00#| work_queue_worker[1] wq:    cores      0 inuse      1 total      1 smallest      1 largest
+2019/11/22 20:31:24.81 #|1574454684.816553169|00#| work_queue_worker[1] wq: tx to master: info end_of_resource_update 0
+2019/11/22 20:31:24.81 #|1574454684.816593866|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/22 20:31:24.81 #|1574454684.816608698|00#| work_queue_worker[1] wq: working for master at 10.0.108.11:1026.
+2019/11/22 20:33:12.53 #|1574454792.538722368|00#| work_queue_worker[1] wq: Failed to read from master.
+2019/11/22 20:33:12.53 #|1574454792.538777435|00#| work_queue_worker[1] wq: cleaning workspace /tmp/worker-0-1
+2019/11/22 20:33:12.53 #|1574454792.538933147|00#| work_queue_worker[1] wq: disconnecting from master 10.0.108.11:1026
+2019/11/22 20:33:12.53 #|1574454792.538958989|00#| work_queue_worker[1] tcp: disconnected from 10.0.108.11 port 1026
+2019/11/22 20:33:12.53 #|1574454792.538968497|00#| work_queue_worker[1] wq: killing all outstanding tasks
+2019/11/22 20:33:12.53 #|1574454792.538978319|00#| work_queue_worker[1] wq: all data structures are clean
+2019/11/22 20:33:18.53 #|1574454798.539428133|00#| work_queue_worker[1] debug: error reading disk usage on directory: ./cache.
+2019/11/22 20:33:18.53 #|1574454798.539467964|00#| work_queue_worker[1] dns: looking up name master
+2019/11/22 20:33:18.53 #|1574454798.539865591|00#| work_queue_worker[1] dns: master is 10.0.108.11
+2019/11/22 20:33:18.53 #|1574454798.539897734|00#| work_queue_worker[1] tcp: connecting to 10.0.108.11 port 1026
+2019/11/22 20:33:18.54 #|1574454798.540039069|00#| work_queue_worker[1] tcp: made connection to 10.0.108.11 port 1026
+2019/11/22 20:33:18.54 #|1574454798.540056652|00#| work_queue_worker[1] wq: connected to master master:1026 via local address 10.0.108.7:55346
+2019/11/22 20:33:18.54 #|1574454798.540065590|00#| work_queue_worker[1] wq: preparing workspace /tmp/worker-0-1
+2019/11/22 20:33:18.54 #|1574454798.540183490|00#| work_queue_worker[1] dns: looking up name 0473a2dd78cf
+2019/11/22 20:33:18.54 #|1574454798.540215130|00#| work_queue_worker[1] dns: 0473a2dd78cf is 10.0.108.7
+2019/11/22 20:33:18.54 #|1574454798.540225645|00#| work_queue_worker[1] dns: looking up addr 10.0.108.7
+2019/11/22 20:33:18.54 #|1574454798.540248083|00#| work_queue_worker[1] dns: 10.0.108.7 is 0473a2dd78cf
+2019/11/22 20:33:18.54 #|1574454798.540257514|00#| work_queue_worker[1] dns: finding my hostname: uname = 0473a2dd78cf, address = 10.0.108.7, hostname = 0473a2dd78cf
+2019/11/22 20:33:18.54 #|1574454798.540267093|00#| work_queue_worker[1] wq: tx to master: workqueue 8 0473a2dd78cf Linux x86_64 8.0.0
+2019/11/22 20:33:18.54 #|1574454798.540312922|00#| work_queue_worker[1] wq: tx to master: info worker-id worker-c2dcf2b05c21c8eb17a72734da1de240
+2019/11/22 20:33:18.54 #|1574454798.540349580|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/22 20:33:18.54 #|1574454798.540383213|00#| work_queue_worker[1] wq: Sending resource description to master:
+2019/11/22 20:33:18.54 #|1574454798.540394382|00#| work_queue_worker[1] wq:  workers      0 inuse      1 total      1 smallest      1 largest
+2019/11/22 20:33:18.54 #|1574454798.540426710|00#| work_queue_worker[1] wq:     disk      0 inuse   1104 total   1104 smallest   1104 largest
+2019/11/22 20:33:18.54 #|1574454798.540460978|00#| work_queue_worker[1] wq:   memory      0 inuse  11908 total  11908 smallest  11908 largest
+2019/11/22 20:33:18.54 #|1574454798.540495056|00#| work_queue_worker[1] wq:     gpus      0 inuse      0 total      0 smallest      0 largest
+2019/11/22 20:33:18.54 #|1574454798.540529239|00#| work_queue_worker[1] wq:    cores      0 inuse      1 total      1 smallest      1 largest
+2019/11/22 20:33:18.54 #|1574454798.540579573|00#| work_queue_worker[1] wq: tx to master: info end_of_resource_update 0
+2019/11/22 20:33:18.54 #|1574454798.540613612|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/22 20:33:18.54 #|1574454798.540627873|00#| work_queue_worker[1] wq: working for master at 10.0.108.11:1026.
+2019/11/22 20:35:27.31 #|1574454927.310108831|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.bti 14920392 0644 1
+2019/11/22 20:35:27.31 #|1574454927.310162854|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.bti into workspace
+2019/11/22 20:35:27.33 #|1574454927.331920766|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.nal 752 0644 1
+2019/11/22 20:35:27.33 #|1574454927.331963763|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.nal into workspace
+2019/11/22 20:35:27.33 #|1574454927.332055347|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nni 27220 0644 1
+2019/11/22 20:35:27.33 #|1574454927.332076790|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nni into workspace
+2019/11/22 20:35:27.33 #|1574454927.332301332|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nog 3378248 0644 1
+2019/11/22 20:35:27.33 #|1574454927.332328031|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nog into workspace
+2019/11/22 20:35:27.33 #|1574454927.337050333|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.btd 141628361 0644 1
+2019/11/22 20:35:27.33 #|1574454927.337094082|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.btd into workspace
+2019/11/22 20:35:27.51 #|1574454927.519748918|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhr 148534336 0644 1
+2019/11/22 20:35:27.51 #|1574454927.519793456|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhr into workspace
+2019/11/22 20:35:27.71 #|1574454927.711084557|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhi 338004 0644 1
+2019/11/22 20:35:27.71 #|1574454927.711131183|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhi into workspace
+2019/11/22 20:35:27.71 #|1574454927.711665469|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nnd 6955488 0644 1
+2019/11/22 20:35:27.71 #|1574454927.711689634|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nnd into workspace
+2019/11/22 20:35:27.72 #|1574454927.720680761|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhd 14869748 0644 1
+2019/11/22 20:35:27.72 #|1574454927.720722735|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhd into workspace
+2019/11/22 20:35:27.73 #|1574454927.739999266|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq 974099786 0644 1
+2019/11/22 20:35:27.74 #|1574454927.740043793|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq into workspace
+2019/11/22 20:35:27.74 #|1574454927.740057838|00#| work_queue_worker[1] debug: File of size 928 MB will lower available disk space (888 MB) below threshold (0 MB).
+2019/11/22 20:35:27.74 #|1574454927.740066748|00#| work_queue_worker[1] wq: Could not put file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq, not enough disk space (974099786 bytes needed)
+2019/11/22 20:35:27.74 #|1574454927.740078495|00#| work_queue_worker[1] wq: cleaning workspace /tmp/worker-0-1
+2019/11/22 20:35:27.79 #|1574454927.795613336|00#| work_queue_worker[1] wq: disconnecting from master 10.0.108.11:1026
+2019/11/22 20:35:27.79 #|1574454927.795796118|00#| work_queue_worker[1] tcp: disconnected from 10.0.108.11 port 1026
+2019/11/22 20:35:27.79 #|1574454927.795810371|00#| work_queue_worker[1] wq: killing all outstanding tasks
+2019/11/22 20:35:27.79 #|1574454927.795821248|00#| work_queue_worker[1] wq: all data structures are clean
+2019/11/22 20:35:33.79 #|1574454933.796321894|00#| work_queue_worker[1] debug: error reading disk usage on directory: ./cache.
+2019/11/22 20:35:33.79 #|1574454933.796390649|00#| work_queue_worker[1] tcp: connecting to 10.0.108.11 port 1026
+2019/11/22 20:35:33.79 #|1574454933.796579557|00#| work_queue_worker[1] tcp: made connection to 10.0.108.11 port 1026
+2019/11/22 20:35:33.79 #|1574454933.796604308|00#| work_queue_worker[1] wq: connected to master master:1026 via local address 10.0.108.7:55386
+2019/11/22 20:35:33.79 #|1574454933.796617767|00#| work_queue_worker[1] wq: preparing workspace /tmp/worker-0-1
+2019/11/22 20:35:33.79 #|1574454933.796762058|00#| work_queue_worker[1] dns: finding my hostname: uname = 0473a2dd78cf, address = 10.0.108.7, hostname = 0473a2dd78cf
+2019/11/22 20:35:33.79 #|1574454933.796780940|00#| work_queue_worker[1] wq: tx to master: workqueue 8 0473a2dd78cf Linux x86_64 8.0.0
+2019/11/22 20:35:33.79 #|1574454933.796863591|00#| work_queue_worker[1] wq: tx to master: info worker-id worker-c2dcf2b05c21c8eb17a72734da1de240
+2019/11/22 20:35:33.79 #|1574454933.796942645|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/22 20:35:33.79 #|1574454933.797016231|00#| work_queue_worker[1] wq: Sending resource description to master:
+2019/11/22 20:35:33.79 #|1574454933.797032623|00#| work_queue_worker[1] wq:  workers      0 inuse      1 total      1 smallest      1 largest
+2019/11/22 20:35:33.79 #|1574454933.797102110|00#| work_queue_worker[1] wq:     disk      0 inuse    799 total    799 smallest    799 largest
+2019/11/22 20:35:33.79 #|1574454933.797175634|00#| work_queue_worker[1] wq:   memory      0 inuse  11908 total  11908 smallest  11908 largest
+2019/11/22 20:35:33.79 #|1574454933.797247543|00#| work_queue_worker[1] wq:     gpus      0 inuse      0 total      0 smallest      0 largest
+2019/11/22 20:35:33.79 #|1574454933.797319720|00#| work_queue_worker[1] wq:    cores      0 inuse      1 total      1 smallest      1 largest
+2019/11/22 20:35:33.79 #|1574454933.797438282|00#| work_queue_worker[1] wq: tx to master: info end_of_resource_update 0
+2019/11/22 20:35:33.79 #|1574454933.797510098|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/22 20:35:33.79 #|1574454933.797582219|00#| work_queue_worker[1] wq: working for master at 10.0.108.11:1026.
+2019/11/22 20:35:33.86 #|1574454933.869115775|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.bti 14920392 0644 1
+2019/11/22 20:35:33.86 #|1574454933.869167061|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.bti into workspace
+2019/11/22 20:35:33.90 #|1574454933.900492113|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.nal 752 0644 1
+2019/11/22 20:35:33.90 #|1574454933.900545046|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.nal into workspace
+2019/11/22 20:35:33.90 #|1574454933.900651553|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nni 27220 0644 1
+2019/11/22 20:35:33.90 #|1574454933.900680714|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nni into workspace
+2019/11/22 20:35:33.90 #|1574454933.900936008|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nog 3378248 0644 1
+2019/11/22 20:35:33.90 #|1574454933.900970730|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nog into workspace
+2019/11/22 20:35:33.90 #|1574454933.907570280|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.btd 141628361 0644 1
+2019/11/22 20:35:33.90 #|1574454933.907626311|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.btd into workspace
+2019/11/22 20:35:34.09 #|1574454934.91917325|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhr 148534336 0644 1
+2019/11/22 20:35:34.09 #|1574454934.91963052|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhr into workspace
+2019/11/22 20:35:34.30 #|1574454934.301118270|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhi 338004 0644 1
+2019/11/22 20:35:34.30 #|1574454934.301161630|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhi into workspace
+2019/11/22 20:35:34.30 #|1574454934.301957188|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nnd 6955488 0644 1
+2019/11/22 20:35:34.30 #|1574454934.301983950|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nnd into workspace
+2019/11/22 20:35:34.31 #|1574454934.312401577|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhd 14869748 0644 1
+2019/11/22 20:35:34.31 #|1574454934.312468973|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhd into workspace
+2019/11/22 20:35:34.33 #|1574454934.334742895|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq 974099786 0644 1
+2019/11/22 20:35:34.33 #|1574454934.334808124|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq into workspace
+2019/11/22 20:35:34.33 #|1574454934.334833984|00#| work_queue_worker[1] debug: File of size 928 MB will lower available disk space (888 MB) below threshold (0 MB).
+2019/11/22 20:35:34.33 #|1574454934.334849813|00#| work_queue_worker[1] wq: Could not put file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq, not enough disk space (974099786 bytes needed)
+2019/11/22 20:35:34.33 #|1574454934.334862456|00#| work_queue_worker[1] wq: cleaning workspace /tmp/worker-0-1
+2019/11/22 20:35:34.39 #|1574454934.390416105|00#| work_queue_worker[1] wq: disconnecting from master 10.0.108.11:1026
+2019/11/22 20:35:34.39 #|1574454934.390671104|00#| work_queue_worker[1] tcp: disconnected from 10.0.108.11 port 1026
+2019/11/22 20:35:34.39 #|1574454934.390691284|00#| work_queue_worker[1] wq: killing all outstanding tasks
+2019/11/22 20:35:34.39 #|1574454934.390707635|00#| work_queue_worker[1] wq: all data structures are clean
+2019/11/22 20:35:40.39 #|1574454940.391155764|00#| work_queue_worker[1] debug: error reading disk usage on directory: ./cache.
+2019/11/22 20:35:40.39 #|1574454940.391205944|00#| work_queue_worker[1] tcp: connecting to 10.0.108.11 port 1026
+2019/11/22 20:35:40.39 #|1574454940.391397954|00#| work_queue_worker[1] tcp: made connection to 10.0.108.11 port 1026
+2019/11/22 20:35:40.39 #|1574454940.391421776|00#| work_queue_worker[1] wq: connected to master master:1026 via local address 10.0.108.7:55402
+2019/11/22 20:35:40.39 #|1574454940.391435498|00#| work_queue_worker[1] wq: preparing workspace /tmp/worker-0-1
+2019/11/22 20:35:40.39 #|1574454940.391584723|00#| work_queue_worker[1] dns: finding my hostname: uname = 0473a2dd78cf, address = 10.0.108.7, hostname = 0473a2dd78cf
+2019/11/22 20:35:40.39 #|1574454940.391602659|00#| work_queue_worker[1] wq: tx to master: workqueue 8 0473a2dd78cf Linux x86_64 8.0.0
+2019/11/22 20:35:40.39 #|1574454940.391684501|00#| work_queue_worker[1] wq: tx to master: info worker-id worker-c2dcf2b05c21c8eb17a72734da1de240
+2019/11/22 20:35:40.39 #|1574454940.391763841|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/22 20:35:40.39 #|1574454940.391836587|00#| work_queue_worker[1] wq: Sending resource description to master:
+2019/11/22 20:35:40.39 #|1574454940.391854911|00#| work_queue_worker[1] wq:  workers      0 inuse      1 total      1 smallest      1 largest
+2019/11/22 20:35:40.39 #|1574454940.391922443|00#| work_queue_worker[1] wq:     disk      0 inuse   1104 total   1104 smallest   1104 largest
+2019/11/22 20:35:40.39 #|1574454940.391991572|00#| work_queue_worker[1] wq:   memory      0 inuse  11908 total  11908 smallest  11908 largest
+2019/11/22 20:35:40.39 #|1574454940.392063425|00#| work_queue_worker[1] wq:     gpus      0 inuse      0 total      0 smallest      0 largest
+2019/11/22 20:35:40.39 #|1574454940.392151705|00#| work_queue_worker[1] wq:    cores      0 inuse      1 total      1 smallest      1 largest
+2019/11/22 20:35:40.39 #|1574454940.392263856|00#| work_queue_worker[1] wq: tx to master: info end_of_resource_update 0
+2019/11/22 20:35:40.39 #|1574454940.392332886|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/22 20:35:40.39 #|1574454940.392406462|00#| work_queue_worker[1] wq: working for master at 10.0.108.11:1026.
+2019/11/22 20:35:40.39 #|1574454940.393638062|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.bti 14920392 0644 1
+2019/11/22 20:35:40.39 #|1574454940.393684207|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.bti into workspace
+2019/11/22 20:35:40.42 #|1574454940.425191894|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.nal 752 0644 1
+2019/11/22 20:35:40.42 #|1574454940.425234068|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.nal into workspace
+2019/11/22 20:35:40.42 #|1574454940.425323184|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nni 27220 0644 1
+2019/11/22 20:35:40.42 #|1574454940.425344306|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nni into workspace
+2019/11/22 20:35:40.42 #|1574454940.425582278|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nog 3378248 0644 1
+2019/11/22 20:35:40.42 #|1574454940.425622885|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nog into workspace
+2019/11/22 20:35:40.43 #|1574454940.431428377|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.btd 141628361 0644 1
+2019/11/22 20:35:40.43 #|1574454940.431471199|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.btd into workspace
+2019/11/22 20:35:40.64 #|1574454940.643786365|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhr 148534336 0644 1
+2019/11/22 20:35:40.64 #|1574454940.643830159|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhr into workspace
+2019/11/22 20:35:40.86 #|1574454940.865429370|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhi 338004 0644 1
+2019/11/22 20:35:40.86 #|1574454940.865486259|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhi into workspace
+2019/11/22 20:35:40.86 #|1574454940.866016522|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nnd 6955488 0644 1
+2019/11/22 20:35:40.86 #|1574454940.866040943|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nnd into workspace
+2019/11/22 20:35:40.87 #|1574454940.875859092|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhd 14869748 0644 1
+2019/11/22 20:35:40.87 #|1574454940.875903270|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhd into workspace
+2019/11/22 20:35:40.89 #|1574454940.895059761|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq 974099786 0644 1
+2019/11/22 20:35:40.89 #|1574454940.895103856|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq into workspace
+2019/11/22 20:35:40.89 #|1574454940.895117392|00#| work_queue_worker[1] debug: File of size 928 MB will lower available disk space (888 MB) below threshold (0 MB).
+2019/11/22 20:35:40.89 #|1574454940.895126019|00#| work_queue_worker[1] wq: Could not put file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq, not enough disk space (974099786 bytes needed)
+2019/11/22 20:35:40.89 #|1574454940.895144095|00#| work_queue_worker[1] wq: cleaning workspace /tmp/worker-0-1
+2019/11/22 20:35:40.95 #|1574454940.950907413|00#| work_queue_worker[1] wq: disconnecting from master 10.0.108.11:1026
+2019/11/22 20:35:40.95 #|1574454940.951097089|00#| work_queue_worker[1] tcp: disconnected from 10.0.108.11 port 1026
+2019/11/22 20:35:40.95 #|1574454940.951111392|00#| work_queue_worker[1] wq: killing all outstanding tasks
+2019/11/22 20:35:40.95 #|1574454940.951122295|00#| work_queue_worker[1] wq: all data structures are clean
+2019/11/22 20:35:46.95 #|1574454946.951539686|00#| work_queue_worker[1] debug: error reading disk usage on directory: ./cache.
+2019/11/22 20:35:46.95 #|1574454946.951580584|00#| work_queue_worker[1] tcp: connecting to 10.0.108.11 port 1026
+2019/11/22 20:35:46.95 #|1574454946.951740132|00#| work_queue_worker[1] tcp: made connection to 10.0.108.11 port 1026
+2019/11/22 20:35:46.95 #|1574454946.951758395|00#| work_queue_worker[1] wq: connected to master master:1026 via local address 10.0.108.7:55414
+2019/11/22 20:35:46.95 #|1574454946.951767605|00#| work_queue_worker[1] wq: preparing workspace /tmp/worker-0-1
+2019/11/22 20:35:46.95 #|1574454946.951879582|00#| work_queue_worker[1] dns: finding my hostname: uname = 0473a2dd78cf, address = 10.0.108.7, hostname = 0473a2dd78cf
+2019/11/22 20:35:46.95 #|1574454946.951892544|00#| work_queue_worker[1] wq: tx to master: workqueue 8 0473a2dd78cf Linux x86_64 8.0.0
+2019/11/22 20:35:46.95 #|1574454946.951952100|00#| work_queue_worker[1] wq: tx to master: info worker-id worker-c2dcf2b05c21c8eb17a72734da1de240
+2019/11/22 20:35:46.95 #|1574454946.952004446|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/22 20:35:46.95 #|1574454946.952051653|00#| work_queue_worker[1] wq: Sending resource description to master:
+2019/11/22 20:35:46.95 #|1574454946.952063708|00#| work_queue_worker[1] wq:  workers      0 inuse      1 total      1 smallest      1 largest
+2019/11/22 20:35:46.95 #|1574454946.952109974|00#| work_queue_worker[1] wq:     disk      0 inuse   1104 total   1104 smallest   1104 largest
+2019/11/22 20:35:46.95 #|1574454946.952158088|00#| work_queue_worker[1] wq:   memory      0 inuse  11908 total  11908 smallest  11908 largest
+2019/11/22 20:35:46.95 #|1574454946.952205891|00#| work_queue_worker[1] wq:     gpus      0 inuse      0 total      0 smallest      0 largest
+2019/11/22 20:35:46.95 #|1574454946.952253582|00#| work_queue_worker[1] wq:    cores      0 inuse      1 total      1 smallest      1 largest
+2019/11/22 20:35:46.95 #|1574454946.952329382|00#| work_queue_worker[1] wq: tx to master: info end_of_resource_update 0
+2019/11/22 20:35:46.95 #|1574454946.952377270|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/22 20:35:46.95 #|1574454946.952425016|00#| work_queue_worker[1] wq: working for master at 10.0.108.11:1026.
+2019/11/22 20:35:46.95 #|1574454946.954225039|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.bti 14920392 0644 1
+2019/11/22 20:35:46.95 #|1574454946.954265590|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.bti into workspace
+2019/11/22 20:35:46.97 #|1574454946.974063546|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.nal 752 0644 1
+2019/11/22 20:35:46.97 #|1574454946.974101687|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.nal into workspace
+2019/11/22 20:35:46.97 #|1574454946.974199415|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nni 27220 0644 1
+2019/11/22 20:35:46.97 #|1574454946.974221186|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nni into workspace
+2019/11/22 20:35:46.97 #|1574454946.974370264|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nog 3378248 0644 1
+2019/11/22 20:35:46.97 #|1574454946.974395764|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nog into workspace
+2019/11/22 20:35:46.98 #|1574454946.981668628|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.btd 141628361 0644 1
+2019/11/22 20:35:46.98 #|1574454946.981724047|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.btd into workspace
+2019/11/22 20:35:47.18 #|1574454947.183105229|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhr 148534336 0644 1
+2019/11/22 20:35:47.18 #|1574454947.183149320|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhr into workspace
+2019/11/22 20:35:47.37 #|1574454947.376825278|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhi 338004 0644 1
+2019/11/22 20:35:47.37 #|1574454947.376869697|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhi into workspace
+2019/11/22 20:35:47.37 #|1574454947.377582304|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nnd 6955488 0644 1
+2019/11/22 20:35:47.37 #|1574454947.377607019|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nnd into workspace
+2019/11/22 20:35:47.38 #|1574454947.388151026|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhd 14869748 0644 1
+2019/11/22 20:35:47.38 #|1574454947.388216147|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhd into workspace
+2019/11/22 20:35:47.41 #|1574454947.410408821|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq 974099786 0644 1
+2019/11/22 20:35:47.41 #|1574454947.410453813|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq into workspace
+2019/11/22 20:35:47.41 #|1574454947.410467849|00#| work_queue_worker[1] debug: File of size 928 MB will lower available disk space (888 MB) below threshold (0 MB).
+2019/11/22 20:35:47.41 #|1574454947.410476365|00#| work_queue_worker[1] wq: Could not put file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq, not enough disk space (974099786 bytes needed)
+2019/11/22 20:35:47.41 #|1574454947.410488006|00#| work_queue_worker[1] wq: cleaning workspace /tmp/worker-0-1
+2019/11/22 20:35:47.46 #|1574454947.466604660|00#| work_queue_worker[1] wq: disconnecting from master 10.0.108.11:1026
+2019/11/22 20:35:47.46 #|1574454947.466792367|00#| work_queue_worker[1] tcp: disconnected from 10.0.108.11 port 1026
+2019/11/22 20:35:47.46 #|1574454947.466806724|00#| work_queue_worker[1] wq: killing all outstanding tasks
+2019/11/22 20:35:47.46 #|1574454947.466817732|00#| work_queue_worker[1] wq: all data structures are clean
+2019/11/22 20:35:53.46 #|1574454953.467256008|00#| work_queue_worker[1] debug: error reading disk usage on directory: ./cache.
+2019/11/22 20:35:53.46 #|1574454953.467305885|00#| work_queue_worker[1] tcp: connecting to 10.0.108.11 port 1026
+2019/11/22 20:35:53.46 #|1574454953.467493227|00#| work_queue_worker[1] tcp: made connection to 10.0.108.11 port 1026
+2019/11/22 20:35:53.46 #|1574454953.467511824|00#| work_queue_worker[1] wq: connected to master master:1026 via local address 10.0.108.7:55428
+2019/11/22 20:35:53.46 #|1574454953.467521081|00#| work_queue_worker[1] wq: preparing workspace /tmp/worker-0-1
+2019/11/22 20:35:53.46 #|1574454953.467632595|00#| work_queue_worker[1] dns: finding my hostname: uname = 0473a2dd78cf, address = 10.0.108.7, hostname = 0473a2dd78cf
+2019/11/22 20:35:53.46 #|1574454953.467645955|00#| work_queue_worker[1] wq: tx to master: workqueue 8 0473a2dd78cf Linux x86_64 8.0.0
+2019/11/22 20:35:53.46 #|1574454953.467707562|00#| work_queue_worker[1] wq: tx to master: info worker-id worker-c2dcf2b05c21c8eb17a72734da1de240
+2019/11/22 20:35:53.46 #|1574454953.467760072|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/22 20:35:53.46 #|1574454953.467823098|00#| work_queue_worker[1] wq: Sending resource description to master:
+2019/11/22 20:35:53.46 #|1574454953.467835601|00#| work_queue_worker[1] wq:  workers      0 inuse      1 total      1 smallest      1 largest
+2019/11/22 20:35:53.46 #|1574454953.467882379|00#| work_queue_worker[1] wq:     disk      0 inuse   1103 total   1103 smallest   1103 largest
+2019/11/22 20:35:53.46 #|1574454953.467930274|00#| work_queue_worker[1] wq:   memory      0 inuse  11908 total  11908 smallest  11908 largest
+2019/11/22 20:35:53.46 #|1574454953.467978367|00#| work_queue_worker[1] wq:     gpus      0 inuse      0 total      0 smallest      0 largest
+2019/11/22 20:35:53.46 #|1574454953.468025973|00#| work_queue_worker[1] wq:    cores      0 inuse      1 total      1 smallest      1 largest
+2019/11/22 20:35:53.46 #|1574454953.468101724|00#| work_queue_worker[1] wq: tx to master: info end_of_resource_update 0
+2019/11/22 20:35:53.46 #|1574454953.468150364|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/22 20:35:53.46 #|1574454953.468197758|00#| work_queue_worker[1] wq: working for master at 10.0.108.11:1026.
+2019/11/22 20:35:53.46 #|1574454953.469517068|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.bti 14920392 0644 1
+2019/11/22 20:35:53.46 #|1574454953.469558958|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.bti into workspace
+2019/11/22 20:35:53.49 #|1574454953.490351488|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.nal 752 0644 1
+2019/11/22 20:35:53.49 #|1574454953.490392134|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.nal into workspace
+2019/11/22 20:35:53.49 #|1574454953.490579850|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nni 27220 0644 1
+2019/11/22 20:35:53.49 #|1574454953.490607044|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nni into workspace
+2019/11/22 20:35:53.49 #|1574454953.490718463|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nog 3378248 0644 1
+2019/11/22 20:35:53.49 #|1574454953.490743341|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nog into workspace
+2019/11/22 20:35:53.49 #|1574454953.495139866|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.btd 141628361 0644 1
+2019/11/22 20:35:53.49 #|1574454953.495178132|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.btd into workspace
+2019/11/22 20:35:53.70 #|1574454953.709605293|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhr 148534336 0644 1
+2019/11/22 20:35:53.70 #|1574454953.709648855|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhr into workspace
+2019/11/22 20:35:53.89 #|1574454953.899713606|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhi 338004 0644 1
+2019/11/22 20:35:53.89 #|1574454953.899757964|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhi into workspace
+2019/11/22 20:35:53.90 #|1574454953.900327910|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nnd 6955488 0644 1
+2019/11/22 20:35:53.90 #|1574454953.900351886|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nnd into workspace
+2019/11/22 20:35:53.90 #|1574454953.909382499|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhd 14869748 0644 1
+2019/11/22 20:35:53.90 #|1574454953.909426602|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhd into workspace
+2019/11/22 20:35:53.92 #|1574454953.928602862|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq 974099786 0644 1
+2019/11/22 20:35:53.92 #|1574454953.928654059|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq into workspace
+2019/11/22 20:35:53.92 #|1574454953.928668355|00#| work_queue_worker[1] debug: File of size 928 MB will lower available disk space (888 MB) below threshold (0 MB).
+2019/11/22 20:35:53.92 #|1574454953.928677381|00#| work_queue_worker[1] wq: Could not put file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq, not enough disk space (974099786 bytes needed)
+2019/11/22 20:35:53.92 #|1574454953.928689429|00#| work_queue_worker[1] wq: cleaning workspace /tmp/worker-0-1
+2019/11/22 20:35:53.98 #|1574454953.984472201|00#| work_queue_worker[1] wq: disconnecting from master 10.0.108.11:1026
+2019/11/22 20:35:53.98 #|1574454953.984663718|00#| work_queue_worker[1] tcp: disconnected from 10.0.108.11 port 1026
+2019/11/22 20:35:53.98 #|1574454953.984678060|00#| work_queue_worker[1] wq: killing all outstanding tasks
+2019/11/22 20:35:53.98 #|1574454953.984689033|00#| work_queue_worker[1] wq: all data structures are clean
+2019/11/22 20:35:59.98 #|1574454959.985139276|00#| work_queue_worker[1] debug: error reading disk usage on directory: ./cache.
+2019/11/22 20:35:59.98 #|1574454959.985193629|00#| work_queue_worker[1] tcp: connecting to 10.0.108.11 port 1026
+2019/11/22 20:35:59.98 #|1574454959.985380742|00#| work_queue_worker[1] tcp: made connection to 10.0.108.11 port 1026
+2019/11/22 20:35:59.98 #|1574454959.985399760|00#| work_queue_worker[1] wq: connected to master master:1026 via local address 10.0.108.7:55440
+2019/11/22 20:35:59.98 #|1574454959.985409358|00#| work_queue_worker[1] wq: preparing workspace /tmp/worker-0-1
+2019/11/22 20:35:59.98 #|1574454959.985523535|00#| work_queue_worker[1] dns: finding my hostname: uname = 0473a2dd78cf, address = 10.0.108.7, hostname = 0473a2dd78cf
+2019/11/22 20:35:59.98 #|1574454959.985537111|00#| work_queue_worker[1] wq: tx to master: workqueue 8 0473a2dd78cf Linux x86_64 8.0.0
+2019/11/22 20:35:59.98 #|1574454959.985600247|00#| work_queue_worker[1] wq: tx to master: info worker-id worker-c2dcf2b05c21c8eb17a72734da1de240
+2019/11/22 20:35:59.98 #|1574454959.985651907|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/22 20:35:59.98 #|1574454959.985701635|00#| work_queue_worker[1] wq: Sending resource description to master:
+2019/11/22 20:35:59.98 #|1574454959.985713885|00#| work_queue_worker[1] wq:  workers      0 inuse      1 total      1 smallest      1 largest
+2019/11/22 20:35:59.98 #|1574454959.985759839|00#| work_queue_worker[1] wq:     disk      0 inuse   1103 total   1103 smallest   1103 largest
+2019/11/22 20:35:59.98 #|1574454959.985809335|00#| work_queue_worker[1] wq:   memory      0 inuse  11908 total  11908 smallest  11908 largest
+2019/11/22 20:35:59.98 #|1574454959.985858291|00#| work_queue_worker[1] wq:     gpus      0 inuse      0 total      0 smallest      0 largest
+2019/11/22 20:35:59.98 #|1574454959.985906969|00#| work_queue_worker[1] wq:    cores      0 inuse      1 total      1 smallest      1 largest
+2019/11/22 20:35:59.98 #|1574454959.985983558|00#| work_queue_worker[1] wq: tx to master: info end_of_resource_update 0
+2019/11/22 20:35:59.98 #|1574454959.986032700|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/22 20:35:59.98 #|1574454959.986081022|00#| work_queue_worker[1] wq: working for master at 10.0.108.11:1026.
+2019/11/22 20:35:59.98 #|1574454959.986718303|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.bti 14920392 0644 1
+2019/11/22 20:35:59.98 #|1574454959.986760825|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.bti into workspace
+2019/11/22 20:36:00.00 #|1574454960.7521046|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.nal 752 0644 1
+2019/11/22 20:36:00.00 #|1574454960.7563059|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.nal into workspace
+2019/11/22 20:36:00.00 #|1574454960.7661808|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nni 27220 0644 1
+2019/11/22 20:36:00.00 #|1574454960.7684224|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nni into workspace
+2019/11/22 20:36:00.00 #|1574454960.7876899|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nog 3378248 0644 1
+2019/11/22 20:36:00.00 #|1574454960.7903369|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nog into workspace
+2019/11/22 20:36:00.01 #|1574454960.12671770|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.btd 141628361 0644 1
+2019/11/22 20:36:00.01 #|1574454960.12714988|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.btd into workspace
+2019/11/22 20:36:00.19 #|1574454960.195918211|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhr 148534336 0644 1
+2019/11/22 20:36:00.19 #|1574454960.195962807|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhr into workspace
+2019/11/22 20:36:00.38 #|1574454960.387080028|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhi 338004 0644 1
+2019/11/22 20:36:00.38 #|1574454960.387125288|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhi into workspace
+2019/11/22 20:36:00.38 #|1574454960.387655286|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nnd 6955488 0644 1
+2019/11/22 20:36:00.38 #|1574454960.387679470|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nnd into workspace
+2019/11/22 20:36:00.39 #|1574454960.396619691|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhd 14869748 0644 1
+2019/11/22 20:36:00.39 #|1574454960.396663617|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhd into workspace
+2019/11/22 20:36:00.41 #|1574454960.415774900|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq 974099786 0644 1
+2019/11/22 20:36:00.41 #|1574454960.415820206|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq into workspace
+2019/11/22 20:36:00.41 #|1574454960.415834218|00#| work_queue_worker[1] debug: File of size 928 MB will lower available disk space (888 MB) below threshold (0 MB).
+2019/11/22 20:36:00.41 #|1574454960.415842980|00#| work_queue_worker[1] wq: Could not put file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq, not enough disk space (974099786 bytes needed)
+2019/11/22 20:36:00.41 #|1574454960.415854922|00#| work_queue_worker[1] wq: cleaning workspace /tmp/worker-0-1
+2019/11/22 20:36:00.47 #|1574454960.471346054|00#| work_queue_worker[1] wq: disconnecting from master 10.0.108.11:1026
+2019/11/22 20:36:00.47 #|1574454960.471533088|00#| work_queue_worker[1] tcp: disconnected from 10.0.108.11 port 1026
+2019/11/22 20:36:00.47 #|1574454960.471547934|00#| work_queue_worker[1] wq: killing all outstanding tasks
+2019/11/22 20:36:00.47 #|1574454960.471558904|00#| work_queue_worker[1] wq: all data structures are clean
+2019/11/22 20:36:06.47 #|1574454966.472024433|00#| work_queue_worker[1] debug: error reading disk usage on directory: ./cache.
+2019/11/22 20:36:06.47 #|1574454966.472075481|00#| work_queue_worker[1] tcp: connecting to 10.0.108.11 port 1026
+2019/11/22 20:36:06.47 #|1574454966.472260052|00#| work_queue_worker[1] tcp: made connection to 10.0.108.11 port 1026
+2019/11/22 20:36:06.47 #|1574454966.472278902|00#| work_queue_worker[1] wq: connected to master master:1026 via local address 10.0.108.7:55452
+2019/11/22 20:36:06.47 #|1574454966.472288376|00#| work_queue_worker[1] wq: preparing workspace /tmp/worker-0-1
+2019/11/22 20:36:06.47 #|1574454966.472413291|00#| work_queue_worker[1] dns: finding my hostname: uname = 0473a2dd78cf, address = 10.0.108.7, hostname = 0473a2dd78cf
+2019/11/22 20:36:06.47 #|1574454966.472426788|00#| work_queue_worker[1] wq: tx to master: workqueue 8 0473a2dd78cf Linux x86_64 8.0.0
+2019/11/22 20:36:06.47 #|1574454966.472489997|00#| work_queue_worker[1] wq: tx to master: info worker-id worker-c2dcf2b05c21c8eb17a72734da1de240
+2019/11/22 20:36:06.47 #|1574454966.472541861|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/22 20:36:06.47 #|1574454966.472591837|00#| work_queue_worker[1] wq: Sending resource description to master:
+2019/11/22 20:36:06.47 #|1574454966.472604050|00#| work_queue_worker[1] wq:  workers      0 inuse      1 total      1 smallest      1 largest
+2019/11/22 20:36:06.47 #|1574454966.472650722|00#| work_queue_worker[1] wq:     disk      0 inuse   1103 total   1103 smallest   1103 largest
+2019/11/22 20:36:06.47 #|1574454966.472699362|00#| work_queue_worker[1] wq:   memory      0 inuse  11908 total  11908 smallest  11908 largest
+2019/11/22 20:36:06.47 #|1574454966.472747396|00#| work_queue_worker[1] wq:     gpus      0 inuse      0 total      0 smallest      0 largest
+2019/11/22 20:36:06.47 #|1574454966.472796014|00#| work_queue_worker[1] wq:    cores      0 inuse      1 total      1 smallest      1 largest
+2019/11/22 20:36:06.47 #|1574454966.472872684|00#| work_queue_worker[1] wq: tx to master: info end_of_resource_update 0
+2019/11/22 20:36:06.47 #|1574454966.472921719|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/22 20:36:06.47 #|1574454966.472970502|00#| work_queue_worker[1] wq: working for master at 10.0.108.11:1026.
+2019/11/22 20:36:06.47 #|1574454966.474104998|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.bti 14920392 0644 1
+2019/11/22 20:36:06.47 #|1574454966.474145312|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.bti into workspace
+2019/11/22 20:36:06.49 #|1574454966.494671568|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.nal 752 0644 1
+2019/11/22 20:36:06.49 #|1574454966.494711773|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.nal into workspace
+2019/11/22 20:36:06.49 #|1574454966.494862033|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nni 27220 0644 1
+2019/11/22 20:36:06.49 #|1574454966.494887658|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nni into workspace
+2019/11/22 20:36:06.49 #|1574454966.495001473|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nog 3378248 0644 1
+2019/11/22 20:36:06.49 #|1574454966.495026933|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nog into workspace
+2019/11/22 20:36:06.49 #|1574454966.499473739|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.btd 141628361 0644 1
+2019/11/22 20:36:06.49 #|1574454966.499513412|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/taxdb.btd into workspace
+2019/11/22 20:36:06.68 #|1574454966.683353842|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhr 148534336 0644 1
+2019/11/22 20:36:06.68 #|1574454966.683399027|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhr into workspace
+2019/11/22 20:36:06.87 #|1574454966.874638558|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhi 338004 0644 1
+2019/11/22 20:36:06.87 #|1574454966.874684730|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhi into workspace
+2019/11/22 20:36:06.87 #|1574454966.875217770|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nnd 6955488 0644 1
+2019/11/22 20:36:06.87 #|1574454966.875249340|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nnd into workspace
+2019/11/22 20:36:06.88 #|1574454966.884365826|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhd 14869748 0644 1
+2019/11/22 20:36:06.88 #|1574454966.884409351|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nhd into workspace
+2019/11/22 20:36:06.90 #|1574454966.903575797|00#| work_queue_worker[1] wq: rx from master: put file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq 974099786 0644 1
+2019/11/22 20:36:06.90 #|1574454966.903620669|00#| work_queue_worker[1] wq: Putting file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq into workspace
+2019/11/22 20:36:06.90 #|1574454966.903634497|00#| work_queue_worker[1] debug: File of size 928 MB will lower available disk space (888 MB) below threshold (0 MB).
+2019/11/22 20:36:06.90 #|1574454966.903643362|00#| work_queue_worker[1] wq: Could not put file file-0-25930e3036f13852cb0b29694bbab611-nt/nt.44.nsq, not enough disk space (974099786 bytes needed)
+2019/11/22 20:36:06.90 #|1574454966.903655144|00#| work_queue_worker[1] wq: cleaning workspace /tmp/worker-0-1
+2019/11/22 20:36:06.95 #|1574454966.959650220|00#| work_queue_worker[1] wq: disconnecting from master 10.0.108.11:1026
+2019/11/22 20:36:06.95 #|1574454966.959841493|00#| work_queue_worker[1] tcp: disconnected from 10.0.108.11 port 1026
+2019/11/22 20:36:06.95 #|1574454966.959856202|00#| work_queue_worker[1] wq: killing all outstanding tasks
+2019/11/22 20:36:06.95 #|1574454966.959867325|00#| work_queue_worker[1] wq: all data structures are clean
+2019/11/22 20:36:12.96 #|1574454972.960344375|00#| work_queue_worker[1] debug: error reading disk usage on directory: ./cache.
+2019/11/22 20:36:12.96 #|1574454972.960404842|00#| work_queue_worker[1] tcp: connecting to 10.0.108.11 port 1026
+2019/11/22 20:36:12.96 #|1574454972.960643843|00#| work_queue_worker[1] tcp: made connection to 10.0.108.11 port 1026
+2019/11/22 20:36:12.96 #|1574454972.960670620|00#| work_queue_worker[1] wq: connected to master master:1026 via local address 10.0.108.7:55468
+2019/11/22 20:36:12.96 #|1574454972.960686037|00#| work_queue_worker[1] wq: preparing workspace /tmp/worker-0-1
+2019/11/22 20:36:12.96 #|1574454972.960842000|00#| work_queue_worker[1] dns: finding my hostname: uname = 0473a2dd78cf, address = 10.0.108.7, hostname = 0473a2dd78cf
+2019/11/22 20:36:12.96 #|1574454972.960865202|00#| work_queue_worker[1] wq: tx to master: workqueue 8 0473a2dd78cf Linux x86_64 8.0.0
+2019/11/22 20:36:12.96 #|1574454972.960959007|00#| work_queue_worker[1] wq: tx to master: info worker-id worker-c2dcf2b05c21c8eb17a72734da1de240
+2019/11/22 20:36:12.96 #|1574454972.961036532|00#| work_queue_worker[1] wq: tx to master: alive
+2019/11/22 20:36:12.96 #|1574454972.961109998|00#| work_queue_worker[1] wq: Sending resource description to master:
+2019/11/22 20:36:12.96 #|1574454972.961127801|00#| work_queue_worker[1] wq:  workers      0 inuse      1 total      1 smallest      1 largest
+2019/11/22 20:36:12.96 #|1574454972.961210517|00#| work_queue_worker[1] wq:     disk      0 inuse   1103 total   1103 smallest   1103 largest
+2019/11/22 20:36:12.96 #|1574454972.961286567|00#| work_queue_worker[1] wq:   memory      0 inuse  11908 total  11908 smallest  11908 largest
+2019/11/22 20:36:12.96 #|1574454972.961364087|00#| work_queue_worker[1] wq:     gpus      0 inuse      0 total      0 smallest      0 largest
+2019/11/22 20:36:12.96 #|1574454972.961441260|00#| work_queue_worker[1] wq:    cores      0 inuse      1 total      1 smallest      1 largest
+2019/11/22 20:36:12.96 #|1574454972.961567349|00#| work_queue_worker[1] wq: tx to master: info end_of_resource_update 0
+2019/11/22 20:36:12.96 #|1574454972.961648620|00#| work_queue_worker[1] wq: tx to master: info tasks_running 0
+2019/11/22 20:36:12.96 #|1574454972.961728775|00#| work_queue_worker[1] wq: working for master at 10.0.108.11:1026.
+2019/11/22 20:36:28.79 #|1574454988.798551182|00#| work_queue_worker[1] wq: rx from master: release
+2019/11/22 20:36:28.79 #|1574454988.798578089|00#| work_queue_worker[1] wq: released by master 10.0.108.11:1026.
+2019/11/22 20:36:28.79 #|1574454988.798594303|00#| work_queue_worker[1] wq: cleaning workspace /tmp/worker-0-1
+2019/11/22 20:36:28.79 #|1574454988.798699420|00#| work_queue_worker[1] wq: disconnecting from master 10.0.108.11:1026
+2019/11/22 20:36:28.79 #|1574454988.798780225|00#| work_queue_worker[1] tcp: disconnected from 10.0.108.11 port 1026
+2019/11/22 20:36:28.79 #|1574454988.798794012|00#| work_queue_worker[1] wq: killing all outstanding tasks
+2019/11/22 20:36:28.79 #|1574454988.798803447|00#| work_queue_worker[1] wq: all data structures are clean
+2019/11/22 20:36:29.79 #|1574454989.798933328|00#| work_queue_worker[1] tcp: connecting to 10.0.108.11 port 1026
